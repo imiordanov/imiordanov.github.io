@@ -1,0 +1,13 @@
+\begin{thebibliography}{IT17}
+
+\bibitem[IT17]{it-idtbs-17}
+Iordan Iordanov and Monique Teillaud.
+\newblock {Implementing Delaunay Triangulations of the Bolza Surface}.
+\newblock In {\em 33rd International Symposium on Computational Geometry (SoCG
+  2017)}, volume~77 of {\em Leibniz International Proceedings in Informatics
+  (LIPIcs)}, pages 44:1--44:15, Dagstuhl, Germany, 2017. Schloss
+  Dagstuhl--Leibniz-Zentrum fuer Informatik.
+\newblock \href {http://dx.doi.org/10.4230/LIPIcs.SoCG.2017.44}
+  {\path{doi:10.4230/LIPIcs.SoCG.2017.44}}.
+
+\end{thebibliography}
