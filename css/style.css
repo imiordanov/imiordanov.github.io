@@ -122,3 +122,11 @@ img {
 .blendy {
   background-color: #fff;
 }
+
+
+.header-image {
+  float: left;
+  border-radius: 0px 0px;
+  padding-top: 10px;
+  height: 50px;
+}
