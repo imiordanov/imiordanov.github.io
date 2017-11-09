@@ -22,9 +22,9 @@ p {
 }
 
 .parallax-container {
-  min-height: 200px;
+  min-height: 300px;
   line-height: 0;
-  height: 200px;
+  height: 300px;
   color: rgba(255,255,255,.9);
 }
 
@@ -129,4 +129,11 @@ img {
   border-radius: 0px 0px;
   padding-top: 10px;
   height: 50px;
+}
+
+.header-container {
+  min-height: 200px;
+  line-height: 0;
+  height: 200px;
+  color: rgba(255,255,255,.9);
 }
