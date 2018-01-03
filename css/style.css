@@ -52,8 +52,15 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+
+.inline {
+  font-size: 1.25em;
+  vertical-align: bottom;
 }
 
 footer.page-footer {
