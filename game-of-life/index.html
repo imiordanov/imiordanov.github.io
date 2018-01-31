@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Life</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div style="width:95%;">
+		<div style="vertical-align:top; width:30%; text-align:left;">
+			<span style="text-align:center;"><h3>Conway's Game of Life</h3></span>
+			Black tiles represent live cells, white tiles represent dead cells. <br> <br>
+			Rules:<br>
+			&nbsp; &bull; A live cell with fewer than 2 live neighbors dies; <br>
+			&nbsp; &bull; A live cell with more than 3 live neighbors dies; <br>
+			&nbsp; &bull; A live cell with 2 or 3 live neighbors still lives; <br>
+			&nbsp; &bull; A dead cell with 3 live neighbors comes to life. <br> <br>
+			
+
+			One might ask whether a concrete pattern can be obtained from a given start pattern. This question, however, is undecidable. <br> <br>
+
+			The implementation shown here starts with a random pattern every time. The board contains 900 tiles (30 x 30), and initially 200 cells are given life at random. <br> <br>
+
+			Oh, and it works on a torus. Opposite sides are identified. The next step would be to make it work on a double torus, but it will take some time.
+		</div>
+		<div style="width:45%;">
+			<canvas id="mcv"></canvas>
+		</div>
+		<div style="vertical-align:top; width:10%;">
+			<span style="text-align:center;"><h3>Stats</h3></span>
+			<div> Initial # live cells: <span id="init-alive">0</span> </div>
+			<div> Maximum # live cells: <span id="max-alive">0</span> </div>
+			<div> Minimum # live cells: <span id="min-alive">0</span> </div>
+			<div> Current # live cells: <span id="now-alive">0</span> </div>
+		</div>
+	</div>
+</body>
+
+<script src="js/code.js" type="text/javascript"></script>
+
+</html>
