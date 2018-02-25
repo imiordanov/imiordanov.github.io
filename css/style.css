@@ -136,7 +136,7 @@ img {
   float: left;
   border-radius: 0px 0px;
   padding-top: 10px;
-  height: 50px;
+  height: 30px;
 }
 
 .header-container {
@@ -145,3 +145,16 @@ img {
   height: 200px;
   color: rgba(255,255,255,.9);
 }
+
+.quote {
+  font-size: 0.5em;
+  color: #aaa;
+}
+
+.quote i {
+  font-size: 1em;
+  color: #999;
+  padding: 0px;
+  margin: 0px;
+}
+
