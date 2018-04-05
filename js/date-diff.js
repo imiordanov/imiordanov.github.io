@@ -35,4 +35,4 @@ function date_diff(date1, date2){
     return diff;
 }
 
-document.getElementById("moreinfo").innerHTML = "(which makes me " + date_diff(new Date(1986,08,20), new Date()).year + " years old)";
+document.getElementById("moreinfo").innerHTML = ", which makes me " + date_diff(new Date(1986,08,20), new Date()).year + " years old.";
