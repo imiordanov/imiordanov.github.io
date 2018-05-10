@@ -156,12 +156,21 @@ img {
   width: 100%;
 }
 
+.last-modified {
+  font-size: 0.8em; 
+  margin-top: 7px; 
+  color: #999; 
+  text-align: right;
+}
+
 @media (max-width: 600px) {
   .quote {
     display: none;
   }
-
   .brand-logo {
+    display: none;
+  }
+  .last-modified {
     display: none;
   }
 }
@@ -170,8 +179,10 @@ img {
   .quote {
     display: none;
   }
-
   .brand-logo {
+    display: none;
+  }
+  .last-modified {
     display: none;
   }
 }
