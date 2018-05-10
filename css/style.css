@@ -108,12 +108,6 @@ html {
   border-top: 3pt solid #008080;
 }
 
-.outer {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
 img {
   float: left;
   margin-right: 20px;
@@ -164,6 +158,20 @@ img {
 
 @media (max-width: 600px) {
   .quote {
+    display: none;
+  }
+
+  .brand-logo {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) {
+  .quote {
+    display: none;
+  }
+
+  .brand-logo {
     display: none;
   }
 }
