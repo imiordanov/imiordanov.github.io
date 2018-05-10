@@ -163,6 +163,18 @@ img {
   text-align: right;
 }
 
+@media (max-height: 600px) {
+  .quote {
+    display: none;
+  }
+  .brand-logo {
+    display: none;
+  }
+  .last-modified {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .quote {
     display: none;
@@ -175,14 +187,3 @@ img {
   }
 }
 
-@media (max-height: 600px) {
-  .quote {
-    display: none;
-  }
-  .brand-logo {
-    display: none;
-  }
-  .last-modified {
-    display: none;
-  }
-}
