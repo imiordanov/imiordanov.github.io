@@ -173,7 +173,13 @@ img {
   .last-modified {
     display: none;
   }
-  .col .center .s2 {
+  .row .center {
+    width: 100%;
+  }
+  .row .col.s5 {
+    width:25%;
+  }
+  .row .col.s2 {
     width:50%;
   }
 }
@@ -188,7 +194,13 @@ img {
   .last-modified {
     display: none;
   }
-  .col .center .s2 {
+  .row .center {
+    width: 100%;
+  }
+  .row .col.s5 {
+    width:25%;
+  }
+  .row .col.s2 {
     width:50%;
   }
 }
