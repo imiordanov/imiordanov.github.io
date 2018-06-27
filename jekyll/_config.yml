@@ -17,7 +17,7 @@ title: Iordan M. Iordanov
 email: i.m.iordanov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal webpage of Iordan Iordanov.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll" # the subpath of your site, e.g. /blog
 url: "https://imiordanov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: imiordanov
 github_username:  imiordanov
