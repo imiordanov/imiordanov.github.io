@@ -1,10 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html"/>
+
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
 <title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt; Class Template Reference</title>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css" />
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Manual/jquery.js"></script>
@@ -21,7 +23,7 @@
   }
   $(document).ready(initResizable);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
@@ -64,18 +66,12 @@ MathJax.Hub.Config({
   </ul>
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
-           onmouseover="return searchBox.OnSearchSelectShow()"
-           onmouseout="return searchBox.OnSearchSelectHide()"
-           alt=""/>
-      <input type="text" id="MSearchField" value="Search" accesskey="S"
-             onfocus="searchBox.OnSearchFieldFocus(true)" 
-             onblur="searchBox.OnSearchFieldFocus(false)" 
-             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
     </span>
     <span class="right">
       <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
-        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/>
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
       </a>
     </span>
   </div>
@@ -97,15 +93,11 @@ MathJax.Hub.Config({
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- Generated by Doxygen 1.8.4 -->
@@ -113,11 +105,10 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
+      <div id="nav-sync" class="sync" style="display: none"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -136,8 +127,7 @@ $(document).ready(function(){initNavTree('classCGAL_1_1Periodic__4__hyperbolic__
 
 <p>Inherited by <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;</a>.</p>
 <a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
-<div class="textblock"><h3>template&lt;class GT, class TDS&gt;<br/>
-class CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;</h3>
+<div class="textblock"> 
 
 <p>The class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">Periodic_4_hyperbolic_triangulation_2</a></code> offers base functionalities needed by <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code>. </p>
 <p>Note that this class does not support modification of the triangulation (insertion or removal).</p>
@@ -150,377 +140,377 @@ class CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;</h3>
   </dd>
 </dl>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Types</h2></td></tr>
 <tr class="memitem:ab525a17b16400c774bf00946957b235a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab525a17b16400c774bf00946957b235a"></a>
-typedef GT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a></td></tr>
-<tr class="separator:ab525a17b16400c774bf00946957b235a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef GT </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a></td></tr>
+<tr class="separator:ab525a17b16400c774bf00946957b235a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae3fab38a805868b5ade4b6fb88c8c7d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3fab38a805868b5ade4b6fb88c8c7d6"></a>
-typedef TDS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a></td></tr>
-<tr class="separator:ae3fab38a805868b5ade4b6fb88c8c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef TDS </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a></td></tr>
+<tr class="separator:ae3fab38a805868b5ade4b6fb88c8c7d6"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following types represent geometric objects. </p>
 </td></tr>
-<tr class="memitem:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="memItemLeft" align="right" valign="top">typedef Geometric_traits::Point_2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a></td></tr>
-<tr class="memdesc:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a point in the hyperbolic plane.  <a href="#a1f08a4d36c8f9a365b6b47fc0ef34b8c">More...</a><br/></td></tr>
-<tr class="separator:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="memItemLeft" align="right" valign="top">typedef Geometric_traits::Point_2 </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a></td></tr>
+<tr class="memdesc:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="mdescLeft"> </td><td class="mdescRight">Represents a point in the hyperbolic plane.  <a href="#a1f08a4d36c8f9a365b6b47fc0ef34b8c">More...</a><br /></td></tr>
+<tr class="separator:a1f08a4d36c8f9a365b6b47fc0ef34b8c"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ac3c5b78389edf47fa1135c46f0bdbf98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3c5b78389edf47fa1135c46f0bdbf98"></a>
-typedef Geometric_traits::Segment_2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a></td></tr>
-<tr class="memdesc:ac3c5b78389edf47fa1135c46f0bdbf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a hyperbolic segment in the hyperbolic plane. <br/></td></tr>
-<tr class="separator:ac3c5b78389edf47fa1135c46f0bdbf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef Geometric_traits::Segment_2 </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a></td></tr>
+<tr class="memdesc:ac3c5b78389edf47fa1135c46f0bdbf98"><td class="mdescLeft"> </td><td class="mdescRight">Represents a hyperbolic segment in the hyperbolic plane. <br /></td></tr>
+<tr class="separator:ac3c5b78389edf47fa1135c46f0bdbf98"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:acc4cf08d981975217ada8b7193e0f4a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc4cf08d981975217ada8b7193e0f4a1"></a>
-typedef <br class="typebreak"/>
-Geometric_traits::Triangle_2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a></td></tr>
-<tr class="memdesc:acc4cf08d981975217ada8b7193e0f4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a triangle contained in the Poincaré disk. <br/></td></tr>
-<tr class="separator:acc4cf08d981975217ada8b7193e0f4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Geometric_traits::Triangle_2 </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a></td></tr>
+<tr class="memdesc:acc4cf08d981975217ada8b7193e0f4a1"><td class="mdescLeft"> </td><td class="mdescRight">Represents a triangle contained in the Poincaré disk. <br /></td></tr>
+<tr class="separator:acc4cf08d981975217ada8b7193e0f4a1"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following type represents hyperbolic translations specific for the Bolza surface. </p>
 </td></tr>
 <tr class="memitem:a7fcc7a09aef396a6e02d6634d4e04652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fcc7a09aef396a6e02d6634d4e04652"></a>
-typedef <br class="typebreak"/>
-Geometric_traits::Hyperbolic_translation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a></td></tr>
-<tr class="separator:a7fcc7a09aef396a6e02d6634d4e04652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Geometric_traits::Hyperbolic_translation </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a></td></tr>
+<tr class="separator:a7fcc7a09aef396a6e02d6634d4e04652"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following types represent images of points, segments, and triangles under the action of hyperbolic translations. </p>
 </td></tr>
 <tr class="memitem:a4900fe2e4ea7a1ddb0c16635bb824dfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4900fe2e4ea7a1ddb0c16635bb824dfb"></a>
-typedef std::pair&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak"/>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a></td></tr>
-<tr class="memdesc:a4900fe2e4ea7a1ddb0c16635bb824dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a periodic point, i.e., a pair of a point in the original octagon and a hyperbolic translation. <br/></td></tr>
-<tr class="separator:a4900fe2e4ea7a1ddb0c16635bb824dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef std::pair&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak" />
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a></td></tr>
+<tr class="memdesc:a4900fe2e4ea7a1ddb0c16635bb824dfb"><td class="mdescLeft"> </td><td class="mdescRight">Represents a periodic point, i.e., a pair of a point in the original octagon and a hyperbolic translation. <br /></td></tr>
+<tr class="separator:a4900fe2e4ea7a1ddb0c16635bb824dfb"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:acd0774193284912aa4aa5b7665dcf9cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0774193284912aa4aa5b7665dcf9cf"></a>
-typedef std::array&lt; std::pair<br class="typebreak"/>
-&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak"/>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a></td></tr>
-<tr class="memdesc:acd0774193284912aa4aa5b7665dcf9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a periodic segment, defined by two periodic points. <br/></td></tr>
-<tr class="separator:acd0774193284912aa4aa5b7665dcf9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef std::array&lt; std::pair<br class="typebreak" />
+&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak" />
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt;, 2 &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a></td></tr>
+<tr class="memdesc:acd0774193284912aa4aa5b7665dcf9cf"><td class="mdescLeft"> </td><td class="mdescRight">Represents a periodic segment, defined by two periodic points. <br /></td></tr>
+<tr class="separator:acd0774193284912aa4aa5b7665dcf9cf"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a68a26190dabd6e0d54324b23babefc39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a26190dabd6e0d54324b23babefc39"></a>
-typedef std::array&lt; std::pair<br class="typebreak"/>
-&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak"/>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt;, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a></td></tr>
-<tr class="memdesc:a68a26190dabd6e0d54324b23babefc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a periodic triangle, defined by three periodic points. <br/></td></tr>
-<tr class="separator:a68a26190dabd6e0d54324b23babefc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef std::array&lt; std::pair<br class="typebreak" />
+&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>, <br class="typebreak" />
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &gt;, 3 &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a></td></tr>
+<tr class="memdesc:a68a26190dabd6e0d54324b23babefc39"><td class="mdescLeft"> </td><td class="mdescRight">Represents a periodic triangle, defined by three periodic points. <br /></td></tr>
+<tr class="separator:a68a26190dabd6e0d54324b23babefc39"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following types give access to the elements of the triangulation. </p>
 </td></tr>
 <tr class="memitem:a1697a399af990b82dc68ac818ecb3360"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1697a399af990b82dc68ac818ecb3360"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Edge&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a></td></tr>
-<tr class="separator:a1697a399af990b82dc68ac818ecb3360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Edge </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a></td></tr>
+<tr class="separator:a1697a399af990b82dc68ac818ecb3360"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a71d9d9e3de9e1249febe25a9a0d3be8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71d9d9e3de9e1249febe25a9a0d3be8c"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Face&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a></td></tr>
-<tr class="separator:a71d9d9e3de9e1249febe25a9a0d3be8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Face </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a></td></tr>
+<tr class="separator:a71d9d9e3de9e1249febe25a9a0d3be8c"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae37a45a43a0779b701935108f09fe2b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae37a45a43a0779b701935108f09fe2b0"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Vertex_handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a></td></tr>
-<tr class="separator:ae37a45a43a0779b701935108f09fe2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Vertex_handle </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a></td></tr>
+<tr class="separator:ae37a45a43a0779b701935108f09fe2b0"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a7cb1725a5f11fd4ed53b0130efbfe007"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb1725a5f11fd4ed53b0130efbfe007"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Face_handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a></td></tr>
-<tr class="separator:a7cb1725a5f11fd4ed53b0130efbfe007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Face_handle </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a></td></tr>
+<tr class="separator:a7cb1725a5f11fd4ed53b0130efbfe007"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following iterator and circulator types are defined to give access over the vertices, edges and faces of the triangulation. </p>
 </td></tr>
 <tr class="memitem:ac54fae739b2fa2231e922e9e37cdb08d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac54fae739b2fa2231e922e9e37cdb08d"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Face_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a></td></tr>
-<tr class="separator:ac54fae739b2fa2231e922e9e37cdb08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Face_iterator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a></td></tr>
+<tr class="separator:ac54fae739b2fa2231e922e9e37cdb08d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a59f835c7ff55e762375604aa5b89ea69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f835c7ff55e762375604aa5b89ea69"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Edge_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a></td></tr>
-<tr class="separator:a59f835c7ff55e762375604aa5b89ea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Edge_iterator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a></td></tr>
+<tr class="separator:a59f835c7ff55e762375604aa5b89ea69"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a78d25ff16ba5e0503077588da7c7072b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78d25ff16ba5e0503077588da7c7072b"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Vertex_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a></td></tr>
-<tr class="separator:a78d25ff16ba5e0503077588da7c7072b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Vertex_iterator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a></td></tr>
+<tr class="separator:a78d25ff16ba5e0503077588da7c7072b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae8c3dd43711c45ce859ac0b8cc165ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8c3dd43711c45ce859ac0b8cc165ab0"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Face_circulator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a></td></tr>
-<tr class="separator:ae8c3dd43711c45ce859ac0b8cc165ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Face_circulator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a></td></tr>
+<tr class="separator:ae8c3dd43711c45ce859ac0b8cc165ab0"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a7d1c800014ef2b9d2f0f89e3e04a9917"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d1c800014ef2b9d2f0f89e3e04a9917"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Edge_circulator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a></td></tr>
-<tr class="separator:a7d1c800014ef2b9d2f0f89e3e04a9917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Edge_circulator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a></td></tr>
+<tr class="separator:a7d1c800014ef2b9d2f0f89e3e04a9917"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a0d321e2d6808275d0e157298adf369dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d321e2d6808275d0e157298adf369dc"></a>
-typedef <br class="typebreak"/>
-Triangulation_data_structure::Vertex_circulator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a></td></tr>
-<tr class="separator:a0d321e2d6808275d0e157298adf369dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+typedef <br class="typebreak" />
+Triangulation_data_structure::Vertex_circulator </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a></td></tr>
+<tr class="separator:a0d321e2d6808275d0e157298adf369dc"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The following type is inherited from the base <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation.tag:../Triangulation/" href="../Triangulation/classCGAL_1_1Triangulation.html">Triangulation</a> class. </p>
 </td></tr>
-<tr class="memitem:a436e182c64d5e98b0e7559eb7cdcb798"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> { <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798ae345997ec79d36a799893959a670b489">VERTEX</a> = 0, 
+<tr class="memitem:a436e182c64d5e98b0e7559eb7cdcb798"><td class="memItemLeft" align="right" valign="top">enum  </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> { <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798ae345997ec79d36a799893959a670b489">VERTEX</a> = 0, 
 <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798af860c7a9ced09f4e972e53b6bea2f950">EDGE</a>, 
 <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798acf07c710808ef267e1efb9ae46a582c4">FACE</a>
  }</td></tr>
-<tr class="memdesc:a436e182c64d5e98b0e7559eb7cdcb798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration type that indicates where a point is located.  <a href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">More...</a><br/></td></tr>
-<tr class="separator:a436e182c64d5e98b0e7559eb7cdcb798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a436e182c64d5e98b0e7559eb7cdcb798"><td class="mdescLeft"> </td><td class="mdescRight">Enumeration type that indicates where a point is located.  <a href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">More...</a><br /></td></tr>
+<tr class="separator:a436e182c64d5e98b0e7559eb7cdcb798"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Creation</h2></td></tr>
 <tr class="memitem:a46d0a8c4134508b879e81f927c587b61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46d0a8c4134508b879e81f927c587b61"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a46d0a8c4134508b879e81f927c587b61">Periodic_4_hyperbolic_triangulation_2</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a> &amp;gt=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a>())</td></tr>
-<tr class="memdesc:a46d0a8c4134508b879e81f927c587b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, with an optional parameter for the geometric traits object. <br/></td></tr>
-<tr class="separator:a46d0a8c4134508b879e81f927c587b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a46d0a8c4134508b879e81f927c587b61">Periodic_4_hyperbolic_triangulation_2</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a> &amp;gt=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a>())</td></tr>
+<tr class="memdesc:a46d0a8c4134508b879e81f927c587b61"><td class="mdescLeft"> </td><td class="mdescRight">Default constructor, with an optional parameter for the geometric traits object. <br /></td></tr>
+<tr class="separator:a46d0a8c4134508b879e81f927c587b61"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a2e44c0207d54d2e819db330cd3501087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e44c0207d54d2e819db330cd3501087"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a2e44c0207d54d2e819db330cd3501087">Periodic_4_hyperbolic_triangulation_2</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp;tr)</td></tr>
-<tr class="memdesc:a2e44c0207d54d2e819db330cd3501087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. <br/></td></tr>
-<tr class="separator:a2e44c0207d54d2e819db330cd3501087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a2e44c0207d54d2e819db330cd3501087">Periodic_4_hyperbolic_triangulation_2</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp;tr)</td></tr>
+<tr class="memdesc:a2e44c0207d54d2e819db330cd3501087"><td class="mdescLeft"> </td><td class="mdescRight">Copy constructor. <br /></td></tr>
+<tr class="separator:a2e44c0207d54d2e819db330cd3501087"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Assignment</h2></td></tr>
 <tr class="memitem:a71408ef4cc37dfc713b2e37cf30efd36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71408ef4cc37dfc713b2e37cf30efd36"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71408ef4cc37dfc713b2e37cf30efd36">operator=</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> tr)</td></tr>
-<tr class="memdesc:a71408ef4cc37dfc713b2e37cf30efd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">The triangulation <code>tr</code> is duplicated, and modifying the copy after the duplication does not modify the original. <br/></td></tr>
-<tr class="separator:a71408ef4cc37dfc713b2e37cf30efd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71408ef4cc37dfc713b2e37cf30efd36">operator=</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> tr)</td></tr>
+<tr class="memdesc:a71408ef4cc37dfc713b2e37cf30efd36"><td class="mdescLeft"> </td><td class="mdescRight">The triangulation <code>tr</code> is duplicated, and modifying the copy after the duplication does not modify the original. <br /></td></tr>
+<tr class="separator:a71408ef4cc37dfc713b2e37cf30efd36"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a85b1b2536bba81c2b3201bcc94858ef2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85b1b2536bba81c2b3201bcc94858ef2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a85b1b2536bba81c2b3201bcc94858ef2">swap</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp;tr)</td></tr>
-<tr class="memdesc:a85b1b2536bba81c2b3201bcc94858ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The triangulation is swapped with <code>tr</code>. <br/></td></tr>
-<tr class="separator:a85b1b2536bba81c2b3201bcc94858ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a85b1b2536bba81c2b3201bcc94858ef2">swap</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a> &amp;tr)</td></tr>
+<tr class="memdesc:a85b1b2536bba81c2b3201bcc94858ef2"><td class="mdescLeft"> </td><td class="mdescRight">The triangulation is swapped with <code>tr</code>. <br /></td></tr>
+<tr class="separator:a85b1b2536bba81c2b3201bcc94858ef2"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a25c2082ad6e3f108637dac18f9aea248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25c2082ad6e3f108637dac18f9aea248"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a25c2082ad6e3f108637dac18f9aea248">clear</a> ()</td></tr>
-<tr class="memdesc:a25c2082ad6e3f108637dac18f9aea248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all faces and vertices of the triangulation. <br/></td></tr>
-<tr class="separator:a25c2082ad6e3f108637dac18f9aea248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3519b40c70217b2f5757f1d3a9e17596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a3519b40c70217b2f5757f1d3a9e17596">operator==</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr2)</td></tr>
-<tr class="memdesc:a3519b40c70217b2f5757f1d3a9e17596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <a href="#a3519b40c70217b2f5757f1d3a9e17596">More...</a><br/></td></tr>
-<tr class="separator:a3519b40c70217b2f5757f1d3a9e17596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aee77c4586953eecb2ddfc26b9b5b9cf4">operator!=</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr2)</td></tr>
-<tr class="memdesc:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator.  <a href="#aee77c4586953eecb2ddfc26b9b5b9cf4">More...</a><br/></td></tr>
-<tr class="separator:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a25c2082ad6e3f108637dac18f9aea248">clear</a> ()</td></tr>
+<tr class="memdesc:a25c2082ad6e3f108637dac18f9aea248"><td class="mdescLeft"> </td><td class="mdescRight">Deletes all faces and vertices of the triangulation. <br /></td></tr>
+<tr class="separator:a25c2082ad6e3f108637dac18f9aea248"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3519b40c70217b2f5757f1d3a9e17596"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a3519b40c70217b2f5757f1d3a9e17596">operator==</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr2)</td></tr>
+<tr class="memdesc:a3519b40c70217b2f5757f1d3a9e17596"><td class="mdescLeft"> </td><td class="mdescRight">Equality operator.  <a href="#a3519b40c70217b2f5757f1d3a9e17596">More...</a><br /></td></tr>
+<tr class="separator:a3519b40c70217b2f5757f1d3a9e17596"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aee77c4586953eecb2ddfc26b9b5b9cf4">operator!=</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;tr2)</td></tr>
+<tr class="memdesc:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="mdescLeft"> </td><td class="mdescRight">Inequality operator.  <a href="#aee77c4586953eecb2ddfc26b9b5b9cf4">More...</a><br /></td></tr>
+<tr class="separator:aee77c4586953eecb2ddfc26b9b5b9cf4"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Access functions</h2></td></tr>
 <tr class="memitem:a855c623adbe9391b5cb8f25db4b8cf24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a855c623adbe9391b5cb8f25db4b8cf24"></a>
-const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a855c623adbe9391b5cb8f25db4b8cf24">geom_traits</a> () const </td></tr>
-<tr class="memdesc:a855c623adbe9391b5cb8f25db4b8cf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the geometric traits object. <br/></td></tr>
-<tr class="separator:a855c623adbe9391b5cb8f25db4b8cf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab525a17b16400c774bf00946957b235a">Geometric_traits</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a855c623adbe9391b5cb8f25db4b8cf24">geom_traits</a> () const </td></tr>
+<tr class="memdesc:a855c623adbe9391b5cb8f25db4b8cf24"><td class="mdescLeft"> </td><td class="mdescRight">Returns a const reference to the geometric traits object. <br /></td></tr>
+<tr class="separator:a855c623adbe9391b5cb8f25db4b8cf24"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a7c4e0317a3c23d8e38cc724e3e5ddf22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c4e0317a3c23d8e38cc724e3e5ddf22"></a>
-const <br class="typebreak"/>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7c4e0317a3c23d8e38cc724e3e5ddf22">tds</a> () const </td></tr>
-<tr class="memdesc:a7c4e0317a3c23d8e38cc724e3e5ddf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the triangulation data structure. <br/></td></tr>
-<tr class="separator:a7c4e0317a3c23d8e38cc724e3e5ddf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+const <br class="typebreak" />
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7c4e0317a3c23d8e38cc724e3e5ddf22">tds</a> () const </td></tr>
+<tr class="memdesc:a7c4e0317a3c23d8e38cc724e3e5ddf22"><td class="mdescLeft"> </td><td class="mdescRight">Returns a const reference to the triangulation data structure. <br /></td></tr>
+<tr class="separator:a7c4e0317a3c23d8e38cc724e3e5ddf22"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a8951eae5100d7336227fa74f21597799"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8951eae5100d7336227fa74f21597799"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8951eae5100d7336227fa74f21597799">tds</a> ()</td></tr>
-<tr class="memdesc:a8951eae5100d7336227fa74f21597799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the triangulation data structure. <br/></td></tr>
-<tr class="separator:a8951eae5100d7336227fa74f21597799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3fab38a805868b5ade4b6fb88c8c7d6">Triangulation_data_structure</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8951eae5100d7336227fa74f21597799">tds</a> ()</td></tr>
+<tr class="memdesc:a8951eae5100d7336227fa74f21597799"><td class="mdescLeft"> </td><td class="mdescRight">Returns a reference to the triangulation data structure. <br /></td></tr>
+<tr class="separator:a8951eae5100d7336227fa74f21597799"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ac70f2c9ba7b589b824724e9ef72b6550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac70f2c9ba7b589b824724e9ef72b6550"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac70f2c9ba7b589b824724e9ef72b6550">number_of_vertices</a> () const </td></tr>
-<tr class="memdesc:ac70f2c9ba7b589b824724e9ef72b6550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of vertices in the triangulation. <br/></td></tr>
-<tr class="separator:ac70f2c9ba7b589b824724e9ef72b6550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+size_type </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac70f2c9ba7b589b824724e9ef72b6550">number_of_vertices</a> () const </td></tr>
+<tr class="memdesc:ac70f2c9ba7b589b824724e9ef72b6550"><td class="mdescLeft"> </td><td class="mdescRight">Returns the number of vertices in the triangulation. <br /></td></tr>
+<tr class="separator:ac70f2c9ba7b589b824724e9ef72b6550"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:adf650fce9c95c4b46568bc4dea65b38a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf650fce9c95c4b46568bc4dea65b38a"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#adf650fce9c95c4b46568bc4dea65b38a">number_of_edges</a> () const </td></tr>
-<tr class="memdesc:adf650fce9c95c4b46568bc4dea65b38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of edges in the triangulation. <br/></td></tr>
-<tr class="separator:adf650fce9c95c4b46568bc4dea65b38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+size_type </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#adf650fce9c95c4b46568bc4dea65b38a">number_of_edges</a> () const </td></tr>
+<tr class="memdesc:adf650fce9c95c4b46568bc4dea65b38a"><td class="mdescLeft"> </td><td class="mdescRight">Returns the number of edges in the triangulation. <br /></td></tr>
+<tr class="separator:adf650fce9c95c4b46568bc4dea65b38a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa33d1efc83c5d12aa4de7c4f8cc497f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33d1efc83c5d12aa4de7c4f8cc497f6"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa33d1efc83c5d12aa4de7c4f8cc497f6">number_of_faces</a> () const </td></tr>
-<tr class="memdesc:aa33d1efc83c5d12aa4de7c4f8cc497f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of faces in the triangulation. <br/></td></tr>
-<tr class="separator:aa33d1efc83c5d12aa4de7c4f8cc497f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+size_type </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa33d1efc83c5d12aa4de7c4f8cc497f6">number_of_faces</a> () const </td></tr>
+<tr class="memdesc:aa33d1efc83c5d12aa4de7c4f8cc497f6"><td class="mdescLeft"> </td><td class="mdescRight">Returns the number of faces in the triangulation. <br /></td></tr>
+<tr class="separator:aa33d1efc83c5d12aa4de7c4f8cc497f6"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Geometric access functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp4f4bfe2ce897a2c48498554362470d63"></a>The functions below return periodic points, segments and triangles. </p>
 </td></tr>
-<tr class="memitem:ad42d3864169099982a828f1f96269e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad42d3864169099982a828f1f96269e5d">periodic_point</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
-<tr class="memdesc:ad42d3864169099982a828f1f96269e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic point given by the <code>i</code>-th vertex of face <code>f</code>, that is the point in the original domain and the translation of the vertex in <code>f</code>.  <a href="#ad42d3864169099982a828f1f96269e5d">More...</a><br/></td></tr>
-<tr class="separator:ad42d3864169099982a828f1f96269e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42d3864169099982a828f1f96269e5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad42d3864169099982a828f1f96269e5d">periodic_point</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
+<tr class="memdesc:ad42d3864169099982a828f1f96269e5d"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic point given by the <code>i</code>-th vertex of face <code>f</code>, that is the point in the original domain and the translation of the vertex in <code>f</code>.  <a href="#ad42d3864169099982a828f1f96269e5d">More...</a><br /></td></tr>
+<tr class="separator:ad42d3864169099982a828f1f96269e5d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa150ab38a717764b3730e315fdf81f8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa150ab38a717764b3730e315fdf81f8e"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa150ab38a717764b3730e315fdf81f8e">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2) const </td></tr>
-<tr class="memdesc:aa150ab38a717764b3730e315fdf81f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic segment formed by the two point-translation pairs <code>(p1, tr1)</code> and <code>(p2, tr2)</code>. <br/></td></tr>
-<tr class="separator:aa150ab38a717764b3730e315fdf81f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa150ab38a717764b3730e315fdf81f8e">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2) const </td></tr>
+<tr class="memdesc:aa150ab38a717764b3730e315fdf81f8e"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic segment formed by the two point-translation pairs <code>(p1, tr1)</code> and <code>(p2, tr2)</code>. <br /></td></tr>
+<tr class="separator:aa150ab38a717764b3730e315fdf81f8e"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a8f4d2b3e44a9a90c20f5ef8ec1438675"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4d2b3e44a9a90c20f5ef8ec1438675"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8f4d2b3e44a9a90c20f5ef8ec1438675">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2) const </td></tr>
-<tr class="memdesc:a8f4d2b3e44a9a90c20f5ef8ec1438675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic segment formed by the two point-translation pairs <code>(p1, Id)</code> and <code>(p2, Id)</code>, where <code>Id</code> is the identity translation. <br/></td></tr>
-<tr class="separator:a8f4d2b3e44a9a90c20f5ef8ec1438675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a061af58b18bdb6fbf242de07f011ee9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a061af58b18bdb6fbf242de07f011ee9c">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> c, int i, int j) const </td></tr>
-<tr class="memdesc:a061af58b18bdb6fbf242de07f011ee9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>(f,i,j)</code>.  <a href="#a061af58b18bdb6fbf242de07f011ee9c">More...</a><br/></td></tr>
-<tr class="separator:a061af58b18bdb6fbf242de07f011ee9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade667372d63ac048bb57b627e468707b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ade667372d63ac048bb57b627e468707b">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;e) const </td></tr>
-<tr class="memdesc:ade667372d63ac048bb57b627e468707b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>e</code>.  <a href="#ade667372d63ac048bb57b627e468707b">More...</a><br/></td></tr>
-<tr class="separator:ade667372d63ac048bb57b627e468707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa667ecfbad8b1cab3cc95b00e2eeb5b6">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;e, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr) const </td></tr>
-<tr class="memdesc:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>e</code> translated by <code>tr</code>.  <a href="#aa667ecfbad8b1cab3cc95b00e2eeb5b6">More...</a><br/></td></tr>
-<tr class="separator:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8f4d2b3e44a9a90c20f5ef8ec1438675">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2) const </td></tr>
+<tr class="memdesc:a8f4d2b3e44a9a90c20f5ef8ec1438675"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic segment formed by the two point-translation pairs <code>(p1, Id)</code> and <code>(p2, Id)</code>, where <code>Id</code> is the identity translation. <br /></td></tr>
+<tr class="separator:a8f4d2b3e44a9a90c20f5ef8ec1438675"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a061af58b18bdb6fbf242de07f011ee9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a061af58b18bdb6fbf242de07f011ee9c">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> c, int i, int j) const </td></tr>
+<tr class="memdesc:a061af58b18bdb6fbf242de07f011ee9c"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>(f,i,j)</code>.  <a href="#a061af58b18bdb6fbf242de07f011ee9c">More...</a><br /></td></tr>
+<tr class="separator:a061af58b18bdb6fbf242de07f011ee9c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ade667372d63ac048bb57b627e468707b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ade667372d63ac048bb57b627e468707b">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;e) const </td></tr>
+<tr class="memdesc:ade667372d63ac048bb57b627e468707b"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>e</code>.  <a href="#ade667372d63ac048bb57b627e468707b">More...</a><br /></td></tr>
+<tr class="separator:ade667372d63ac048bb57b627e468707b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa667ecfbad8b1cab3cc95b00e2eeb5b6">periodic_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;e, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr) const </td></tr>
+<tr class="memdesc:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic segment formed by the endpoints of edge <code>e</code> translated by <code>tr</code>.  <a href="#aa667ecfbad8b1cab3cc95b00e2eeb5b6">More...</a><br /></td></tr>
+<tr class="separator:aa667ecfbad8b1cab3cc95b00e2eeb5b6"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab1af98ca123ac8ebd2e5e0548acdfa3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1af98ca123ac8ebd2e5e0548acdfa3d"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab1af98ca123ac8ebd2e5e0548acdfa3d">periodic_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f) const </td></tr>
-<tr class="memdesc:ab1af98ca123ac8ebd2e5e0548acdfa3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic triangle formed by the pairs of points and translations corresponding to each vertex of <code>f</code>. <br/></td></tr>
-<tr class="separator:ab1af98ca123ac8ebd2e5e0548acdfa3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab1af98ca123ac8ebd2e5e0548acdfa3d">periodic_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f) const </td></tr>
+<tr class="memdesc:ab1af98ca123ac8ebd2e5e0548acdfa3d"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic triangle formed by the pairs of points and translations corresponding to each vertex of <code>f</code>. <br /></td></tr>
+<tr class="separator:ab1af98ca123ac8ebd2e5e0548acdfa3d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad19d65996f03d844cb7fad313735d7f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad19d65996f03d844cb7fad313735d7f4"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad19d65996f03d844cb7fad313735d7f4">periodic_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr) const </td></tr>
-<tr class="memdesc:ad19d65996f03d844cb7fad313735d7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the periodic triangle formed by the pairs of points and translations corresponding to each vertex of <code>f</code>, translated by <code>tr</code>. <br/></td></tr>
-<tr class="separator:ad19d65996f03d844cb7fad313735d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad19d65996f03d844cb7fad313735d7f4">periodic_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr) const </td></tr>
+<tr class="memdesc:ad19d65996f03d844cb7fad313735d7f4"><td class="mdescLeft"> </td><td class="mdescRight">Returns the periodic triangle formed by the pairs of points and translations corresponding to each vertex of <code>f</code>, translated by <code>tr</code>. <br /></td></tr>
+<tr class="separator:ad19d65996f03d844cb7fad313735d7f4"><td class="memSeparator" colspan="2"> </td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp01747264fe7bf50731df0522c351974e"></a>The functions below return non-periodic points, segments and triangles. </p>
 </td></tr>
 <tr class="memitem:a6d09733abe765a57b0e9b2920d0e0e4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d09733abe765a57b0e9b2920d0e0e4a"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a6d09733abe765a57b0e9b2920d0e0e4a">construct_point</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a> &amp;pp) const </td></tr>
-<tr class="memdesc:a6d09733abe765a57b0e9b2920d0e0e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the periodic point <code>pp</code> into a point in the hyperbolic plane by applying <code>pp.second</code> to <code>pp.first</code>. <br/></td></tr>
-<tr class="separator:a6d09733abe765a57b0e9b2920d0e0e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa270084ce7f9d92a7691f35bfd450e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa270084ce7f9d92a7691f35bfd450e9c">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh, int idx) const </td></tr>
-<tr class="memdesc:aa270084ce7f9d92a7691f35bfd450e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the hyperbolic segment formed by the endpoints of edge <code>(fh, idx)</code>.  <a href="#aa270084ce7f9d92a7691f35bfd450e9c">More...</a><br/></td></tr>
-<tr class="separator:aa270084ce7f9d92a7691f35bfd450e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a6d09733abe765a57b0e9b2920d0e0e4a">construct_point</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a> &amp;pp) const </td></tr>
+<tr class="memdesc:a6d09733abe765a57b0e9b2920d0e0e4a"><td class="mdescLeft"> </td><td class="mdescRight">Converts the periodic point <code>pp</code> into a point in the hyperbolic plane by applying <code>pp.second</code> to <code>pp.first</code>. <br /></td></tr>
+<tr class="separator:a6d09733abe765a57b0e9b2920d0e0e4a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa270084ce7f9d92a7691f35bfd450e9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa270084ce7f9d92a7691f35bfd450e9c">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh, int idx) const </td></tr>
+<tr class="memdesc:aa270084ce7f9d92a7691f35bfd450e9c"><td class="mdescLeft"> </td><td class="mdescRight">Constructs the hyperbolic segment formed by the endpoints of edge <code>(fh, idx)</code>.  <a href="#aa270084ce7f9d92a7691f35bfd450e9c">More...</a><br /></td></tr>
+<tr class="separator:aa270084ce7f9d92a7691f35bfd450e9c"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa0f582e9a52564096ed47b6a16b47efc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0f582e9a52564096ed47b6a16b47efc"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa0f582e9a52564096ed47b6a16b47efc">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2) const </td></tr>
-<tr class="memdesc:aa0f582e9a52564096ed47b6a16b47efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hyperbolic segment with endpoints <code>p1</code> and <code>p2</code>. <br/></td></tr>
-<tr class="separator:aa0f582e9a52564096ed47b6a16b47efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aa0f582e9a52564096ed47b6a16b47efc">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2) const </td></tr>
+<tr class="memdesc:aa0f582e9a52564096ed47b6a16b47efc"><td class="mdescLeft"> </td><td class="mdescRight">Returns the hyperbolic segment with endpoints <code>p1</code> and <code>p2</code>. <br /></td></tr>
+<tr class="separator:aa0f582e9a52564096ed47b6a16b47efc"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a9ead62e7f5d9f277a67d821b229abb05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ead62e7f5d9f277a67d821b229abb05"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9ead62e7f5d9f277a67d821b229abb05">construct_segment</a> (const pair&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>, int &gt; &amp;e) const </td></tr>
-<tr class="memdesc:a9ead62e7f5d9f277a67d821b229abb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hyperbolic segment formed by the endpoints of <code>e</code>. <br/></td></tr>
-<tr class="separator:a9ead62e7f5d9f277a67d821b229abb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9ead62e7f5d9f277a67d821b229abb05">construct_segment</a> (const pair&lt; <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>, int &gt; &amp;e) const </td></tr>
+<tr class="memdesc:a9ead62e7f5d9f277a67d821b229abb05"><td class="mdescLeft"> </td><td class="mdescRight">Returns the hyperbolic segment formed by the endpoints of <code>e</code>. <br /></td></tr>
+<tr class="separator:a9ead62e7f5d9f277a67d821b229abb05"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a89527e5432d7f754ec0fab1b8a94e59d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89527e5432d7f754ec0fab1b8a94e59d"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a89527e5432d7f754ec0fab1b8a94e59d">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> &amp;ps) const </td></tr>
-<tr class="memdesc:a89527e5432d7f754ec0fab1b8a94e59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hyperbolic segment formed by the endpoints of <code>ps</code>. <br/></td></tr>
-<tr class="separator:a89527e5432d7f754ec0fab1b8a94e59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a89527e5432d7f754ec0fab1b8a94e59d">construct_segment</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> &amp;ps) const </td></tr>
+<tr class="memdesc:a89527e5432d7f754ec0fab1b8a94e59d"><td class="mdescLeft"> </td><td class="mdescRight">Returns the hyperbolic segment formed by the endpoints of <code>ps</code>. <br /></td></tr>
+<tr class="separator:a89527e5432d7f754ec0fab1b8a94e59d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:af2aee0a04311fe718091c9ab8bd1933c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2aee0a04311fe718091c9ab8bd1933c"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#af2aee0a04311fe718091c9ab8bd1933c">construct_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh) const </td></tr>
-<tr class="memdesc:af2aee0a04311fe718091c9ab8bd1933c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the triangle formed by the vertices of <code>fh</code>. <br/></td></tr>
-<tr class="separator:af2aee0a04311fe718091c9ab8bd1933c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#af2aee0a04311fe718091c9ab8bd1933c">construct_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh) const </td></tr>
+<tr class="memdesc:af2aee0a04311fe718091c9ab8bd1933c"><td class="mdescLeft"> </td><td class="mdescRight">Returns the triangle formed by the vertices of <code>fh</code>. <br /></td></tr>
+<tr class="separator:af2aee0a04311fe718091c9ab8bd1933c"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab51304c47f1b0acdb064b5e6fcdafb1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab51304c47f1b0acdb064b5e6fcdafb1b"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab51304c47f1b0acdb064b5e6fcdafb1b">construct_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a> &amp;pt) const </td></tr>
-<tr class="memdesc:ab51304c47f1b0acdb064b5e6fcdafb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the triangle formed by the vertices of <code>pt</code>. <br/></td></tr>
-<tr class="separator:ab51304c47f1b0acdb064b5e6fcdafb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc4cf08d981975217ada8b7193e0f4a1">Triangle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab51304c47f1b0acdb064b5e6fcdafb1b">construct_triangle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a68a26190dabd6e0d54324b23babefc39">Periodic_triangle</a> &amp;pt) const </td></tr>
+<tr class="memdesc:ab51304c47f1b0acdb064b5e6fcdafb1b"><td class="mdescLeft"> </td><td class="mdescRight">Returns the triangle formed by the vertices of <code>pt</code>. <br /></td></tr>
+<tr class="separator:ab51304c47f1b0acdb064b5e6fcdafb1b"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Point location</h2></td></tr>
-<tr class="memitem:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5e96bcd9cfb8fc87e48c573ff90a3c4d">hyperbolic_periodic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;lo, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
-<tr class="memdesc:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the face <code>rf</code> for which the periodic triangle <code>(rf, lo)</code> contains the query point <code>p</code>.  <a href="#a5e96bcd9cfb8fc87e48c573ff90a3c4d">More...</a><br/></td></tr>
-<tr class="separator:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdce64167893ec5891b075ee0e9b868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#abbdce64167893ec5891b075ee0e9b868">hyperbolic_periodic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;lt, int &amp;li, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;lo, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
-<tr class="memdesc:abbdce64167893ec5891b075ee0e9b868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above.  <a href="#abbdce64167893ec5891b075ee0e9b868">More...</a><br/></td></tr>
-<tr class="separator:abbdce64167893ec5891b075ee0e9b868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3773e767e53dd26150cc59593347a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3773e767e53dd26150cc59593347a5c">hyperbolic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
-<tr class="memdesc:ae3773e767e53dd26150cc59593347a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the canonical representative of the face that contains the query point <code>p</code>.  <a href="#ae3773e767e53dd26150cc59593347a5c">More...</a><br/></td></tr>
-<tr class="separator:ae3773e767e53dd26150cc59593347a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5a36d1c16826c53cb33765953e8d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5f5a36d1c16826c53cb33765953e8d95">hyperbolic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;lt, int &amp;li, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
-<tr class="memdesc:a5f5a36d1c16826c53cb33765953e8d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as above.  <a href="#a5f5a36d1c16826c53cb33765953e8d95">More...</a><br/></td></tr>
-<tr class="separator:a5f5a36d1c16826c53cb33765953e8d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5e96bcd9cfb8fc87e48c573ff90a3c4d">hyperbolic_periodic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;lo, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
+<tr class="memdesc:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="mdescLeft"> </td><td class="mdescRight">Returns the face <code>rf</code> for which the periodic triangle <code>(rf, lo)</code> contains the query point <code>p</code>.  <a href="#a5e96bcd9cfb8fc87e48c573ff90a3c4d">More...</a><br /></td></tr>
+<tr class="separator:a5e96bcd9cfb8fc87e48c573ff90a3c4d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abbdce64167893ec5891b075ee0e9b868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#abbdce64167893ec5891b075ee0e9b868">hyperbolic_periodic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;lt, int &amp;li, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;lo, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
+<tr class="memdesc:abbdce64167893ec5891b075ee0e9b868"><td class="mdescLeft"> </td><td class="mdescRight">Same as above.  <a href="#abbdce64167893ec5891b075ee0e9b868">More...</a><br /></td></tr>
+<tr class="separator:abbdce64167893ec5891b075ee0e9b868"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae3773e767e53dd26150cc59593347a5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae3773e767e53dd26150cc59593347a5c">hyperbolic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
+<tr class="memdesc:ae3773e767e53dd26150cc59593347a5c"><td class="mdescLeft"> </td><td class="mdescRight">Returns the canonical representative of the face that contains the query point <code>p</code>.  <a href="#ae3773e767e53dd26150cc59593347a5c">More...</a><br /></td></tr>
+<tr class="separator:ae3773e767e53dd26150cc59593347a5c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5f5a36d1c16826c53cb33765953e8d95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5f5a36d1c16826c53cb33765953e8d95">hyperbolic_locate</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;lt, int &amp;li, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()) const </td></tr>
+<tr class="memdesc:a5f5a36d1c16826c53cb33765953e8d95"><td class="mdescLeft"> </td><td class="mdescRight">Same as above.  <a href="#a5f5a36d1c16826c53cb33765953e8d95">More...</a><br /></td></tr>
+<tr class="separator:a5f5a36d1c16826c53cb33765953e8d95"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Predicate functions</h2></td></tr>
-<tr class="memitem:a9d808fd9023ce194ccd3e7f207864e4d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9d808fd9023ce194ccd3e7f207864e4d">orientation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3) const </td></tr>
-<tr class="memdesc:a9d808fd9023ce194ccd3e7f207864e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>Orientation</code> of the points <code>p1, p2, p3</code>.  <a href="#a9d808fd9023ce194ccd3e7f207864e4d">More...</a><br/></td></tr>
-<tr class="separator:a9d808fd9023ce194ccd3e7f207864e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d808fd9023ce194ccd3e7f207864e4d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525">Orientation</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9d808fd9023ce194ccd3e7f207864e4d">orientation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3) const </td></tr>
+<tr class="memdesc:a9d808fd9023ce194ccd3e7f207864e4d"><td class="mdescLeft"> </td><td class="mdescRight">Returns the <code>Orientation</code> of the points <code>p1, p2, p3</code>.  <a href="#a9d808fd9023ce194ccd3e7f207864e4d">More...</a><br /></td></tr>
+<tr class="separator:a9d808fd9023ce194ccd3e7f207864e4d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a58360c5fae07c97917ed76e7be1f02a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58360c5fae07c97917ed76e7be1f02a9"></a>
-<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525">Orientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a58360c5fae07c97917ed76e7be1f02a9">orientation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr3) const </td></tr>
-<tr class="memdesc:a58360c5fae07c97917ed76e7be1f02a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>Orientation</code> of the three periodic points <code>(p1, tr1), (p2, tr2)</code> and <code>(p3, tr3)</code>. <br/></td></tr>
-<tr class="separator:a58360c5fae07c97917ed76e7be1f02a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81132bf016fc4b62698fe9db8f27cf0e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga5006dd2552d97fa577d81bd819c0f979">Oriented_side</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a81132bf016fc4b62698fe9db8f27cf0e">side_of_oriented_circle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;q) const </td></tr>
-<tr class="memdesc:a81132bf016fc4b62698fe9db8f27cf0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>Oriented_side</code> on which <code>q</code> is located with respect to the circle defined by the points <code>p1,p2,p3</code>.  <a href="#a81132bf016fc4b62698fe9db8f27cf0e">More...</a><br/></td></tr>
-<tr class="separator:a81132bf016fc4b62698fe9db8f27cf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525">Orientation</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a58360c5fae07c97917ed76e7be1f02a9">orientation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr3) const </td></tr>
+<tr class="memdesc:a58360c5fae07c97917ed76e7be1f02a9"><td class="mdescLeft"> </td><td class="mdescRight">Returns the <code>Orientation</code> of the three periodic points <code>(p1, tr1), (p2, tr2)</code> and <code>(p3, tr3)</code>. <br /></td></tr>
+<tr class="separator:a58360c5fae07c97917ed76e7be1f02a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a81132bf016fc4b62698fe9db8f27cf0e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga5006dd2552d97fa577d81bd819c0f979">Oriented_side</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a81132bf016fc4b62698fe9db8f27cf0e">side_of_oriented_circle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;q) const </td></tr>
+<tr class="memdesc:a81132bf016fc4b62698fe9db8f27cf0e"><td class="mdescLeft"> </td><td class="mdescRight">Returns the <code>Oriented_side</code> on which <code>q</code> is located with respect to the circle defined by the points <code>p1,p2,p3</code>.  <a href="#a81132bf016fc4b62698fe9db8f27cf0e">More...</a><br /></td></tr>
+<tr class="separator:a81132bf016fc4b62698fe9db8f27cf0e"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a8fddb4181e46818789dff3d55a7e0aff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fddb4181e46818789dff3d55a7e0aff"></a>
-<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga5006dd2552d97fa577d81bd819c0f979">Oriented_side</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8fddb4181e46818789dff3d55a7e0aff">side_of_oriented_circle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;q, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;trq) const </td></tr>
-<tr class="memdesc:a8fddb4181e46818789dff3d55a7e0aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code>Oriented_side</code> on which the periodic point <code>(q, trq)</code> is located with respect to the circle defined by the periodic points <code>(p1, tr1), (p2, tr2)</code> and <code>(p3, tr3)</code>. <br/></td></tr>
-<tr class="separator:a8fddb4181e46818789dff3d55a7e0aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga5006dd2552d97fa577d81bd819c0f979">Oriented_side</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a8fddb4181e46818789dff3d55a7e0aff">side_of_oriented_circle</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;p3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;q, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr1, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr2, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;tr3, const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;trq) const </td></tr>
+<tr class="memdesc:a8fddb4181e46818789dff3d55a7e0aff"><td class="mdescLeft"> </td><td class="mdescRight">Returns the <code>Oriented_side</code> on which the periodic point <code>(q, trq)</code> is located with respect to the circle defined by the periodic points <code>(p1, tr1), (p2, tr2)</code> and <code>(p3, tr3)</code>. <br /></td></tr>
+<tr class="separator:a8fddb4181e46818789dff3d55a7e0aff"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Queries</h2></td></tr>
 <tr class="memitem:a9683a51e42a328e15eaa697aead84589"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9683a51e42a328e15eaa697aead84589"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9683a51e42a328e15eaa697aead84589">is_vertex</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
-<tr class="memdesc:a9683a51e42a328e15eaa697aead84589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether <code>v</code> is a vertex of the triangulation. <br/></td></tr>
-<tr class="separator:a9683a51e42a328e15eaa697aead84589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a87d5500e4f7dde7cfd5764f7e8c749fc">is_edge</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> u, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh, int &amp;i) const </td></tr>
-<tr class="memdesc:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether <code>(u, v)</code> is an edge of the triangulation.  <a href="#a87d5500e4f7dde7cfd5764f7e8c749fc">More...</a><br/></td></tr>
-<tr class="separator:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a3bca1fabe5c2a00e7ebcda9ea546b9ab">is_face</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> u, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> w, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh) const </td></tr>
-<tr class="memdesc:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether there exists a face in the triangulation with vertices <code>u, v</code> and <code>w</code>.  <a href="#a3bca1fabe5c2a00e7ebcda9ea546b9ab">More...</a><br/></td></tr>
-<tr class="separator:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8626b3030a80fa3cf47de0f2776ae8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aba8626b3030a80fa3cf47de0f2776ae8">has_vertex</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, int &amp;i) const </td></tr>
-<tr class="memdesc:aba8626b3030a80fa3cf47de0f2776ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether face <code>f</code> has <code>v</code> as a vertex.  <a href="#aba8626b3030a80fa3cf47de0f2776ae8">More...</a><br/></td></tr>
-<tr class="separator:aba8626b3030a80fa3cf47de0f2776ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9683a51e42a328e15eaa697aead84589">is_vertex</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
+<tr class="memdesc:a9683a51e42a328e15eaa697aead84589"><td class="mdescLeft"> </td><td class="mdescRight">Tests whether <code>v</code> is a vertex of the triangulation. <br /></td></tr>
+<tr class="separator:a9683a51e42a328e15eaa697aead84589"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a87d5500e4f7dde7cfd5764f7e8c749fc">is_edge</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> u, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh, int &amp;i) const </td></tr>
+<tr class="memdesc:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="mdescLeft"> </td><td class="mdescRight">Tests whether <code>(u, v)</code> is an edge of the triangulation.  <a href="#a87d5500e4f7dde7cfd5764f7e8c749fc">More...</a><br /></td></tr>
+<tr class="separator:a87d5500e4f7dde7cfd5764f7e8c749fc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a3bca1fabe5c2a00e7ebcda9ea546b9ab">is_face</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> u, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> w, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;fh) const </td></tr>
+<tr class="memdesc:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="mdescLeft"> </td><td class="mdescRight">Tests whether there exists a face in the triangulation with vertices <code>u, v</code> and <code>w</code>.  <a href="#a3bca1fabe5c2a00e7ebcda9ea546b9ab">More...</a><br /></td></tr>
+<tr class="separator:a3bca1fabe5c2a00e7ebcda9ea546b9ab"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aba8626b3030a80fa3cf47de0f2776ae8"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#aba8626b3030a80fa3cf47de0f2776ae8">has_vertex</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;f, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, int &amp;i) const </td></tr>
+<tr class="memdesc:aba8626b3030a80fa3cf47de0f2776ae8"><td class="mdescLeft"> </td><td class="mdescRight">Tests whether face <code>f</code> has <code>v</code> as a vertex.  <a href="#aba8626b3030a80fa3cf47de0f2776ae8">More...</a><br /></td></tr>
+<tr class="separator:aba8626b3030a80fa3cf47de0f2776ae8"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Vertex, Edge, and Face iterators</h2></td></tr>
-<tr class="memitem:af7104f2ce3cfa145df6aa0fde6591deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#af7104f2ce3cfa145df6aa0fde6591deb">vertices_begin</a> () const </td></tr>
-<tr class="memdesc:af7104f2ce3cfa145df6aa0fde6591deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary vertex.  <a href="#af7104f2ce3cfa145df6aa0fde6591deb">More...</a><br/></td></tr>
-<tr class="separator:af7104f2ce3cfa145df6aa0fde6591deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7104f2ce3cfa145df6aa0fde6591deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#af7104f2ce3cfa145df6aa0fde6591deb">vertices_begin</a> () const </td></tr>
+<tr class="memdesc:af7104f2ce3cfa145df6aa0fde6591deb"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary vertex.  <a href="#af7104f2ce3cfa145df6aa0fde6591deb">More...</a><br /></td></tr>
+<tr class="separator:af7104f2ce3cfa145df6aa0fde6591deb"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a803e71843cf920a8dcce91bed3743241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a803e71843cf920a8dcce91bed3743241"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a803e71843cf920a8dcce91bed3743241">vertices_end</a> () const </td></tr>
-<tr class="memdesc:a803e71843cf920a8dcce91bed3743241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Past-the-end iterator. <br/></td></tr>
-<tr class="separator:a803e71843cf920a8dcce91bed3743241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804aee0283f5bc5106e419bd5fd05b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a804aee0283f5bc5106e419bd5fd05b74">edges_begin</a> () const </td></tr>
-<tr class="memdesc:a804aee0283f5bc5106e419bd5fd05b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary edge.  <a href="#a804aee0283f5bc5106e419bd5fd05b74">More...</a><br/></td></tr>
-<tr class="separator:a804aee0283f5bc5106e419bd5fd05b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a78d25ff16ba5e0503077588da7c7072b">Vertex_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a803e71843cf920a8dcce91bed3743241">vertices_end</a> () const </td></tr>
+<tr class="memdesc:a803e71843cf920a8dcce91bed3743241"><td class="mdescLeft"> </td><td class="mdescRight">Past-the-end iterator. <br /></td></tr>
+<tr class="separator:a803e71843cf920a8dcce91bed3743241"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a804aee0283f5bc5106e419bd5fd05b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a804aee0283f5bc5106e419bd5fd05b74">edges_begin</a> () const </td></tr>
+<tr class="memdesc:a804aee0283f5bc5106e419bd5fd05b74"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary edge.  <a href="#a804aee0283f5bc5106e419bd5fd05b74">More...</a><br /></td></tr>
+<tr class="separator:a804aee0283f5bc5106e419bd5fd05b74"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a5c297897fccd8b1749d6ec7ba0bc042c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c297897fccd8b1749d6ec7ba0bc042c"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5c297897fccd8b1749d6ec7ba0bc042c">edges_end</a> () const </td></tr>
-<tr class="memdesc:a5c297897fccd8b1749d6ec7ba0bc042c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Past-the-end iterator. <br/></td></tr>
-<tr class="separator:a5c297897fccd8b1749d6ec7ba0bc042c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7a1202afbfd8e3fa43067730136d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc7a1202afbfd8e3fa43067730136d94">faces_begin</a> () const </td></tr>
-<tr class="memdesc:acc7a1202afbfd8e3fa43067730136d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary face.  <a href="#acc7a1202afbfd8e3fa43067730136d94">More...</a><br/></td></tr>
-<tr class="separator:acc7a1202afbfd8e3fa43067730136d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a59f835c7ff55e762375604aa5b89ea69">Edge_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a5c297897fccd8b1749d6ec7ba0bc042c">edges_end</a> () const </td></tr>
+<tr class="memdesc:a5c297897fccd8b1749d6ec7ba0bc042c"><td class="mdescLeft"> </td><td class="mdescRight">Past-the-end iterator. <br /></td></tr>
+<tr class="separator:a5c297897fccd8b1749d6ec7ba0bc042c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acc7a1202afbfd8e3fa43067730136d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acc7a1202afbfd8e3fa43067730136d94">faces_begin</a> () const </td></tr>
+<tr class="memdesc:acc7a1202afbfd8e3fa43067730136d94"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary face.  <a href="#acc7a1202afbfd8e3fa43067730136d94">More...</a><br /></td></tr>
+<tr class="separator:acc7a1202afbfd8e3fa43067730136d94"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a7170132f18d1edf3d1da83db6274c402"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7170132f18d1edf3d1da83db6274c402"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7170132f18d1edf3d1da83db6274c402">faces_end</a> () const </td></tr>
-<tr class="memdesc:a7170132f18d1edf3d1da83db6274c402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Past-the-end iterator. <br/></td></tr>
-<tr class="separator:a7170132f18d1edf3d1da83db6274c402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac54fae739b2fa2231e922e9e37cdb08d">Face_iterator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7170132f18d1edf3d1da83db6274c402">faces_end</a> () const </td></tr>
+<tr class="memdesc:a7170132f18d1edf3d1da83db6274c402"><td class="mdescLeft"> </td><td class="mdescRight">Past-the-end iterator. <br /></td></tr>
+<tr class="separator:a7170132f18d1edf3d1da83db6274c402"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Vertex, Edge and Face circulators</h2></td></tr>
 <tr class="memitem:a316ebe9b7e42ab15b8322ba3180250f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a316ebe9b7e42ab15b8322ba3180250f6"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a316ebe9b7e42ab15b8322ba3180250f6">incident_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
-<tr class="memdesc:a316ebe9b7e42ab15b8322ba3180250f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary vertex incident to <code>v</code>. <br/></td></tr>
-<tr class="separator:a316ebe9b7e42ab15b8322ba3180250f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a316ebe9b7e42ab15b8322ba3180250f6">incident_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
+<tr class="memdesc:a316ebe9b7e42ab15b8322ba3180250f6"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary vertex incident to <code>v</code>. <br /></td></tr>
+<tr class="separator:a316ebe9b7e42ab15b8322ba3180250f6"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a93436ca0000a6490f81038ba1dfa7f34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93436ca0000a6490f81038ba1dfa7f34"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a93436ca0000a6490f81038ba1dfa7f34">incident_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
-<tr class="memdesc:a93436ca0000a6490f81038ba1dfa7f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at the first vertex of <code>f</code> adjacent to <code>v</code> in counterclockwise order around <code>v</code>. <br/></td></tr>
-<tr class="separator:a93436ca0000a6490f81038ba1dfa7f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a0d321e2d6808275d0e157298adf369dc">Vertex_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a93436ca0000a6490f81038ba1dfa7f34">incident_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
+<tr class="memdesc:a93436ca0000a6490f81038ba1dfa7f34"><td class="mdescLeft"> </td><td class="mdescRight">Starts at the first vertex of <code>f</code> adjacent to <code>v</code> in counterclockwise order around <code>v</code>. <br /></td></tr>
+<tr class="separator:a93436ca0000a6490f81038ba1dfa7f34"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a2c20cc2ae867cf6ba9ce2af241df12b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c20cc2ae867cf6ba9ce2af241df12b5"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a2c20cc2ae867cf6ba9ce2af241df12b5">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
-<tr class="memdesc:a2c20cc2ae867cf6ba9ce2af241df12b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary edge incident to <code>v</code>. <br/></td></tr>
-<tr class="separator:a2c20cc2ae867cf6ba9ce2af241df12b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a2c20cc2ae867cf6ba9ce2af241df12b5">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
+<tr class="memdesc:a2c20cc2ae867cf6ba9ce2af241df12b5"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary edge incident to <code>v</code>. <br /></td></tr>
+<tr class="separator:a2c20cc2ae867cf6ba9ce2af241df12b5"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a9654bb888ac04b27854eb59267397c9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9654bb888ac04b27854eb59267397c9a"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9654bb888ac04b27854eb59267397c9a">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
-<tr class="memdesc:a9654bb888ac04b27854eb59267397c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at the first edge of <code>f</code> incident to <code>v</code>, in counterclockwise order around <code>v</code>. <br/></td></tr>
-<tr class="separator:a9654bb888ac04b27854eb59267397c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7d1c800014ef2b9d2f0f89e3e04a9917">Edge_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9654bb888ac04b27854eb59267397c9a">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
+<tr class="memdesc:a9654bb888ac04b27854eb59267397c9a"><td class="mdescLeft"> </td><td class="mdescRight">Starts at the first edge of <code>f</code> incident to <code>v</code>, in counterclockwise order around <code>v</code>. <br /></td></tr>
+<tr class="separator:a9654bb888ac04b27854eb59267397c9a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a9c047acd515a7d06c2f414d61d18e8a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c047acd515a7d06c2f414d61d18e8a9"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9c047acd515a7d06c2f414d61d18e8a9">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
-<tr class="memdesc:a9c047acd515a7d06c2f414d61d18e8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at an arbitrary face incident to <code>v</code>. <br/></td></tr>
-<tr class="separator:a9c047acd515a7d06c2f414d61d18e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9c047acd515a7d06c2f414d61d18e8a9">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
+<tr class="memdesc:a9c047acd515a7d06c2f414d61d18e8a9"><td class="mdescLeft"> </td><td class="mdescRight">Starts at an arbitrary face incident to <code>v</code>. <br /></td></tr>
+<tr class="separator:a9c047acd515a7d06c2f414d61d18e8a9"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a53da0cc3dd4470b21b860fdff2c20c9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53da0cc3dd4470b21b860fdff2c20c9d"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a53da0cc3dd4470b21b860fdff2c20c9d">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
-<tr class="memdesc:a53da0cc3dd4470b21b860fdff2c20c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at face <code>f</code>. <br/></td></tr>
-<tr class="separator:a53da0cc3dd4470b21b860fdff2c20c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae8c3dd43711c45ce859ac0b8cc165ab0">Face_circulator</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a53da0cc3dd4470b21b860fdff2c20c9d">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f) const </td></tr>
+<tr class="memdesc:a53da0cc3dd4470b21b860fdff2c20c9d"><td class="mdescLeft"> </td><td class="mdescRight">Starts at face <code>f</code>. <br /></td></tr>
+<tr class="separator:a53da0cc3dd4470b21b860fdff2c20c9d"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Traversal of the Vertices, Edges and Faces incident to a vertex</h2></td></tr>
 <tr class="memitem:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="memTemplParams" colspan="2"><a class="anchor" id="abcc2504d9b6cc7f530de75a1f963cfe0"></a>
 template&lt;class OutputIterator &gt; </td></tr>
-<tr class="memitem:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#abcc2504d9b6cc7f530de75a1f963cfe0">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> faces) const </td></tr>
-<tr class="memdesc:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the faces incident to <code>v</code> into the output iterator <code>faces</code>. <br/></td></tr>
-<tr class="separator:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#abcc2504d9b6cc7f530de75a1f963cfe0">incident_faces</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> faces) const </td></tr>
+<tr class="memdesc:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="mdescLeft"> </td><td class="mdescRight">Copies the faces incident to <code>v</code> into the output iterator <code>faces</code>. <br /></td></tr>
+<tr class="separator:abcc2504d9b6cc7f530de75a1f963cfe0"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6d45293e60676f9f53733b3a220c7124"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6d45293e60676f9f53733b3a220c7124"></a>
 template&lt;class OutputIterator &gt; </td></tr>
-<tr class="memitem:a6d45293e60676f9f53733b3a220c7124"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a6d45293e60676f9f53733b3a220c7124">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> edges) const </td></tr>
-<tr class="memdesc:a6d45293e60676f9f53733b3a220c7124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the edges incident to <code>v</code> into the output iterator <code>edges</code>. <br/></td></tr>
-<tr class="separator:a6d45293e60676f9f53733b3a220c7124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d45293e60676f9f53733b3a220c7124"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a6d45293e60676f9f53733b3a220c7124">incident_edges</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> edges) const </td></tr>
+<tr class="memdesc:a6d45293e60676f9f53733b3a220c7124"><td class="mdescLeft"> </td><td class="mdescRight">Copies the edges incident to <code>v</code> into the output iterator <code>edges</code>. <br /></td></tr>
+<tr class="separator:a6d45293e60676f9f53733b3a220c7124"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ac40abf79095f9a845e2213e24f17eafa"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac40abf79095f9a845e2213e24f17eafa"></a>
 template&lt;class OutputIterator &gt; </td></tr>
-<tr class="memitem:ac40abf79095f9a845e2213e24f17eafa"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac40abf79095f9a845e2213e24f17eafa">adjacent_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> vertices) const </td></tr>
-<tr class="memdesc:ac40abf79095f9a845e2213e24f17eafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the vertices incident to <code>v</code> into the output iterator <code>vertices</code>. <br/></td></tr>
-<tr class="separator:ac40abf79095f9a845e2213e24f17eafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40abf79095f9a845e2213e24f17eafa"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac40abf79095f9a845e2213e24f17eafa">adjacent_vertices</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classOutputIterator.html">OutputIterator</a> vertices) const </td></tr>
+<tr class="memdesc:ac40abf79095f9a845e2213e24f17eafa"><td class="mdescLeft"> </td><td class="mdescRight">Copies the vertices incident to <code>v</code> into the output iterator <code>vertices</code>. <br /></td></tr>
+<tr class="separator:ac40abf79095f9a845e2213e24f17eafa"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a50c88b38341800a1532de0ada7ad8dd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50c88b38341800a1532de0ada7ad8dd1"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a50c88b38341800a1532de0ada7ad8dd1">degree</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
-<tr class="memdesc:a50c88b38341800a1532de0ada7ad8dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the degree of <code>v</code>, i.e., the number of edges incident to <code>v</code>. <br/></td></tr>
-<tr class="separator:a50c88b38341800a1532de0ada7ad8dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+size_type </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a50c88b38341800a1532de0ada7ad8dd1">degree</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> v) const </td></tr>
+<tr class="memdesc:a50c88b38341800a1532de0ada7ad8dd1"><td class="mdescLeft"> </td><td class="mdescRight">Returns the degree of <code>v</code>, i.e., the number of edges incident to <code>v</code>. <br /></td></tr>
+<tr class="separator:a50c88b38341800a1532de0ada7ad8dd1"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Traversal between adjacent faces</h2></td></tr>
 <tr class="memitem:a1931ba33ac83e17aae6f1d0f03e68a38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1931ba33ac83e17aae6f1d0f03e68a38"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1931ba33ac83e17aae6f1d0f03e68a38">mirror_index</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
-<tr class="memdesc:a1931ba33ac83e17aae6f1d0f03e68a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of <code>f</code> in its <code>i</code>-th neighbor. <br/></td></tr>
-<tr class="separator:a1931ba33ac83e17aae6f1d0f03e68a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+int </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1931ba33ac83e17aae6f1d0f03e68a38">mirror_index</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
+<tr class="memdesc:a1931ba33ac83e17aae6f1d0f03e68a38"><td class="mdescLeft"> </td><td class="mdescRight">Returns the index of <code>f</code> in its <code>i</code>-th neighbor. <br /></td></tr>
+<tr class="separator:a1931ba33ac83e17aae6f1d0f03e68a38"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab66958483bf5b55742a14f8c88478ff0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab66958483bf5b55742a14f8c88478ff0"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab66958483bf5b55742a14f8c88478ff0">mirror_vertex</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
-<tr class="memdesc:ab66958483bf5b55742a14f8c88478ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertex of the <code>i</code>-th neighbor of <code>f</code> that is opposite to <code>f</code>. <br/></td></tr>
-<tr class="separator:ab66958483bf5b55742a14f8c88478ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab66958483bf5b55742a14f8c88478ff0">mirror_vertex</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, int i) const </td></tr>
+<tr class="memdesc:ab66958483bf5b55742a14f8c88478ff0"><td class="mdescLeft"> </td><td class="mdescRight">Returns the vertex of the <code>i</code>-th neighbor of <code>f</code> that is opposite to <code>f</code>. <br /></td></tr>
+<tr class="separator:ab66958483bf5b55742a14f8c88478ff0"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a26bbe365b2637d94c14302000af7ba8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26bbe365b2637d94c14302000af7ba8b"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a26bbe365b2637d94c14302000af7ba8b">mirror_edge</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> e) const </td></tr>
-<tr class="memdesc:a26bbe365b2637d94c14302000af7ba8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the same edge seen from the other adjacent face. <br/></td></tr>
-<tr class="separator:a26bbe365b2637d94c14302000af7ba8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a26bbe365b2637d94c14302000af7ba8b">mirror_edge</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> e) const </td></tr>
+<tr class="memdesc:a26bbe365b2637d94c14302000af7ba8b"><td class="mdescLeft"> </td><td class="mdescRight">Returns the same edge seen from the other adjacent face. <br /></td></tr>
+<tr class="separator:a26bbe365b2637d94c14302000af7ba8b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab30ea18a9361f2090448d64a79a7365a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab30ea18a9361f2090448d64a79a7365a"></a>
-<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab30ea18a9361f2090448d64a79a7365a">neighbor_translation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> fh, int i) const </td></tr>
-<tr class="memdesc:ab30ea18a9361f2090448d64a79a7365a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hyperbolic translation for which the <code>i</code>-th neighbor of <code>fh</code> is adjacent to (the canonical representative of) <code>fh</code> in the hyperbolic plane. <br/></td></tr>
-<tr class="separator:ab30ea18a9361f2090448d64a79a7365a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ab30ea18a9361f2090448d64a79a7365a">neighbor_translation</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> fh, int i) const </td></tr>
+<tr class="memdesc:ab30ea18a9361f2090448d64a79a7365a"><td class="mdescLeft"> </td><td class="mdescRight">Returns the hyperbolic translation for which the <code>i</code>-th neighbor of <code>fh</code> is adjacent to (the canonical representative of) <code>fh</code> in the hyperbolic plane. <br /></td></tr>
+<tr class="separator:ab30ea18a9361f2090448d64a79a7365a"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Validity checking</h2></td></tr>
 <tr class="memitem:a968b3c0cc60df8e0fde843f4a6135a6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a968b3c0cc60df8e0fde843f4a6135a6b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a968b3c0cc60df8e0fde843f4a6135a6b">is_valid</a> (bool verbose=false) const </td></tr>
-<tr class="memdesc:a968b3c0cc60df8e0fde843f4a6135a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the combinatorial validity of the triangulation, and also the validity of its geometric embedding. <br/></td></tr>
-<tr class="separator:a968b3c0cc60df8e0fde843f4a6135a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e55ed5ebac7569b3029e67cbe9af58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a36e55ed5ebac7569b3029e67cbe9af58">is_valid</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, bool verbose=false) const </td></tr>
-<tr class="memdesc:a36e55ed5ebac7569b3029e67cbe9af58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the combinatorial validity of face <code>f</code>.  <a href="#a36e55ed5ebac7569b3029e67cbe9af58">More...</a><br/></td></tr>
-<tr class="separator:a36e55ed5ebac7569b3029e67cbe9af58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a968b3c0cc60df8e0fde843f4a6135a6b">is_valid</a> (bool verbose=false) const </td></tr>
+<tr class="memdesc:a968b3c0cc60df8e0fde843f4a6135a6b"><td class="mdescLeft"> </td><td class="mdescRight">Checks the combinatorial validity of the triangulation, and also the validity of its geometric embedding. <br /></td></tr>
+<tr class="separator:a968b3c0cc60df8e0fde843f4a6135a6b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a36e55ed5ebac7569b3029e67cbe9af58"><td class="memItemLeft" align="right" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a36e55ed5ebac7569b3029e67cbe9af58">is_valid</a> (<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> f, bool verbose=false) const </td></tr>
+<tr class="memdesc:a36e55ed5ebac7569b3029e67cbe9af58"><td class="mdescLeft"> </td><td class="mdescRight">Checks the combinatorial validity of face <code>f</code>.  <a href="#a36e55ed5ebac7569b3029e67cbe9af58">More...</a><br /></td></tr>
+<tr class="separator:a36e55ed5ebac7569b3029e67cbe9af58"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a1f08a4d36c8f9a365b6b47fc0ef34b8c"></a>
@@ -555,11 +545,11 @@ template&lt;class GT , class TDS &gt; </div>
 
 <p>Enumeration type that indicates where a point is located. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798ae345997ec79d36a799893959a670b489"></a>VERTEX</em>&nbsp;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798ae345997ec79d36a799893959a670b489"></a>VERTEX</em> </td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798af860c7a9ced09f4e972e53b6bea2f950"></a>EDGE</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798af860c7a9ced09f4e972e53b6bea2f950"></a>EDGE</em> </td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798acf07c710808ef267e1efb9ae46a582c4"></a>FACE</em>&nbsp;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a436e182c64d5e98b0e7559eb7cdcb798acf07c710808ef267e1efb9ae46a582c4"></a>FACE</em> </td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -575,14 +565,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ac3c5b78389edf47fa1135c46f0bdbf98">Segment</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::construct_segment </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp; </td>
           <td class="paramname"><em>fh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>idx</em>&#160;</td>
+          <td class="paramtype">int </td>
+          <td class="paramname"><em>idx</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -646,20 +636,20 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::has_vertex </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a71d9d9e3de9e1249febe25a9a0d3be8c">Face</a> &amp; </td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
+          <td class="paramtype">int &amp; </td>
+          <td class="paramname"><em>i</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -683,14 +673,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::hyperbolic_locate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
-          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
+          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -714,26 +704,26 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::hyperbolic_locate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp; </td>
           <td class="paramname"><em>lt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">int &amp; </td>
           <td class="paramname"><em>li</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
-          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
+          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -757,20 +747,20 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::hyperbolic_periodic_locate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp; </td>
           <td class="paramname"><em>lo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
-          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
+          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -794,32 +784,32 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::hyperbolic_periodic_locate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798">Locate_type</a> &amp; </td>
           <td class="paramname"><em>lt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">int &amp; </td>
           <td class="paramname"><em>li</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp; </td>
           <td class="paramname"><em>lo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
-          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
+          <td class="paramname"><em>start</em> = <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>()</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -843,26 +833,26 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::is_edge </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp; </td>
           <td class="paramname"><em>fh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
+          <td class="paramtype">int &amp; </td>
+          <td class="paramname"><em>i</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -886,26 +876,26 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::is_face </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp;&#160;</td>
-          <td class="paramname"><em>fh</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> &amp; </td>
+          <td class="paramname"><em>fh</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -929,14 +919,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::is_valid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>verbose</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">bool </td>
+          <td class="paramname"><em>verbose</em> = <code>false</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -947,7 +937,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p>Checks the combinatorial validity of face <code>f</code>. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>add checks for 1- and 2-cycles! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>add checks for 1- and 2-cycles! </dd></dl>
 
 </div>
 </div>
@@ -960,14 +950,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp; </td>
           <td class="paramname"><em>tr1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tr2</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp; </td>
+          <td class="paramname"><em>tr2</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -978,7 +968,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p>Inequality operator. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>implement </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>implement </dd></dl>
 
 </div>
 </div>
@@ -991,14 +981,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp; </td>
           <td class="paramname"><em>tr1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tr2</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt; &amp; </td>
+          <td class="paramname"><em>tr2</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1009,7 +999,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p>Equality operator. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>implement </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>implement </dd></dl>
 
 </div>
 </div>
@@ -1022,20 +1012,20 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525">Orientation</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::orientation </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>p3</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
+          <td class="paramname"><em>p3</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1059,14 +1049,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a4900fe2e4ea7a1ddb0c16635bb824dfb">Periodic_point</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::periodic_point </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
+          <td class="paramtype">int </td>
+          <td class="paramname"><em>i</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1090,20 +1080,20 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::periodic_segment </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> </td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">int </td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
+          <td class="paramtype">int </td>
+          <td class="paramname"><em>j</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1127,7 +1117,7 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::periodic_segment </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp; </td>
           <td class="paramname"><em>e</em>)</td><td></td>
           <td> const</td>
         </tr>
@@ -1148,14 +1138,14 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#acd0774193284912aa4aa5b7665dcf9cf">Periodic_segment</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::periodic_segment </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1697a399af990b82dc68ac818ecb3360">Edge</a> &amp; </td>
           <td class="paramname"><em>e</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp;&#160;</td>
-          <td class="paramname"><em>tr</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation</a> &amp; </td>
+          <td class="paramname"><em>tr</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1179,26 +1169,26 @@ template&lt;class GT , class TDS &gt; </div>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/group__kernel__enums.html#ga5006dd2552d97fa577d81bd819c0f979">Oriented_side</a> <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">CGAL::Periodic_4_hyperbolic_triangulation_2</a>&lt; GT, TDS &gt;::side_of_oriented_circle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
           <td class="paramname"><em>p3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>q</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a1f08a4d36c8f9a365b6b47fc0ef34b8c">Point</a> &amp; </td>
+          <td class="paramname"><em>q</em> </td>
         </tr>
         <tr>
           <td></td>
@@ -1239,12 +1229,15 @@ template&lt;class GT , class TDS &gt; </div>
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceCGAL.html">CGAL</a></li><li class="navelem"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a></li>
-    <li class="footer">Generated on Sat Aug 11 2018 13:05:59 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="navelem"><a class="el" href="../Manual/namespaceCGAL.html">CGAL</a></li><li class="navelem"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html">Periodic_4_hyperbolic_triangulation_2</a></li>
+    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
   </ul>
 </div>
 </div>
 </body>
+
+
+
 </html>

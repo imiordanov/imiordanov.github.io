@@ -1,10 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/index.html"/>
+
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
 <title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: User Manual</title>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<link href="navtree.css" rel="stylesheet" type="text/css" />
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Manual/jquery.js"></script>
@@ -21,7 +23,7 @@
   }
   $(document).ready(initResizable);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
@@ -64,18 +66,12 @@ MathJax.Hub.Config({
   </ul>
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
-           onmouseover="return searchBox.OnSearchSelectShow()"
-           onmouseout="return searchBox.OnSearchSelectHide()"
-           alt=""/>
-      <input type="text" id="MSearchField" value="Search" accesskey="S"
-             onfocus="searchBox.OnSearchFieldFocus(true)" 
-             onblur="searchBox.OnSearchFieldFocus(false)" 
-             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
     </span>
     <span class="right">
       <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
-        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/>
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
       </a>
     </span>
   </div>
@@ -97,15 +93,11 @@ MathJax.Hub.Config({
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- Generated by Doxygen 1.8.4 -->
@@ -113,11 +105,10 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
+      <div id="nav-sync" class="sync" style="display: none"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -129,12 +120,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">User Manual </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="Chapter_2D_Periodic_Hyperbolic_Triangulations"></a><a class="anchor" id="chapterP4HTriangulation2"></a>  <div id="autotoc" class="toc"></div>  <dl class="section author"><dt>Author</dt><dd>Iordan Iordanov &amp; Monique Teillaud</dd></dl>
+<div class="textblock"><p><a class="anchor" id="Chapter_2D_Periodic_Hyperbolic_Triangulations"></a><a class="anchor" id="chapterP4HTriangulation2"></a>  </p><div id="autotoc" class="toc"></div>  <dl class="section author"><dt>Author</dt><dd>Iordan Iordanov &amp; Monique Teillaud</dd></dl>
 <div class="image">
-<img src="triangulation-350px.png" alt="triangulation-350px.png"/>
+<img src="triangulation-350px.png" alt="triangulation-350px.png" />
 </div>
 <p>The 2D periodic hyperbolic triangulations class of <span style="font-variant: small-caps;">CGAL</span> is designed to represent triangulations of sets of points on the two-dimensional Bolza surface.</p>
-<p>The Bolza surface is a closed compact orientable surface of genus 2. Closed compact surfaces of genus at least 2 all have constant negative curvature, so they are hyperbolic. Among all surfaces of genus 2, the Bolza surface is the most symmetric one, and its properties are well understood. It is a natural extension from genus 1 (the Euclidean flat torus, see <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Periodic_2_triangulation_2.tag:../Periodic_2_triangulation_2/" href="../Periodic_2_triangulation_2/index.html#Chapter_2D_Periodic_Triangulations">Chapter_2D_Periodic_Triangulations</a> ) to genus 2.</p>
+ <div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000004">Modifications:</a></b></dt><dd>The Bolza surface is a closed compact orientable surface of genus 2. A closed compact surface of genus at least 2 is conformally equivalent to some surface of constant negative curvature, therefore it is <em>hyperbolic</em>. Among all surfaces of genus 2, the Bolza surface is the most symmetric one, and its properties are well understood. It is a natural extension from genus 1 (the Euclidean flat torus, see <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Periodic_2_triangulation_2.tag:../Periodic_2_triangulation_2/" href="../Periodic_2_triangulation_2/index.html#Chapter_2D_Periodic_Triangulations">Chapter_2D_Periodic_Triangulations</a> ) to genus 2.  </dd></dl></div> 
 <p>Triangulations of the Bolza surface are periodic triangulations of the hyperbolic plane, and they are also <em>simplicial complexes</em>, i.e. a triangulation: </p>
 <ul>
 <li>
@@ -145,54 +136,53 @@ two \( k\)-simplices either do not intersect or share a common \( j\)-face, \( j
 <p>The simplices of dimension 0, 1 and 2 are called <em>vertex</em>, <em>edge</em>, and <em>face</em>, respectively. For more details on simplices, see <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation.tag:../Triangulation/" href="../Triangulation/index.html#Chapter_Triangulations">Chapter_Triangulations</a>.</p>
 <h1><a class="anchor" id="P4HT2_thespace"></a>
 The Bolza surface</h1>
-<p>Let \(\mathbb{H}^2\) denote the hyperbolic plane, represented in the Poincaré disk model. Consider the regular hyperbolic octagon \( \mathcal D_O \) centered at the origin, with all angles equal to \( \pi/4\). Note that \(\mathcal D_O\) is unique up to rotation, and cannot be scaled, since this operation would change its angle sum. Now, consider the four hyperbolic translations \( a,b,c,d\) with their respective inverses \(\overline{a}, \overline{b}, \overline{c}, \overline{d}\) that identify the opposite sides of \( \mathcal D_O \). The axes of these translations are diameters of the Poincaré disk. See Figure <a class="el" href="index.html#fig__P4HTriangulationOctagonId">fig__P4HTriangulationOctagonId</a> - Left. The four translations \(a, b, c, d\) generate a discrete group of orientation-preserving isometries, with finite presentation </p>
-<p class="formulaDsp">
+<p>Let \(\mathbb{H}^2\) denote the hyperbolic plane, represented in the Poincaré disk model. Consider the regular hyperbolic octagon \( \mathcal D_O \) centered at the origin, with all angles equal to \( \pi/4\). Note that \(\mathcal D_O\) is unique up to rotation, and cannot be scaled, since this operation would change its angle sum. Now, consider the four hyperbolic translations \( a,b,c,d\) with their respective inverses \(\overline{a}, \overline{b}, \overline{c}, \overline{d}\) that identify the opposite sides of \( \mathcal D_O \). The axes of these translations are diameters of the Poincaré disk.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000005">Modifications:</a></b></dt><dd>See <a class="el" href="index.html#fig__P4HTriangulationOctagonId">Figure 42.1</a> - Left.  </dd></dl></div>  The four translations \(a, b, c, d\) generate a discrete group of orientation-preserving isometries, with finite presentation <p class="formulaDsp">
 \[ \mathcal{G} = \left&lt; a,b,c,d \; \bigg| \; abcd\overline{a}\overline{b}\overline{c}\overline{d} \right&gt;. \]
 </p>
-<p> The Bolza surface \(\mathcal{M}\) is defined as \(\mathcal{M} = \mathbb H^2 / \mathcal{G}\). \(\mathcal G\) is the fundamental group of \(\mathcal M\). The octagon \(\mathcal D_O\) is a fundamental domain for \(\mathcal G\).</p>
+ The Bolza surface \(\mathcal{M}\) is defined as \(\mathcal{M} = \mathbb H^2 / \mathcal{G}\). \(\mathcal G\) is the fundamental group of \(\mathcal M\). The octagon \(\mathcal D_O\) is a fundamental domain for \(\mathcal G\).
 <p><a class="anchor" id="fig__P4HTriangulationOctagonId"></a></p>
-<center> <table  border="0">
+<center> <table border="0">
 <tr>
 <td><div class="image">
-<img src="octagon_identification.png" alt="octagon_identification.png"/>
+<img src="octagon_identification.png" alt="octagon_identification.png" />
 </div>
    </td><td><div class="image">
-<img src="original_domain.png" alt="original_domain.png"/>
+<img src="original_domain.png" alt="original_domain.png" />
 </div>
     </td></tr>
 </table>
-</center> <div class="cgal_figure_caption">   <a class="el" href="index.html#fig__P4HTriangulationOctagonId">fig__P4HTriangulationOctagonId</a> <b>Left:</b> The hyperbolic translations \(a,b,c,d\) and their inverses identify opposite sides of \(\mathcal D_o\). <b>Right:</b> The half-open octagon is an original domain for \(\mathcal{M}\). Note that only one of the vertices of the octagon is included in the original domain.  </div>  <br/>
-</p>
+</center> <div class="cgal_figure_caption">   <a class="el" href="index.html#fig__P4HTriangulationOctagonId">Figure 42.1</a> <b>Left:</b> The hyperbolic translations \(a,b,c,d\) and their inverses identify opposite sides of \(\mathcal D_o\). <b>Right:</b> The half-open octagon is an original domain for \(\mathcal{M}\). Note that only one of the vertices of the octagon is included in the original domain.  </div>  <br />
+
 <p>We say that two elements \(p\) and \(q\) in \(\mathbb H^2\) are in the same orbit under the action of \(\mathcal G\) if there exists an element \(g \in \mathcal G\) such that \(g(p) = q\). Each element of \(\mathcal M\) corresponds to the orbit of an element of \(\mathbb H^2\) under the action of \(\mathcal G\). So, each element of \(\mathcal M\) has infinitely many images in \(\mathbb H^2\); we call these images the <em>representatives</em> of an element of \(\mathcal{M}\).</p>
-<p>The implementation does not work directly on elements of \(\mathcal{M}\), but on some representatives in \(\mathbb H^2\) that we distinguish. The half-open octagon shown in Figure <a class="el" href="index.html#fig__P4HTriangulationOctagonId">fig__P4HTriangulationOctagonId</a> - Right contains exactly one representative of each point on \(\mathcal{M}\), and we call that half-open octagon the <em>original domain</em> \(\mathcal D\). From now on, whenever we talk about a <em>point</em>, we will generally mean the representative of an element of \(\mathcal{M}\) that lies inside \(\mathcal D\).</p>
+<p>The implementation does not work directly on elements of \(\mathcal{M}\), but on some representatives in \(\mathbb H^2\) that we distinguish.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000006">Modifications:</a></b></dt><dd>The half-open octagon shown in <a class="el" href="index.html#fig__P4HTriangulationOctagonId">Figure 42.1</a> - Right contains exactly one representative of each point on \(\mathcal{M}\), and we call that half-open octagon the <em>original domain</em> \(\mathcal D\).  </dd></dl></div>  From now on, whenever we talk about a <em>point</em>, we will generally mean the representative of an element of \(\mathcal{M}\) that lies inside \(\mathcal D\). 
 <p>We require that all input points lie inside \(\mathcal D\). Edges and faces, however, may cross the boundary of \(\mathcal D\), i.e., they may be defined in terms of points both inside and outside \(\mathcal D\). The points outside \(\mathcal D\) are images of points inside \(\mathcal D\) under the action of some translation in the group \(\mathcal{G}\). So, to specify an edge or a face, we use two or three pairs of points and translations in \(\mathcal{G}\); points in the original domain are paired with the identity translation \(\mathbb 1\).</p>
 <h1><a class="anchor" id="P4HT2_representation"></a>
 Representation</h1>
 <p>A triangulation is a collection of vertices and faces that are linked together through incidence and adjacency relations. Each vertex stores a point, and gives access to one of its incident faces. Each face gives access to its three adjacent faces, to its three incident vertices, and to the translation paired with the point in each vertex.</p>
 <p>The three vertices of a face are indexed with 0, 1 and 2 in positive (counter-clockwise) orientation. The orientation of a face in \(\mathcal{M}\) is defined as the orientation of its representative in \(\mathbb H^2\) defined by the translations it stores.</p>
-<p>As in the underlying combinatorial triangulation (see Chapter <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/index.html#Chapter_2D_Triangulation_Data_Structure">Chapter_2D_Triangulation_Data_Structure</a>), the neighbors of a face are indexed with 0, 1, 2 in such a way that the \(i\)-th neighbor is opposite to the vertex with the same index. Edges are not explicitly represented: an edge is given by a face and the index of its opposite vertex in that face. See Figure <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">fig__P4HTriangulationOrientationDS</a> - Left.</p>
+<p>As in the underlying combinatorial triangulation (see Chapter <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/index.html#Chapter_2D_Triangulation_Data_Structure">Chapter_2D_Triangulation_Data_Structure</a>), the neighbors of a face are indexed with 0, 1, 2 in such a way that the \(i\)-th neighbor is opposite to the vertex with the same index. Edges are not explicitly represented: an edge is given by a face and the index of its opposite vertex in that face.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000007">Modifications:</a></b></dt><dd>See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a> - Left.  </dd></dl></div> 
 <p><a class="anchor" id="fig__P4HTriangulationOrientationDS"></a></p>
-<center> <table  border="0">
+<center> <table border="0">
 <tr>
 <td><div class="image">
-<img src="P4T_ds_doc_300.png" alt="P4T_ds_doc_300.png"/>
+<img src="P4T_ds_doc_300.png" alt="P4T_ds_doc_300.png" />
 </div>
    </td><td><div class="image">
-<img src="periodic_face.png" alt="periodic_face.png"/>
+<img src="periodic_face.png" alt="periodic_face.png" />
 </div>
     </td></tr>
 </table>
-</center> <div class="cgal_figure_caption">   <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">fig__P4HTriangulationOrientationDS</a> <b>Left:</b> Representation of a face \(f\) stored in the triangulation data structure. Each vertex \(v_i\) stores a point \(p_i\) that is paired with a translation \(\tau_i\). Opposite to vertex \(i\) is the \(i\)-th neighbor of \(f\). <b>Right:</b> Illustration of the canonical representative in \(\mathbb H^2\) of a face on \(\mathcal M\). Among the three candidate faces, the canonical representative is the green one, which is closest to the region labeled \(abcd\) clockwise. In the face we store the translations that produce its canonical representative in \(\mathbb H^2\), in this case \(\mathbb 1, a\), and \(\overline{b}\), corresponding to the points \(p, q\), and \(r\).  </div>  <br/>
-</p>
+</center> <div class="cgal_figure_caption">   <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a> <b>Left:</b> Representation of a face \(f\) stored in the triangulation data structure. Each vertex \(v_i\) stores a point \(p_i\) that is paired with a translation \(\tau_i\). Opposite to vertex \(i\) is the \(i\)-th neighbor of \(f\). <b>Right:</b> Illustration of the canonical representative in \(\mathbb H^2\) of a face on \(\mathcal M\). Among the three candidate faces, the canonical representative is the green one, which is closest to the region labeled \(abcd\) clockwise. In the face we store the translations that produce its canonical representative in \(\mathbb H^2\), in this case \(\mathbb 1, a\), and \(\overline{b}\), corresponding to the points \(p, q\), and \(r\).  </div>  <br />
+
 <p>In the data structure each vertex stores the input point in \(\mathcal D\) to which it corresponds. For every face on \(\mathcal{M}\), the data structure stores the <em>canonical representative</em> of that face in \(\mathbb H^2\).</p>
-<p>We introduce some notation necessary for the definition of canonical representative. Let \(\mathcal N\) denote the translations of \(\mathcal G\) for which the image of \(\mathcal D_O\) has at least one vertex in common with \(\mathcal D_O\). Let \(\mathcal D_{\mathcal N}\) be the union of \(\mathcal D_O\) and these images. With the use of dummy points (see <a class="el" href="index.html#P4HT2_Dummy_points">Dummy points</a>), faces with at least one vertex in \(\mathcal D\) are contained in \(\mathcal D_{\mathcal N}\). We consider the images of \(\mathcal D_O\) to be ordered counter-clockwise around \(\mathcal D_O\), arbitrarily starting with the one labeled \(abcd\). See Figure <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">fig__P4HTriangulationOrientationDS</a> - Right. We then choose the canonical representative in \(\mathbb H^2\) of a face on \(\mathcal M\) so that: </p>
+<p>We introduce some notation necessary for the definition of canonical representative. Let \(\mathcal N\) denote the translations of \(\mathcal G\) for which the image of \(\mathcal D_O\) has at least one vertex in common with \(\mathcal D_O\). Let \(\mathcal D_{\mathcal N}\) be the union of \(\mathcal D_O\) and these images. With the use of dummy points (see <a class="el" href="index.html#P4HT2_Dummy_points">Dummy points</a>), faces with at least one vertex in \(\mathcal D\) are contained in \(\mathcal D_{\mathcal N}\). We consider the images of \(\mathcal D_O\) to be ordered counter-clockwise around \(\mathcal D_O\), arbitrarily starting with the one labeled \(abcd\).  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000008">Modifications:</a></b></dt><dd>See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a> - Right.  </dd></dl></div>  We then choose the canonical representative in \(\mathbb H^2\) of a face on \(\mathcal M\) so that: 
 <ul>
 <li>
 either all vertices of the representative lie in \(\mathcal D\), or </li>
 <li>
 the representative has at least one vertex in \(\mathcal D\) and is as close as possible to \(abcd\) in the ordering defined above. </li>
 </ul>
-<p><b>Validity</b> <br/>
+<p><b>Validity</b> <br />
  A periodic hyperbolic triangulation of \(\mathcal{M}\) is said to be <code>valid</code> if and only if </p>
 <ol>
 <li>
@@ -200,7 +190,7 @@ Its underlying combinatorial graph, the triangulation data structure, is <code>v
 <li>
 The combinatorial graph of the triangulation does not contain cycles of length 1 or 2. </li>
 <li>
-Each face of the triangulation is positively oriented. See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">fig__P4HTriangulationOrientationDS</a>. </li>
+Each face of the triangulation is positively oriented. See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a>. </li>
 <li>
 All triangles are topological disks; this condition is satisfied when the Euler relation \(V-E+F = -2\) is verified, where \(V, E, F\) are the number of vertices, edges and faces of the triangulation, respectively. </li>
 </ol>
@@ -208,23 +198,23 @@ All triangles are topological disks; this condition is satisfied when the Euler 
 Hyperbolic Delaunay triangulation</h1>
 <p>The class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> implements Delaunay triangulations of \(\mathcal M\). The prefix "Periodic_4" emphasizes that the triangulation is periodic in the four directions defined by the hyperbolic translations \( a,b,c\) and \(d\).</p>
 <p>Delaunay triangulations have the <em>empty circle property</em>, that is, the circumscribing hyperbolic circle of each face does not contain any other vertex of the triangulation in its interior. These triangulations are uniquely defined if no more than three points are co-circular. Note however that the <span style="font-variant: small-caps;">CGAL</span> implementation computes a unique triangulation even in these cases <a class="el" href="citelist.html#CITEREF_cgal:dt-pvr3d-03">[2]</a>. Note also that since hyperbolic circles coincide with Euclidean circles in the Poincaré disk model, the implementation uses Euclidean predicates to ensure the Delaunay property.</p>
-<p>This implementation is fully dynamic: it supports both insertions of points and vertex removal. Note, however, that the removal of a vertex is authorized only if the triangulation would remain a simplicial complex after the removal of that vertex. If this condition is not satisfied, then then the vertex if <b>not</b> removed from the triangulation.</p>
+<p>This implementation is fully dynamic: it supports both insertions of points and vertex removal. Note, however, that the removal of a vertex is authorized only if the triangulation would remain a simplicial complex after the removal of that vertex.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000009">Modifications:</a></b></dt><dd>If this condition is not satisfied, then the vertex is <b>not</b> removed from the triangulation.  </dd></dl></div> 
 <h1><a class="anchor" id="P4HT2_Dummy_points"></a>
 Dummy points</h1>
-<p>Some point sets do not admit a triangulation of \(\mathcal M\). For this reason, we initialize a triangulation of \(\mathcal M\) with a predetermined set of 14 points, called <em>dummy points</em>, whose triangulation in \(\mathcal M\) is a simplicial complex and has the empty circle property. The set of dummy points has been proposed in <a class="el" href="citelist.html#CITEREF_cgal:btv-dtosl-16">[1]</a>. See Figure <a class="el" href="index.html#fig__P4HTriangulationDummyPoints">fig__P4HTriangulationDummyPoints</a></p>
+<p>Some point sets do not admit a triangulation of \(\mathcal M\). For this reason, we initialize a triangulation of \(\mathcal M\) with a predetermined set of 14 points, called <em>dummy points</em>, whose triangulation in \(\mathcal M\) is a simplicial complex and has the empty circle property. The set of dummy points has been proposed in <a class="el" href="citelist.html#CITEREF_cgal:btv-dtosl-16">[1]</a>.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000010">Modifications:</a></b></dt><dd>See <a class="el" href="index.html#fig__P4HTriangulationDummyPoints">Figure 42.3</a>  </dd></dl></div> 
 <p><a class="anchor" id="fig__P4HTriangulationDummyPoints"></a></p>
 <div class="image">
-<img src="dummy-points-300.png" alt="dummy-points-300.png"/>
+<img src="dummy-points-300.png" alt="dummy-points-300.png" />
 </div>
-   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HTriangulationDummyPoints">fig__P4HTriangulationDummyPoints</a> Delaunay triangulation of \(\mathcal M\) with the 14 dummy points. The set of dummy points contains the origin, the vertex of \(\mathcal D\), the midpoints of the closed sides of \(D\), and the hyperbolic midpoints of the segments between the origin and the vertices of the octagon.  </div>  <br/>
-</p>
-<p>After the triangulation has been initialized with the dummy points, new input points can be inserted. If sufficiently many well-distributed points are inserted, the dummy points become redundant, i.e., the triangulation remains a simplicial complex even if we remove them. If the set of input points is not sufficiently large, or if the points are not well-distributed on the surface, then the final triangulation will contain the necessary dummy points to guarantee that the triangulation is a simplicial complex. Experiments have shown that, on average, all dummy points are removed from the triangulation with the insertion of less than 200 random points uniformly distributed (according to the Euclidean metric) in the unit disk. See Figure <a class="el" href="index.html#fig__P4HDummyPointsHistogram">fig__P4HDummyPointsHistogram</a>.</p>
+   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HTriangulationDummyPoints">Figure 42.3</a> Delaunay triangulation of \(\mathcal M\) with the 14 dummy points. The set of dummy points contains the origin, the vertex of \(\mathcal D\), the midpoints of the closed sides of \(D\), and the hyperbolic midpoints of the segments between the origin and the vertices of the octagon.  </div>  <br />
+
+<p>After the triangulation has been initialized with the dummy points, new input points can be inserted. If sufficiently many well-distributed points are inserted, the dummy points become redundant, i.e., the triangulation remains a simplicial complex even if we remove them. If the set of input points is not sufficiently large, or if the points are not well-distributed on the surface, then the final triangulation will contain the necessary dummy points to guarantee that the triangulation is a simplicial complex. Experiments have shown that, on average, all dummy points are removed from the triangulation with the insertion of less than 200 random points uniformly distributed (according to the Euclidean metric) in the unit disk.  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000011">Modifications:</a></b></dt><dd>See <a class="el" href="index.html#fig__P4HDummyPointsHistogram">Figure 42.4</a>.  </dd></dl></div> 
 <p><a class="anchor" id="fig__P4HDummyPointsHistogram"></a></p>
 <div class="image">
-<img src="histogram-dummy-points.png" alt="histogram-dummy-points.png"/>
+<img src="histogram-dummy-points.png" alt="histogram-dummy-points.png" />
 </div>
-   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HDummyPointsHistogram">fig__P4HDummyPointsHistogram</a> Histogram of the number of random input points needed to remove all dummy points in the triangulation. The data has been acquired over 500 executions.  </div>  <br/>
-</p>
+   <div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HDummyPointsHistogram">Figure 42.4</a> Histogram of the number of random input points needed to remove all dummy points in the triangulation. The data has been acquired over 500 executions.  </div>  <br />
+
 <h1><a class="anchor" id="P4HT2_design"></a>
 Software Design</h1>
 <p>The two main classes <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> and <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">Periodic_4_hyperbolic_triangulation_2</a></code> provide high-level geometric functionality and are responsible for the geometric validity. <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> contains all the functionality that is special to Delaunay triangulations, such as point insertion and vertex removal, the side-of-circle test, finding the conflicting region of a given point, and dual functions. <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">Periodic_4_hyperbolic_triangulation_2</a></code> contains all the functionality that is common to triangulations in general, such as location of a point in the triangulation <a class="el" href="citelist.html#CITEREF_cgal:dpt-wt-02">[3]</a>, and access functions. Note that <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">Periodic_4_hyperbolic_triangulation_2</a></code> does <b>not</b> support point insertion or vertex removal.</p>
@@ -249,12 +239,11 @@ A model of the concept <code><a class="el" href="classHyperbolicOctagonTranslati
 The Triangulation Data Structure Parameter</h2>
 <p>The triangulation data structure class is the second template parameter of the periodic hyperbolic triangulation classes. It is a container for the faces and vertices and maintains incidence and adjacency relations. For details, see Chapter <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/index.html#Chapter_2D_Triangulation_Data_Structure">Chapter_2D_Triangulation_Data_Structure</a>. This parameter follows the concept <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html">TriangulationDataStructure_2</a></code>, for which <span style="font-variant: small-caps;">CGAL</span> offers the model <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classCGAL_1_1Triangulation__data__structure__2.html">Triangulation_data_structure_2</a></code>. This model is itself parameterized by a vertex base class and a face base class, which gives the possibility to customize the vertices and faces used by the triangulation data structure. To represent periodic hyperbolic triangulations, the face base and vertex base classes must be models of the concepts <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classTriangulationFaceBase__2.html">TriangulationFaceBase_2</a>&lt;Traits, <a class="el" href="classPeriodic__4HyperbolicTriangulationDSFaceBase__2.html" title="A refinement of the concept TriangulationDSFaceBase_2 that adds an interface for hyperbolic translati...">Periodic_4HyperbolicTriangulationDSFaceBase_2</a>&gt;</code> and <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classTriangulationVertexBase__2.html">TriangulationVertexBase_2</a>&lt;Traits, <a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html" title="A refinement of the concept TriangulationVertexBase_2 that adds an interface for hyperbolic translati...">Periodic_4HyperbolicTriangulationDSVertexBase_2</a>&gt;</code>, respectively.</p>
 <p>The default value for the triangulation data structure parameter in the hyperbolic periodic triangulation classes is <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classCGAL_1_1Triangulation__data__structure__2.html">Triangulation_data_structure_2</a>&lt; <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classCGAL_1_1Triangulation__face__base__2.html">Triangulation_face_base_2</a>&lt; Traits, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__ds__face__base__2.html" title="The class Periodic_4_hyperbolic_triangulation_ds_face_base_2 is the default model for the concept Per...">Periodic_4_hyperbolic_triangulation_ds_face_base_2</a> &gt;, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classCGAL_1_1Triangulation__vertex__base__2.html">Triangulation_vertex_base_2</a>&lt;Traits, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__ds__vertex__base__2.html" title="The class Periodic_4_hyperbolic_triangulation_ds_vertex_base_2 is the default model for the concept P...">Periodic_4_hyperbolic_triangulation_ds_vertex_base_2</a> &gt; &gt;</code></p>
+ <div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000012">Modifications:</a></b></dt><dd></dd></dl>
 <h1><a class="anchor" id="P4HT2_examples"></a>
 Examples</h1>
-<h2><a class="anchor" id="P4HT2_basicexample"></a>
-Basic example</h2>
-<p>This example shows the initialization of a periodic hyperbolic 2D Delaunay triangulation, the insertion of random points uniformly distributed in the unit disk for the Euclidean metric, and the properties of the triangulation after the insertion. It uses the default parameter of the <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> class for the triangulation data structure.</p>
-<p><br/>
+ </div> <p>This example shows the initialization of a periodic hyperbolic 2D Delaunay triangulation, the insertion of random points uniformly distributed in the unit disk for the Euclidean metric, and the properties of the triangulation after the insertion. It uses the default parameter of the <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> class for the triangulation data structure.</p>
+<p><br />
 <b>File</b> <a class="el" href="Periodic_4_hyperbolic_triangulation_2_2p4ht2_example_insertion_8cpp-example.html">Periodic_4_hyperbolic_triangulation_2/p4ht2_example_insertion.cpp</a></p>
 <div class="fragment"><div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;CGAL/Hyperbolic_octagon_translation.h&gt;</span></div>
@@ -278,7 +267,7 @@ Basic example</h2>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv) {    </div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (argc &lt; 2) {</div>
-<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;usage: &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; [number_of_points_to_insert]&quot;</span> &lt;&lt; endl;</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">"usage: "</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">" [number_of_points_to_insert]"</span> &lt;&lt; endl;</div>
 <div class="line">        <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
 <div class="line"></div>
@@ -295,9 +284,9 @@ Basic example</h2>
 <div class="line">    Triangulation tr;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Insert the new points in the triangulation.</span></div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Inserting &quot;</span> &lt;&lt; N &lt;&lt; <span class="stringliteral">&quot; random points in the triangulation... &quot;</span>; cout.flush();</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Inserting "</span> &lt;&lt; N &lt;&lt; <span class="stringliteral">" random points in the triangulation... "</span>; cout.flush();</div>
 <div class="line">    size_type N_inserted = tr.insert(pts.begin(), pts.end());</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;DONE! &quot;</span> &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"DONE! "</span> &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Make sure that the triangulation is valid.</span></div>
 <div class="line">    CGAL_assertion(tr.is_valid());</div>
@@ -311,26 +300,26 @@ Basic example</h2>
 <div class="line">    <span class="keywordtype">int</span> NDP = tr.number_of_dummy_points();</div>
 <div class="line"></div>
 <div class="line">    cout &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;-------------- STATS --------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Random points generated:           &quot;</span> &lt;&lt; N &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Vertices in the triangulation:     &quot;</span> &lt;&lt; NV &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Dummy points in the triangulation: &quot;</span> &lt;&lt; NDP &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Random points inserted:            &quot;</span> &lt;&lt; N_inserted &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Random points outside/duplicates:  &quot;</span> &lt;&lt; (N - N_inserted) &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"-------------- STATS --------------"</span> &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Random points generated:           "</span> &lt;&lt; N &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Vertices in the triangulation:     "</span> &lt;&lt; NV &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Dummy points in the triangulation: "</span> &lt;&lt; NDP &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Random points inserted:            "</span> &lt;&lt; N_inserted &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Random points outside/duplicates:  "</span> &lt;&lt; (N - N_inserted) &lt;&lt; endl;</div>
 <div class="line">    cout &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;---------- COMBINATORICS ----------&quot;</span> &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Number of vertices NV:             &quot;</span> &lt;&lt; NV &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Number of faces NF:                &quot;</span> &lt;&lt; NF &lt;&lt; endl;</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Number of edges NE:                &quot;</span> &lt;&lt; NE &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"---------- COMBINATORICS ----------"</span> &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Number of vertices NV:             "</span> &lt;&lt; NV &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Number of faces NF:                "</span> &lt;&lt; NF &lt;&lt; endl;</div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Number of edges NE:                "</span> &lt;&lt; NE &lt;&lt; endl;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// The number of vertices in the triangulation must equal the number of points</span></div>
 <div class="line">    <span class="comment">// inserted, plus the dummy points in the triangulation.</span></div>
 <div class="line">    CGAL_assertion( N_inserted + NDP == NV );</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Number of vertices is correct!     &quot;</span> &lt;&lt; endl;    </div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Number of vertices is correct!     "</span> &lt;&lt; endl;    </div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// Note that the Euler relation is already verified by the function `is_valid()`.</span></div>
 <div class="line">    CGAL_assertion( (2 + NE - NV - NF) / 2 == 2);</div>
-<div class="line">    cout &lt;&lt; <span class="stringliteral">&quot;Euler relation verified!           &quot;</span> &lt;&lt; endl &lt;&lt; endl;    </div>
+<div class="line">    cout &lt;&lt; <span class="stringliteral">"Euler relation verified!           "</span> &lt;&lt; endl &lt;&lt; endl;    </div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -348,11 +337,13 @@ Design and Implementation History</h1>
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Aug 11 2018 13:05:59 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
   </ul>
 </div>
 </div>
 </body>
+
+
 </html>

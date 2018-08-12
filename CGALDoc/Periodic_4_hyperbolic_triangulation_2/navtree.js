@@ -10,9 +10,7 @@ var NAVTREE =
         [ "The Geometric Traits Parameter", "index.html#P4HT2_traits", null ],
         [ "The Triangulation Data Structure Parameter", "index.html#P4HT2_datastructure", null ]
       ] ],
-      [ "Examples", "index.html#P4HT2_examples", [
-        [ "Basic example", "index.html#P4HT2_basicexample", null ]
-      ] ],
+      [ "Examples", "index.html#P4HT2_examples", null ],
       [ "Performance", "index.html#P4HT2_Performance", null ],
       [ "Design and Implementation History", "index.html#P4HT2_Design", null ]
     ] ],
@@ -20,6 +18,7 @@ var NAVTREE =
     [ "Todo List", "todo.html", null ],
     [ "Is Model Relationships", "models.html", null ],
     [ "Has Model Relationships", "hasModels.html", null ],
+    [ "MODIFICATIONS", "Modification.html", null ],
     [ "Bibliographic References", "citelist.html", null ],
     [ "Class and Concept List", "annotated.html", "annotated" ],
     [ "Examples", "examples.html", "examples" ]
@@ -28,7 +27,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Periodic_4_hyperbolic_triangulation_2_2p4ht2_example_insertion_8cpp-example.html"
+"Modification.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
