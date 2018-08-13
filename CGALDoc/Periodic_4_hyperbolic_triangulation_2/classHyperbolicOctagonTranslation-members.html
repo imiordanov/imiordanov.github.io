@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/classHyperbolicOctagonTranslation-members.html"/>
+
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: Member List</title>
+<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/jquery.js"></script>
+<script type="text/javascript" src="../Manual/dynsections.js"></script>
+<script type="text/javascript" src="../Manual/resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  resizeHeight = function() {
+    var headerHeight = header.height();
+    var footerHeight = footer.height();
+    var windowHeight = $(window).height() - headerHeight - footerHeight;
+    navtree.css({height:windowHeight + "px"});
+    sidenav.css({height:windowHeight + "px",top: headerHeight+"px"});
+  }
+  $(document).ready(initResizable);
+</script>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<!-- don't use the doxygen include style for mathjax to specify config parameters  -->
+<!-- to use the mathjax cdn use -->
+<!-- <script  -->
+<!--    type="text/javascript"  -->
+<!--    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> -->
+<!-- </script> -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<script src="modules.js" type="text/javascript"></script>
+</head>
+<body>
+<span style="display:none">\( \newcommand{\E}{\mathrm{E}} \) \( \newcommand{\A}{\mathrm{A}} \)
+\( \newcommand{\R}{\mathrm{R}} \) \( \newcommand{\N}{\mathrm{N}} \) \( \newcommand{\Q}{\mathrm{Q}} \) \( \newcommand{\Z}{\mathrm{Z}} \)
+\(
+\def\ccSum #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}
+\def\ccProd #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}\)
+</span>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="http://www.cgal.org/">cgal.org</a></li>
+    <li><a href="../Manual/index.html">Top</a></li>
+    <li><a href="../Manual/general_intro.html">Getting Started</a></li>
+    <li><a href="../Manual/tutorials.html">Tutorials</a></li>
+    <li><a href="../Manual/packages.html">Package Overview</a></li>
+    <li><a href="../Manual/how_to_cite_cgal.html">Acknowledging CGAL</a></li>
+  </ul>
+  <div id="MSearchBox" class="MSearchBoxInactive">
+    <span class="left">
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+    </span>
+    <span class="right">
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
+      </a>
+    </span>
+  </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CGAL 4.12 - 2D Periodic Hyperbolic Triangulations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Manual insertion of the search function. Notice that the path to
+     the search directory is adjusted to the top-level. -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
+</script>
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+<!-- Generated by Doxygen 1.8.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync" style="display: none"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classHyperbolicOctagonTranslation.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">HyperbolicOctagonTranslation Member List</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is the complete list of members for <a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a9a50ddaa82e67ee01da8d1af51f1db91">alpha</a>() const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#ad375eebed025c41b1b7f50006466a591">beta</a>() const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#aae9c4574d46b7242da817a397d407757">HyperbolicOctagonTranslation</a>()</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a32dcafff8c2cf0442db79eb4e375206b">HyperbolicOctagonTranslation</a>(Word w)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#acc2b373b1e014f3f0ad775f861be1e5d">HyperbolicOctagonTranslation</a>(Word_letter l)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#aff1da172d08412373939ae6067462c26">HyperbolicOctagonTranslation</a>(Word_letter l, Word_letter m)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a5aea4bfa8a437f2f0231961186bc4376">HyperbolicOctagonTranslation</a>(Word_letter l, Word_letter m, Word_letter n)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a2f0eb8296ee6f1b45f4195d1921ee336">HyperbolicOctagonTranslation</a>(Word_letter l, Word_letter m, Word_letter n, Word_letter o)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#ae0e54cd2a0d278549551be5946766357">inverse</a>() const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#afd9b65e38715d9dde5f6fcb8e58eaf79">is_identity</a>()</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a> typedef</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a07b7247ccd4f82c052114d30cbc06d38">operator!=</a>(const Hyperbolic_octagon_translation&lt; NT &gt; &amp;other) const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#af925d0d9c09489cac8cf30a44f64a0c6">operator*</a>(const HyperbolicOctagonTranslation &amp;other) const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a10c149493b3f9a05f64b2ccbf2748c05">operator-</a>(const HyperbolicOctagonTranslation &amp;other) const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#ab887334d8b722515ff9490e372257f0b">operator&lt;</a>(const Hyperbolic_octagon_translation&lt; NT &gt; &amp;other) const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a077ea6cfe9f4308005ab82a89e258b50">operator=</a>(const HyperbolicOctagonTranslation &amp;other)</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a9f9b64361238f9c22896dc0fd7d9127a">operator==</a>(const Hyperbolic_octagon_translation&lt; NT &gt; &amp;other) const </td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#aa7bd9d932fe09299e0dd46668d40e1fa">Word</a> typedef</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> typedef</td><td class="entry"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="footer">
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
+  </ul>
+</div>
+</div>
+</body>
+
+
+
+</html>

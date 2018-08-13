@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html"/>
+
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: Periodic_4HyperbolicTriangulationDSVertexBase_2 Concept Reference</title><link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/jquery.js"></script>
+<script type="text/javascript" src="../Manual/dynsections.js"></script>
+<script type="text/javascript" src="../Manual/resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  resizeHeight = function() {
+    var headerHeight = header.height();
+    var footerHeight = footer.height();
+    var windowHeight = $(window).height() - headerHeight - footerHeight;
+    navtree.css({height:windowHeight + "px"});
+    sidenav.css({height:windowHeight + "px",top: headerHeight+"px"});
+  }
+  $(document).ready(initResizable);
+</script>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<!-- don't use the doxygen include style for mathjax to specify config parameters  -->
+<!-- to use the mathjax cdn use -->
+<!-- <script  -->
+<!--    type="text/javascript"  -->
+<!--    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> -->
+<!-- </script> -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<script src="modules.js" type="text/javascript"></script>
+</head>
+<body>
+<span style="display:none">\( \newcommand{\E}{\mathrm{E}} \) \( \newcommand{\A}{\mathrm{A}} \)
+\( \newcommand{\R}{\mathrm{R}} \) \( \newcommand{\N}{\mathrm{N}} \) \( \newcommand{\Q}{\mathrm{Q}} \) \( \newcommand{\Z}{\mathrm{Z}} \)
+\(
+\def\ccSum #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}
+\def\ccProd #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}\)
+</span>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="http://www.cgal.org/">cgal.org</a></li>
+    <li><a href="../Manual/index.html">Top</a></li>
+    <li><a href="../Manual/general_intro.html">Getting Started</a></li>
+    <li><a href="../Manual/tutorials.html">Tutorials</a></li>
+    <li><a href="../Manual/packages.html">Package Overview</a></li>
+    <li><a href="../Manual/how_to_cite_cgal.html">Acknowledging CGAL</a></li>
+  </ul>
+  <div id="MSearchBox" class="MSearchBoxInactive">
+    <span class="left">
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+    </span>
+    <span class="right">
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
+      </a>
+    </span>
+  </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CGAL 4.12 - 2D Periodic Hyperbolic Triangulations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Manual insertion of the search function. Notice that the path to
+     the search directory is adjusted to the top-level. -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
+</script>
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+<!-- Generated by Doxygen 1.8.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync" style="display: none"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Periodic_4HyperbolicTriangulationDSVertexBase_2 Concept Reference<div class="ingroups"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2Concepts.html">Concepts</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p></p>
+
+<a name="details" id="details"></a><h2 class="groupheader">Inherits from</h2><p><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html">TriangulationDSVertexBase_2</a>.</p>
+<a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
+<div class="textblock"><p>A refinement of the concept <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classTriangulationVertexBase__2.html">TriangulationVertexBase_2</a> that adds an interface for hyperbolic translations. </p>
+<p> At the base level, a vertex stores an input point and a handle to one of its incident faces.</p>
+<p>For periodic hyperbolic triangulations, the vertex base class needs to temporarily store a hyperbolic translation during the insertion process.</p>
+<dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000004">Has Models:</a></b></dt><dd><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__ds__vertex__base__2.html" title="The class Periodic_4_hyperbolic_triangulation_ds_vertex_base_2 is the default model for the concept P...">CGAL::Periodic_4_hyperbolic_triangulation_ds_vertex_base_2</a></dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html">TriangulationDataStructure_2</a></code> </dd>
+<dd>
+<code><a class="el" href="classPeriodic__4HyperbolicTriangulationDSFaceBase__2.html" title="A refinement of the concept TriangulationDSFaceBase_2 that adds an interface for hyperbolic translati...">Periodic_4HyperbolicTriangulationDSFaceBase_2</a></code> </dd></dl>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
+Types</h2></td></tr>
+<tr class="memitem:ae4bc49df877fd05bf02f36677c5425bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4bc49df877fd05bf02f36677c5425bb"></a>
+typedef <br class="typebreak" />
+Vb::Triangulation_data_structure </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#ae4bc49df877fd05bf02f36677c5425bb">Triangulation_data_structure</a></td></tr>
+<tr class="separator:ae4bc49df877fd05bf02f36677c5425bb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2d24d89f42a7eadd1cd87e60e103041a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d24d89f42a7eadd1cd87e60e103041a"></a>
+typedef <br class="typebreak" />
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html#a26b05b7b5d0dae837594d2a7d1fd050b">Triangulation_data_structure::Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a2d24d89f42a7eadd1cd87e60e103041a">Face_handle</a></td></tr>
+<tr class="separator:a2d24d89f42a7eadd1cd87e60e103041a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af077fe900ceccde6acdf701fac4ba717"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af077fe900ceccde6acdf701fac4ba717"></a>
+typedef GT::Point_2 </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af077fe900ceccde6acdf701fac4ba717">Point</a></td></tr>
+<tr class="separator:af077fe900ceccde6acdf701fac4ba717"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af86f04c5d62c19fd18ea060b78b2656c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af86f04c5d62c19fd18ea060b78b2656c"></a>
+typedef GT::Hyperbolic_translation </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af86f04c5d62c19fd18ea060b78b2656c">Hyperbolic_translation</a></td></tr>
+<tr class="separator:af86f04c5d62c19fd18ea060b78b2656c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad259dfd9a3c11e2660fedf8a6fb4b5c4"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#ad259dfd9a3c11e2660fedf8a6fb4b5c4">Rebind_TDS</a></td></tr>
+<tr class="memdesc:ad259dfd9a3c11e2660fedf8a6fb4b5c4"><td class="mdescLeft"> </td><td class="mdescRight">Type used internally to break cyclical dependencies.  <a href="#ad259dfd9a3c11e2660fedf8a6fb4b5c4">More...</a><br /></td></tr>
+<tr class="separator:ad259dfd9a3c11e2660fedf8a6fb4b5c4"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
+Creation</h2></td></tr>
+<tr class="memitem:afffafe83599760e3dca63f4427f0d8b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afffafe83599760e3dca63f4427f0d8b7"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#afffafe83599760e3dca63f4427f0d8b7">Periodic_4HyperbolicTriangulationDSVertexBase_2</a> ()</td></tr>
+<tr class="memdesc:afffafe83599760e3dca63f4427f0d8b7"><td class="mdescLeft"> </td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:afffafe83599760e3dca63f4427f0d8b7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab2000a523cd5a8a0b8934f25f4ce2b97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2000a523cd5a8a0b8934f25f4ce2b97"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#ab2000a523cd5a8a0b8934f25f4ce2b97">Periodic_4HyperbolicTriangulationDSVertexBase_2</a> (const <a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af077fe900ceccde6acdf701fac4ba717">Point</a> &amp;p)</td></tr>
+<tr class="memdesc:ab2000a523cd5a8a0b8934f25f4ce2b97"><td class="mdescLeft"> </td><td class="mdescRight">Construct a vertex that stores the point <code>p</code>. <br /></td></tr>
+<tr class="separator:ab2000a523cd5a8a0b8934f25f4ce2b97"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa774e33d84f3ce7383fd7c4b712477ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa774e33d84f3ce7383fd7c4b712477ea"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#aa774e33d84f3ce7383fd7c4b712477ea">Periodic_4HyperbolicTriangulationDSVertexBase_2</a> (const <a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af077fe900ceccde6acdf701fac4ba717">Point</a> &amp;p, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a4c670c87be8e76fa9f32083d57c0a58d">Face_handle</a> fh)</td></tr>
+<tr class="memdesc:aa774e33d84f3ce7383fd7c4b712477ea"><td class="mdescLeft"> </td><td class="mdescRight">Constructs a vertex that stores the point <code>p</code> and is incident to the face <code>fh</code>. <br /></td></tr>
+<tr class="separator:aa774e33d84f3ce7383fd7c4b712477ea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5c2da73575bc3c256389f96726c96293"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c2da73575bc3c256389f96726c96293"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a5c2da73575bc3c256389f96726c96293">Periodic_4HyperbolicTriangulationDSVertexBase_2</a> (const <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a4c670c87be8e76fa9f32083d57c0a58d">Face_handle</a> &amp;fh)</td></tr>
+<tr class="memdesc:a5c2da73575bc3c256389f96726c96293"><td class="mdescLeft"> </td><td class="mdescRight">Constructs a vertex that is incident to the face <code>fh</code>. <br /></td></tr>
+<tr class="separator:a5c2da73575bc3c256389f96726c96293"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
+Hyperbolic translations API</h2></td></tr>
+<tr class="memitem:a0bb07f1e4e3d6b3100b4bcf36948d529"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bb07f1e4e3d6b3100b4bcf36948d529"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a0bb07f1e4e3d6b3100b4bcf36948d529">set_translation</a> (<a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af86f04c5d62c19fd18ea060b78b2656c">Hyperbolic_translation</a> tr)</td></tr>
+<tr class="memdesc:a0bb07f1e4e3d6b3100b4bcf36948d529"><td class="mdescLeft"> </td><td class="mdescRight">Stores the translation <code>tr</code> in the vertex, and sets a flag indicating that the vertex stores a translation. <br /></td></tr>
+<tr class="separator:a0bb07f1e4e3d6b3100b4bcf36948d529"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e559420254733a5efdb8d698411875c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e559420254733a5efdb8d698411875c"></a>
+<a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#af86f04c5d62c19fd18ea060b78b2656c">Hyperbolic_translation</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a1e559420254733a5efdb8d698411875c">translation</a> ()</td></tr>
+<tr class="memdesc:a1e559420254733a5efdb8d698411875c"><td class="mdescLeft"> </td><td class="mdescRight">Returns the translation stored in the vertex. <br /></td></tr>
+<tr class="separator:a1e559420254733a5efdb8d698411875c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4933ecc5e52821d1ff40eaae9d8ac396"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4933ecc5e52821d1ff40eaae9d8ac396"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a4933ecc5e52821d1ff40eaae9d8ac396">clear_translation</a> ()</td></tr>
+<tr class="memdesc:a4933ecc5e52821d1ff40eaae9d8ac396"><td class="mdescLeft"> </td><td class="mdescRight">Removes the translation stored in the vertex, and resets the translation flag. <br /></td></tr>
+<tr class="separator:a4933ecc5e52821d1ff40eaae9d8ac396"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a42295962f61304a727d9bfdf8b9a1249"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42295962f61304a727d9bfdf8b9a1249"></a>
+bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a42295962f61304a727d9bfdf8b9a1249">get_translation_flag</a> ()</td></tr>
+<tr class="memdesc:a42295962f61304a727d9bfdf8b9a1249"><td class="mdescLeft"> </td><td class="mdescRight">Returns the value of a flag, indicating whether the vertex stores a translation or not. <br /></td></tr>
+<tr class="separator:a42295962f61304a727d9bfdf8b9a1249"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited" id="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classTriangulationDSVertexBase__2"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classTriangulationDSVertexBase__2')"><img src="closed.png" alt="-" /> Public Types inherited from <a class="el" href="../TDS_2/classTriangulationDSVertexBase__2.html">TriangulationDSVertexBase_2</a></td></tr>
+<tr class="memitem:ab13384aa4e374330f87d399366288549 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab13384aa4e374330f87d399366288549"></a>
+typedef <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#ab13384aa4e374330f87d399366288549">Rebind_TDS</a></td></tr>
+<tr class="separator:ab13384aa4e374330f87d399366288549 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1d53f1b54b81307222a5588a79366bd9 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d53f1b54b81307222a5588a79366bd9"></a>
+typedef <br class="typebreak" />
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html">TriangulationDataStructure_2</a> </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a1d53f1b54b81307222a5588a79366bd9">Triangulation_data_structure</a></td></tr>
+<tr class="separator:a1d53f1b54b81307222a5588a79366bd9 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a32bd0215e12e7a2c1bad2c1abe40fdc4 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32bd0215e12e7a2c1bad2c1abe40fdc4"></a>
+typedef <br class="typebreak" />
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html#aa0eddf634888b0cd48e4c5ae32347da7">TriangulationDataStructure_2::Vertex_handle</a> </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a32bd0215e12e7a2c1bad2c1abe40fdc4">Vertex_handle</a></td></tr>
+<tr class="separator:a32bd0215e12e7a2c1bad2c1abe40fdc4 inherit pub_types_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c670c87be8e76fa9f32083d57c0a58d inherit pub_types_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c670c87be8e76fa9f32083d57c0a58d"></a>
+typedef <br class="typebreak" />
+<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDataStructure__2.html#a26b05b7b5d0dae837594d2a7d1fd050b">TriangulationDataStructure_2::Face_handle</a> </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a4c670c87be8e76fa9f32083d57c0a58d">Face_handle</a></td></tr>
+<tr class="separator:a4c670c87be8e76fa9f32083d57c0a58d inherit pub_types_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="inherit_header pub_methods_classTriangulationDSVertexBase__2"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTriangulationDSVertexBase__2')"><img src="closed.png" alt="-" /> Public Member Functions inherited from <a class="el" href="../TDS_2/classTriangulationDSVertexBase__2.html">TriangulationDSVertexBase_2</a></td></tr>
+<tr class="memitem:a1cdfbe30da2dfc110fb2f095d0268f18 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cdfbe30da2dfc110fb2f095d0268f18"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a1cdfbe30da2dfc110fb2f095d0268f18">TriangulationDSVertexBase_2</a> ()</td></tr>
+<tr class="separator:a1cdfbe30da2dfc110fb2f095d0268f18 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:af8b42b762b675baf9845606c92936100 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8b42b762b675baf9845606c92936100"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#af8b42b762b675baf9845606c92936100">TriangulationDSVertexBase_2</a> (<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a4c670c87be8e76fa9f32083d57c0a58d">Face_handle</a> f)</td></tr>
+<tr class="separator:af8b42b762b675baf9845606c92936100 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab90c4d50997813e7c7970da039753372 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90c4d50997813e7c7970da039753372"></a>
+void * </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#ab90c4d50997813e7c7970da039753372">for_compact_container</a> () const </td></tr>
+<tr class="separator:ab90c4d50997813e7c7970da039753372 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a979f0a236c2f617ee9e3676a23899cb6 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a979f0a236c2f617ee9e3676a23899cb6"></a>
+void *&amp; </td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSVertexBase__2.html#a979f0a236c2f617ee9e3676a23899cb6">for_compact_container</a> ()</td></tr>
+<tr class="separator:a979f0a236c2f617ee9e3676a23899cb6 inherit pub_methods_classTriangulationDSVertexBase__2"><td class="memSeparator" colspan="2"> </td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ad259dfd9a3c11e2660fedf8a6fb4b5c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#ad259dfd9a3c11e2660fedf8a6fb4b5c4">Periodic_4HyperbolicTriangulationDSVertexBase_2::Rebind_TDS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type used internally to break cyclical dependencies. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classTriangulationDSFaceBase__2.html#a5d1e7a8d013144115ee656ac36204454">TriangulationDSFaceBase_2::Rebind_TDS</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="footer">
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html">Periodic_4HyperbolicTriangulationDSVertexBase_2</a></li>
+    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
+  </ul>
+</div>
+</div>
+</body>
+
+
+
+</html>

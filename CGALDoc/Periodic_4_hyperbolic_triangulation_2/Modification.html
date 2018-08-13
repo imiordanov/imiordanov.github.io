@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/Modification.html"/>
+
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: MODIFICATIONS</title>
+<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/jquery.js"></script>
+<script type="text/javascript" src="../Manual/dynsections.js"></script>
+<script type="text/javascript" src="../Manual/resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  resizeHeight = function() {
+    var headerHeight = header.height();
+    var footerHeight = footer.height();
+    var windowHeight = $(window).height() - headerHeight - footerHeight;
+    navtree.css({height:windowHeight + "px"});
+    sidenav.css({height:windowHeight + "px",top: headerHeight+"px"});
+  }
+  $(document).ready(initResizable);
+</script>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<!-- don't use the doxygen include style for mathjax to specify config parameters  -->
+<!-- to use the mathjax cdn use -->
+<!-- <script  -->
+<!--    type="text/javascript"  -->
+<!--    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> -->
+<!-- </script> -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<script src="modules.js" type="text/javascript"></script>
+</head>
+<body>
+<span style="display:none">\( \newcommand{\E}{\mathrm{E}} \) \( \newcommand{\A}{\mathrm{A}} \)
+\( \newcommand{\R}{\mathrm{R}} \) \( \newcommand{\N}{\mathrm{N}} \) \( \newcommand{\Q}{\mathrm{Q}} \) \( \newcommand{\Z}{\mathrm{Z}} \)
+\(
+\def\ccSum #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}
+\def\ccProd #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}\)
+</span>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="http://www.cgal.org/">cgal.org</a></li>
+    <li><a href="../Manual/index.html">Top</a></li>
+    <li><a href="../Manual/general_intro.html">Getting Started</a></li>
+    <li><a href="../Manual/tutorials.html">Tutorials</a></li>
+    <li><a href="../Manual/packages.html">Package Overview</a></li>
+    <li><a href="../Manual/how_to_cite_cgal.html">Acknowledging CGAL</a></li>
+  </ul>
+  <div id="MSearchBox" class="MSearchBoxInactive">
+    <span class="left">
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+    </span>
+    <span class="right">
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
+      </a>
+    </span>
+  </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CGAL 4.12 - 2D Periodic Hyperbolic Triangulations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Manual insertion of the search function. Notice that the path to
+     the search directory is adjusted to the top-level. -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
+</script>
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+<!-- Generated by Doxygen 1.8.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync" style="display: none"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Modification.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">MODIFICATIONS </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_Modification000001"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a008a562815f70efae3fbe88bd32e9904">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::get_conflicts</a>  (const Point &amp;p, const Face_handle cf, Hyperbolic_translation tr, std::set&lt; Face_handle &gt; &amp;visited, OutputFaceIterator it) const </dt>
+<dd>Same as above. </dd>
+<dt><a class="anchor" id="_Modification000003"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad82986bc9c4c247aeae2a224613028b9">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::insert</a>  (<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> first, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> last)</dt>
+<dd>Inserts all points in the input iterator into the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000002"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a22dcb83f1b7944ec2452a20a1304f99d">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::insert</a>  (const Point &amp;p, Face_handle start=Face_handle(), bool batch_insertion=false)</dt>
+<dd>Inserts the point <code>p</code> in the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000004"></a>page <a class="el" href="index.html">User Manual</a>  </dt>
+<dd><p class="startdd">The Bolza surface is a closed compact orientable surface of genus 2. A closed compact surface of genus at least 2 is conformally equivalent to some surface of constant negative curvature, therefore it is <em>hyperbolic</em>. Among all surfaces of genus 2, the Bolza surface is the most symmetric one, and its properties are well understood. It is a natural extension from genus 1 (the Euclidean flat torus, see <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Periodic_2_triangulation_2.tag:../Periodic_2_triangulation_2/" href="../Periodic_2_triangulation_2/index.html#Chapter_2D_Periodic_Triangulations">Chapter_2D_Periodic_Triangulations</a> ) to genus 2.  </p></dd></dl></div> <p>See <a class="el" href="index.html#fig__P4HTriangulationOctagonId">Figure 42.1</a> - Left.  </p></div>  The four translations \(a, b, c, d\) generate a discrete group of orientation-preserving isometries, with finite presentation 
+<p class="formulaDsp">
+\[ \mathcal{G} = \left&lt; a,b,c,d \; \bigg| \; abcd\overline{a}\overline{b}\overline{c}\overline{d} \right&gt;. \]
+</p>
+<p> The Bolza surface \(\mathcal{M}\) is defined as \(\mathcal{M} = \mathbb H^2 / \mathcal{G}\). \(\mathcal G\) is the fundamental group of \(\mathcal M\). The octagon \(\mathcal D_O\) is a fundamental domain for \(\mathcal G\).</p>
+<p>The half-open octagon shown in <a class="el" href="index.html#fig__P4HTriangulationOctagonId">Figure 42.1</a> - Right contains exactly one representative of each point on \(\mathcal{M}\), and we call that half-open octagon the <em>original domain</em> \(\mathcal D\).  </p></div>  From now on, whenever we talk about a <em>point</em>, we will generally mean the representative of an element of \(\mathcal{M}\) that lies inside \(\mathcal D\). 
+<p>See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a> - Left.   </p><p>See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 42.2</a> - Right.    We then choose the canonical representative in \(\mathbb H^2\) of a face on \(\mathcal M\) so that: </p>
+<p>If this condition is not satisfied, then the vertex is <b>not</b> removed from the triangulation.   </p><p>See <a class="el" href="index.html#fig__P4HTriangulationDummyPoints">Figure 42.3</a>   </p><p>See <a class="el" href="index.html#fig__P4HDummyPointsHistogram">Figure 42.4</a>.   </p><p class="enddd"></p>
+
+
+<!-- contents -->
+<!-- doc-content -->
+<!-- start footer part -->
+<div id="footer">
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
+  </ul>
+</div>
+</div>
+</body>
+
+
+</html>
