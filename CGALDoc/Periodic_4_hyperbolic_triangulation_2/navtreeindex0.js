@@ -1,6 +1,5 @@
 var NAVTREEINDEX0 =
 {
-".html":[7,0],
 "Modification.html":[5],
 "Periodic_4_hyperbolic_triangulation_2_2p4ht2_example_insertion_8cpp-example.html":[8,0],
 "annotated.html":[7],
@@ -166,8 +165,8 @@ var NAVTREEINDEX0 =
 "group__PkgPeriodic4HyperbolicTriangulation2TraitsClasses.html":[1,0,2],
 "group__PkgPeriodic4HyperbolicTriangulation2VertexFaceClasses.html":[1,0,3],
 "hasModels.html":[4],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#P4HT2_Delaunay":[0,2],
 "index.html#P4HT2_Design":[0,7],
 "index.html#P4HT2_Dummy_points":[0,3],
@@ -180,6 +179,7 @@ var NAVTREEINDEX0 =
 "index.html#P4HT2_traits":[0,4,0],
 "models.html":[3],
 "modules.html":[1],
+"namespaceCGAL.html":[7,0],
 "pages.html":[],
 "todo.html":[2]
 };
