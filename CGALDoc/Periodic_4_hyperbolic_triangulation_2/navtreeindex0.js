@@ -1,5 +1,6 @@
 var NAVTREEINDEX0 =
 {
+".html":[7,0],
 "Modification.html":[5],
 "Periodic_4_hyperbolic_triangulation_2_2p4ht2_example_insertion_8cpp-example.html":[8,0],
 "annotated.html":[7],
@@ -8,17 +9,16 @@ var NAVTREEINDEX0 =
 "classCGAL_1_1Hyperbolic__octagon__translation.html#a112058d02c323acc93379cb4b779a38c":[1,0,4,0,0],
 "classCGAL_1_1Hyperbolic__octagon__translation.html#abc07f2ff2c80d2fe6c2ed81da665097d":[1,0,4,0,1],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html":[1,0,1,0],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a008a562815f70efae3fbe88bd32e9904":[1,0,1,0,6],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a22dcb83f1b7944ec2452a20a1304f99d":[1,0,1,0,7],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a4524c33a3fda149aa65f702b02d763ad":[1,0,1,0,11],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a7750de9e91d7bbd7f885e4c4c5686cc4":[1,0,1,0,10],
+"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a22dcb83f1b7944ec2452a20a1304f99d":[1,0,1,0,6],
+"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a4524c33a3fda149aa65f702b02d763ad":[1,0,1,0,10],
+"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a7750de9e91d7bbd7f885e4c4c5686cc4":[1,0,1,0,9],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a7aca10b31f1faa6b13305c86ed0e3339":[1,0,1,0,4],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a8789f38d0610d95b16c697f66f99c19f":[1,0,1,0,5],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a9af599aac9d65a701c9bdecbd2228d71":[1,0,1,0,0],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#aa5c1b2295bab6aed12a8a82b251b0c37":[1,0,1,0,1],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ac35ac1be7091b5ef94c8d864069e2ccb":[1,0,1,0,3],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad4b4f2a038e696d1ce5eeb1fe03823c7":[1,0,1,0,9],
-"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad82986bc9c4c247aeae2a224613028b9":[1,0,1,0,8],
+"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad4b4f2a038e696d1ce5eeb1fe03823c7":[1,0,1,0,8],
+"classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad82986bc9c4c247aeae2a224613028b9":[1,0,1,0,7],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ae7c12c91f13ea54df126e9c22b02c9dc":[1,0,1,0,2],
 "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__traits__2.html":[1,0,2,0],
 "classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html":[1,0,1,1],
@@ -180,7 +180,6 @@ var NAVTREEINDEX0 =
 "index.html#P4HT2_traits":[0,4,0],
 "models.html":[3],
 "modules.html":[1],
-"namespaceCGAL.html":[7,0],
 "pages.html":[],
 "todo.html":[2]
 };

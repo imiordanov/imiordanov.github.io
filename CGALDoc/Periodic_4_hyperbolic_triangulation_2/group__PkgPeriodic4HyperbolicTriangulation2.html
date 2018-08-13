@@ -1,12 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/group__PkgPeriodic4HyperbolicTriangulation2.html"/>
-
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <title>CGAL 4.12 - 2D Periodic Hyperbolic Triangulations: 2D Periodic Hyperbolic Triangulations Reference</title>
-<link href="navtree.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
 <link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
 <link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Manual/jquery.js"></script>
@@ -23,7 +21,7 @@
   }
   $(document).ready(initResizable);
 </script>
-<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../Manual/search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
@@ -66,12 +64,18 @@ MathJax.Hub.Config({
   </ul>
   <div id="MSearchBox" class="MSearchBoxInactive">
     <span class="left">
-      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
-      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png"
+           onmouseover="return searchBox.OnSearchSelectShow()"
+           onmouseout="return searchBox.OnSearchSelectHide()"
+           alt=""/>
+      <input type="text" id="MSearchField" value="Search" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
     </span>
     <span class="right">
       <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()">
-        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" />
+        <img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt=""/>
       </a>
     </span>
   </div>
@@ -93,11 +97,15 @@ MathJax.Hub.Config({
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 </script>
-<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark"> </span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark"> </span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark"> </span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark"> </span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark"> </span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark"> </span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark"> </span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark"> </span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark"> </span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark"> </span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark"> </span>Pages</a></div>
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 <!-- Generated by Doxygen 1.8.4 -->
@@ -105,10 +113,11 @@ var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync" style="display: none"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -124,17 +133,17 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader"> </h2>
 <div class="PkgImage"> <div class="image">
-<img src="triangulation-120px.png" alt="triangulation-120px.png" />
+<img src="triangulation-120px.png" alt="triangulation-120px.png"/>
 </div>
- </div><div class="PkgSummary"> <div class="PkgAuthors">Iordan Iordanov and Monique Teillaud</div> <div class="PkgDescription">This package allows to build and handle triangulations of point sets on the two dimensional hyperbolic Bolza surface. Triangulations are built incrementally and can be modified by insertion or removal of vertices; point location facilities are also offered. The package provides Delaunay triangulations and offers primitives to build the dual Voronoi diagrams.</div><p> <br />
- </p></div><div class="PkgShortInfo"> <b>Introduced in:</b> <span style="font-variant: small-caps;">CGAL</span> 4.10<br />
- <b>Depends on:</b> <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> <br />
- <b>BibTeX:</b> <a href="../Manual/how_to_cite_cgal.html#cgal:i-p4ht2-17-18b">cgal:i-p4ht2-17-18b</a><br />
- <b>License:</b> <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/preliminaries.html#licensesGPL">GPL</a> <br />
- <b>Windows Demo:</b> <a href="http://www.cgal.org/demo/4.12/Periodic_4_hyperbolic_Delaunay_triangulation_2.zip">Periodic Hyperbolic Delaunay Triangulation</a><br />
-<b>Common Demo Dlls:</b> <a href="http://www.cgal.org/demo/4.12/CGAL-demoDLLs.zip">dlls</a><br />
+ </div><div class="PkgSummary"> <div class="PkgAuthors">Iordan Iordanov and Monique Teillaud</div> <div class="PkgDescription">This package allows to build and handle triangulations of point sets on the two dimensional hyperbolic Bolza surface. Triangulations are built incrementally and can be modified by insertion or removal of vertices; point location facilities are also offered. The package provides Delaunay triangulations and offers primitives to build the dual Voronoi diagrams.</div><p> <br/>
+ </div><div class="PkgShortInfo"> <b>Introduced in:</b> <span style="font-variant: small-caps;">CGAL</span> 4.10<br/>
+ <b>Depends on:</b> <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTriangulation2Summary">2D Triangulation</a> <br/>
+ <b>BibTeX:</b> <a href="../Manual/how_to_cite_cgal.html#cgal:i-p4ht2-17-18b">cgal:i-p4ht2-17-18b</a><br/>
+ <b>License:</b> <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/preliminaries.html#licensesGPL">GPL</a> <br/>
+ <b>Windows Demo:</b> <a href="http://www.cgal.org/demo/4.12/Periodic_4_hyperbolic_Delaunay_triangulation_2.zip">Periodic Hyperbolic Delaunay Triangulation</a><br/>
+<b>Common Demo Dlls:</b> <a href="http://www.cgal.org/demo/4.12/CGAL-demoDLLs.zip">dlls</a><br/>
  </div><p>The main class of the 2D Periodic Triangulation package is <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code>. This class allows to construct and modify Delaunay triangulations of the Bolza surface. A secondary class made available is <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>, which gives access to the elements of the triangulation (vertices, edges, and faces), and functionality common to triangulations in general, such as point location. The class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code> does <em>not</em> support insertion or removal of points. <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> inherits <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>.</p>
-<p>Both triangulation classes take a geometric traits and a triangulation data structure as template parameters. The geometric traits class must be a model of the concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html" title="The concept Periodic_4HyperbolicDelaunayTriangulationTraits_2 refines the concept HyperbolicDelaunayT...">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> to provide all predicates and constructions needed by the triangulation classes. The default triangulation data structure used is <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classCGAL_1_1Triangulation__data__structure__2.html">CGAL::Triangulation_data_structure_2</a></code>.</p>
+<p>Both triangulation classes take a geometric traits and a triangulation data structure as template parameters. The geometric traits class must be a model of the concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html" title="The concept Periodic_4HyperbolicDelaunayTriangulationTraits_2 refines the concept HyperbolicDelaunayT...">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> to provide all predicates and constructions needed by the triangulation classes. The default triangulation data structure used is <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/TDS_2.tag:../TDS_2/" href="../TDS_2/classCGAL_1_1Triangulation__data__structure__2.html">CGAL::Triangulation_data_structure_2</a></code>.</p>
 <p>A triangulation is stored as a collection of vertices and faces that are linked together through incidence and adjacency relations. Each face gives access to its three incident vertices and to its three adjacent faces. Each vertex gives access to one of its incident faces. The three vertices of a face are indexed with 0, 1, and 2 in positive (counter-clockwise) orientation. The orientation of faces on the Bolza surface is defined as the orientation of their canonical representatives in the underlying space, which is the hyperbolic plane \( \mathbb H^2\).</p>
 <p>To specify canonical representatives, which may contain vertices both inside and outside the original domain, we store additionally three hyperbolic translations, corresponding to each vertex. The hyperbolic translations are models of the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title="The concept HyperbolicOctagonTranslation describes the requirements for the class of hyperbolic trans...">HyperbolicOctagonTranslation</a></code>.</p>
 <h1>Concepts</h1>
@@ -169,18 +178,18 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
 <li><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a436e182c64d5e98b0e7559eb7cdcb798" title="Enumeration type that indicates where a point is located. ">CGAL::Periodic_4_hyperbolic_triangulation_2::Locate_type</a></code> </li>
 </ul>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups" id="groups"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2Concepts"><td class="memItemLeft" align="right" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2Concepts.html">Concepts</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2MainClasses"><td class="memItemLeft" align="right" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2MainClasses.html">Main Classes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2TraitsClasses"><td class="memItemLeft" align="right" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2TraitsClasses.html">Traits Classes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2VertexFaceClasses"><td class="memItemLeft" align="right" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2VertexFaceClasses.html">Vertex and Face Base Classes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2HyperbolicTranslationsClasses"><td class="memItemLeft" align="right" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2HyperbolicTranslationsClasses.html">Hyperbolic Translations Classes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2Concepts"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2Concepts.html">Concepts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2MainClasses"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2MainClasses.html">Main Classes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2TraitsClasses"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2TraitsClasses.html">Traits Classes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2VertexFaceClasses"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2VertexFaceClasses.html">Vertex and Face Base Classes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__PkgPeriodic4HyperbolicTriangulation2HyperbolicTranslationsClasses"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2HyperbolicTranslationsClasses.html">Hyperbolic Translations Classes</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -188,12 +197,11 @@ Modules</h2></td></tr>
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Aug 13 2018 13:27:04 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>
 </div>
 </div>
 </body>
-
 </html>
