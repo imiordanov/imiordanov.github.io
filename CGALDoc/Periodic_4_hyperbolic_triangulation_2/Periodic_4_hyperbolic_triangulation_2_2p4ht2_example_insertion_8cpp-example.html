@@ -124,16 +124,16 @@ $(document).ready(function(){initNavTree('Periodic_4_hyperbolic_triangulation_2_
 <div class="line"><span class="preprocessor">#include &lt;CGAL/Hyperbolic_octagon_translation.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;CGAL/Periodic_4_hyperbolic_Delaunay_triangulation_2.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;CGAL/Periodic_4_hyperbolic_Delaunay_triangulation_traits_2.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/CORE__Expr_8h.html">CGAL/CORE_Expr.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/CORE__Expr_8h.html">CGAL/CORE_Expr.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;CGAL/Cartesian.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;CGAL/point_generators_2.h&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="keyword">typedef</span> <a name="_a0" id="_a0"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/classCORE_1_1Expr.html">CORE::Expr</a>                                                              NT;</div>
-<div class="line"><span class="keyword">typedef</span> <a name="_a1" id="_a1"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/structCGAL_1_1Cartesian.html">CGAL::Cartesian&lt;NT&gt;</a>                                                     <a name="_a2" id="_a2"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="_a0" id="_a0"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Number_types.tag:../Number_types/" href="../Number_types/classCORE_1_1Expr.html">CORE::Expr</a>                                                              NT;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="_a1" id="_a1"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/structCGAL_1_1Cartesian.html">CGAL::Cartesian&lt;NT&gt;</a>                                                     <a name="_a2" id="_a2"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel.html">Kernel</a>;</div>
 <div class="line"><span class="keyword">typedef</span> <a name="_a3" id="_a3"></a><a class="code" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__traits__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_traits_2 is a model of the concept Periodic_4H...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_traits_2&lt;Kernel&gt;</a>     Traits;</div>
 <div class="line"><span class="keyword">typedef</span> <a name="_a4" id="_a4"></a><a class="code" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt;Traits&gt;</a>            Triangulation;</div>
-<div class="line"><span class="keyword">typedef</span> <a name="_a5" id="_a5"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel_1_1Point__2.html">Kernel::Point_2</a>                                                         Point;</div>
-<div class="line"><span class="keyword">typedef</span> <a name="_a6" id="_a6"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classCGAL_1_1Creator__uniform__2.html">CGAL::Creator_uniform_2&lt;NT,Point&gt;</a>                                       Creator;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="_a5" id="_a5"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classKernel_1_1Point__2.html">Kernel::Point_2</a>                                                         Point;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="_a6" id="_a6"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/classCGAL_1_1Creator__uniform__2.html">CGAL::Creator_uniform_2&lt;NT,Point&gt;</a>                                       Creator;</div>
 <div class="line"><span class="keyword">typedef</span> Triangulation::size_type                                                size_type;</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">using</span> std::cout;</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('Periodic_4_hyperbolic_triangulation_2_
 <div class="line">    <span class="comment">// Some of the points will be outside the octagon, so they will not be inserted.</span></div>
 <div class="line">    std::vector&lt;Point&gt; pts;</div>
 <div class="line">    CGAL::Random_points_in_disc_2&lt;Point,Creator&gt; g( 0.85 );</div>
-<div class="line">    <a name="a7" id="a7"></a><a class="codeRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/group__STLAlgos.html#gadba21cc5c30a79519438dfe0f9264255">CGAL::cpp11::copy_n</a>( g, N, std::back_inserter(pts) );</div>
+<div class="line">    <a name="a7" id="a7"></a><a class="codeRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/group__STLAlgos.html#gadba21cc5c30a79519438dfe0f9264255">CGAL::cpp11::copy_n</a>( g, N, std::back_inserter(pts) );</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// The triangulation is automatically initialized with the dummy points.</span></div>
 <div class="line">    Triangulation tr;</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('Periodic_4_hyperbolic_triangulation_2_
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 12 2018 10:54:38 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Aug 13 2018 14:02:47 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.4 </li>
   </ul>
