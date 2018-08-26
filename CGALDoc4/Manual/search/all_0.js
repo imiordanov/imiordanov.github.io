@@ -9,7 +9,7 @@ var searchData=
   ['2d_20circular_20geometry_20kernel_20reference',['2D Circular Geometry Kernel Reference',['../../Circular_kernel_2/group__PkgCircularKernel2.html',1,'']]],
   ['2d_20convex_20hulls_20and_20extreme_20points_20reference',['2D Convex Hulls and Extreme Points Reference',['../../Convex_hull_2/group__PkgConvexHull2.html',1,'']]],
   ['2d_20envelopes_20reference',['2D Envelopes Reference',['../../Envelope_2/group__PkgEnvelope2.html',1,'']]],
-  ['2d_20hyperbolic_20triangulations_20reference',['2D Hyperbolic Triangulations Reference',['../../Hyperbolic_triangulation_2/group__PkgHyperbolicTriangulation2.html',1,'']]],
+  ['2d_20hyperbolic_20triangulations',['2D Hyperbolic Triangulations',['../../Hyperbolic_triangulation_2/group__PkgHyperbolicTriangulation2.html',1,'']]],
   ['2d_20and_20surface_20function_20interpolation_20reference',['2D and Surface Function Interpolation Reference',['../../Interpolation/group__PkgInterpolation2.html',1,'']]],
   ['2d_20intersection_20of_20curves_20reference',['2D Intersection of Curves Reference',['../../Surface_sweep_2/group__PkgIntersectionOfCurves2.html',1,'']]],
   ['2d_20and_203d_20linear_20geometry_20kernel_20reference',['2D and 3D Linear Geometry Kernel Reference',['../../Kernel_23/group__PkgKernel23.html',1,'']]],
