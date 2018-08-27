@@ -15,6 +15,7 @@ var NAVTREE =
       [ "Design and Implementation History", "index.html#P4HT2_Design", null ]
     ] ],
     [ "Reference Manual", "modules.html", "modules" ],
+    [ "Refinement Relationships", "refines.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Is Model Relationships", "models.html", null ],
     [ "Has Model Relationships", "hasModels.html", null ],
