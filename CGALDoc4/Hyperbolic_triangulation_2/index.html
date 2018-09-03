@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">User Manual </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="Chapter_Hyperbolic_Triangulations"></a><a class="anchor" id="chapterHTriangulation2"></a>  </p><div id="autotoc" class="toc"></div>  <dl class="section author"><dt>Author</dt><dd>Monique Teillaud, Mikhail Bogdanov, and Iordan Iordanov</dd></dl>
+<div class="textblock"><p><a class="anchor" id="Chapter_2D_Hyperbolic_Triangulations"></a><a class="anchor" id="chapterHTriangulation2"></a>  </p><div id="autotoc" class="toc"></div>  <dl class="section author"><dt>Author</dt><dd>Monique Teillaud, Mikhail Bogdanov, and Iordan Iordanov</dd></dl>
 <div class="image">
 <img src="ht-450px.png" alt="ht-450px.png" />
 </div>
@@ -141,7 +141,7 @@ it contains all incident \( j\)-simplices ( \( j&lt;k\)) of any \( k\)-simplex, 
 two \( k\)-simplices either do not intersect or share a common \( j\)-face, \( j&lt;k\). </li>
 </ul>
 <p>The resulting simplices of dimension 0, 1 and 2 are called <em>vertex</em>, <em>edge</em>, and <em>face</em> respectively.</p>
-<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000017">Modifications:</a></b></dt><dd></dd></dl>
+<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000023">Modifications:</a></b></dt><dd></dd></dl>
 <h1><a class="anchor" id="HT_Triangulations"></a>
 Triangulations in the Hyperbolic Plane</h1>
 <p>In this package, we use the Poincaré disk model to represent the hyperbolic plane \(\mathbb H^2\) as the open unit disk centered at the origin. Points on the unit circle are points at infinity. Hyperbolic lines in this model are represented as arcs of circles perpendicular to the boundary of the unit disk, or as its diameters (if they pass through the origin). Hyperbolic circles in \(\mathbb H^2\) coincide with Euclidean circles contained in the unit disk; however, the hyperbolic centers and radii of these circles are not the same as their Euclidean centers and radii.</p>
@@ -151,11 +151,11 @@ A segment with endpoints in \(\mathbb H^2\) is Delaunay hyperbolic if there exis
 <li>
 A face is Delaunay hyperbolic if its circumscribing circle is contained in \(\mathbb H^2\). </li>
 </ul>
-<p> </p></div>  For an illustration, see <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Empty_disks">fig__Hyperbolic_triangulation_2Empty_disks</a>
+<p> </p></div>  For an illustration, see <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Empty_disks">Figure 42.1</a>
 <p><a class="anchor" id="fig__Hyperbolic_triangulation_2Empty_disks"></a></p><center> <div class="image">
-<img src="ht-empty-disks.png" style="max-width:70%;" />
+<img src="ht-empty-disks.png" style="max-width:40%; width=40%;" />
 </div>
- </center><p>  </p><div class="cgal_figure_caption">  <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Empty_disks">fig__Hyperbolic_triangulation_2Empty_disks</a> A face is Delaunay hyperbolic if its circumscribing disk is empty and is also contained in \(\mathbb H^2\) (shaded face). An edge is hyperbolic if there exists at least one disk that passes through its endpoints and is contained in \(\mathbb H^2\). An example of non-hyperbolic edge is the dashed segment: the disks that pass through its endpoints and are contained in \(\mathbb H^2\) are not empty; on the other hand, the disks that pass through its endpoint and are empty, are not contained in \(\mathbb H^2\).  </div>  <br />
+ </center><p>  </p><div class="cgal_figure_caption">  <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Empty_disks">Figure 42.1</a> A face is Delaunay hyperbolic if its circumscribing disk is empty and is also contained in \(\mathbb H^2\) (shaded face). An edge is hyperbolic if there exists at least one disk that passes through its endpoints and is contained in \(\mathbb H^2\). An example of non-hyperbolic edge is the dashed segment: the disks that pass through its endpoints and are contained in \(\mathbb H^2\) are not empty; on the other hand, the disks that pass through its endpoint and are empty, are not contained in \(\mathbb H^2\).  </div>  <br />
 
 <h1><a class="anchor" id="HT2_Design"></a>
 Design and Implementation History</h1>
@@ -169,7 +169,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 24 2018 17:40:39 for CGAL 4.12 - 2D Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Sep 3 2018 15:19:15 for CGAL 4.12 - 2D Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

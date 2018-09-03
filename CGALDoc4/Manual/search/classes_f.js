@@ -52,6 +52,7 @@ var searchData=
   ['periodic_5f4hyperbolicdelaunaytriangulationtraits_5f2',['Periodic_4HyperbolicDelaunayTriangulationTraits_2',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html',1,'']]],
   ['periodic_5f4hyperbolictriangulationdsfacebase_5f2',['Periodic_4HyperbolicTriangulationDSFaceBase_2',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationDSFaceBase__2.html',1,'']]],
   ['periodic_5f4hyperbolictriangulationdsvertexbase_5f2',['Periodic_4HyperbolicTriangulationDSVertexBase_2',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html',1,'']]],
+  ['periodic_5f4hyperbolictriangulationtraits_5f2',['Periodic_4HyperbolicTriangulationTraits_2',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationTraits__2.html',1,'']]],
   ['permute',['Permute',['../../Polynomial/classPolynomialTraits__d_1_1Permute.html',1,'PolynomialTraits_d']]],
   ['planarity',['Planarity',['../../Classification/classCGAL_1_1Classification_1_1Feature_1_1Planarity.html',1,'CGAL::Classification::Feature']]],
   ['plane',['Plane',['../../Point_set_shape_detection_3/classCGAL_1_1Shape__detection__3_1_1Plane.html',1,'CGAL::Shape_detection_3']]],

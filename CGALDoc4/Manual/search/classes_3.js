@@ -22,7 +22,6 @@ var searchData=
   ['delaunay_5fmesher_5f2',['Delaunay_mesher_2',['../../Mesh_2/classCGAL_1_1Delaunay__mesher__2.html',1,'CGAL']]],
   ['delaunay_5ftriangulation',['Delaunay_triangulation',['../../Triangulation/classCGAL_1_1Delaunay__triangulation.html',1,'CGAL']]],
   ['delaunay_5ftriangulation_5f2',['Delaunay_triangulation_2',['../../Triangulation_2/classCGAL_1_1Delaunay__triangulation__2.html',1,'CGAL']]],
-  ['delaunay_5ftriangulation_5f2_3c_20gt_2c_20tds_20_3e',['Delaunay_triangulation_2&lt; Gt, Tds &gt;',['../../Triangulation_2/classCGAL_1_1Delaunay__triangulation__2.html',1,'CGAL']]],
   ['delaunay_5ftriangulation_5f3',['Delaunay_triangulation_3',['../../Triangulation_3/classCGAL_1_1Delaunay__triangulation__3.html',1,'CGAL']]],
   ['delaunay_5ftriangulation_5fadaptation_5ftraits_5f2',['Delaunay_triangulation_adaptation_traits_2',['../../Voronoi_diagram_2/structCGAL_1_1Delaunay__triangulation__adaptation__traits__2.html',1,'CGAL']]],
   ['delaunay_5ftriangulation_5fcaching_5fdegeneracy_5fremoval_5fpolicy_5f2',['Delaunay_triangulation_caching_degeneracy_removal_policy_2',['../../Voronoi_diagram_2/structCGAL_1_1Delaunay__triangulation__caching__degeneracy__removal__policy__2.html',1,'CGAL']]],

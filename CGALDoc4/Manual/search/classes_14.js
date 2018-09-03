@@ -3,7 +3,6 @@ var searchData=
   ['umbilic',['Umbilic',['../../Ridges_3/classCGAL_1_1Umbilic.html',1,'CGAL']]],
   ['umbilic_5fapproximation',['Umbilic_approximation',['../../Ridges_3/classCGAL_1_1Umbilic__approximation.html',1,'CGAL']]],
   ['unary_5ffunction',['unary_function',['../../STL_Extension/structCGAL_1_1unary__function.html',1,'CGAL']]],
-  ['unary_5ffunction_3c_20map_3a_3akey_5ftype_2c_20std_3a_3apair_3c_20map_3a_3amapped_5ftype_2c_20bool_20_3e_20_3e',['unary_function&lt; Map::key_type, std::pair&lt; Map::mapped_type, bool &gt; &gt;',['../../STL_Extension/structCGAL_1_1unary__function.html',1,'CGAL']]],
   ['uncertain',['Uncertain',['../../STL_Extension/classCGAL_1_1Uncertain.html',1,'CGAL']]],
   ['union_5ffind',['Union_find',['../../Miscellany/classCGAL_1_1Union__find.html',1,'CGAL']]],
   ['union_5fof_5fballs_5f3',['Union_of_balls_3',['../../Skin_surface_3/classCGAL_1_1Union__of__balls__3.html',1,'CGAL']]],
