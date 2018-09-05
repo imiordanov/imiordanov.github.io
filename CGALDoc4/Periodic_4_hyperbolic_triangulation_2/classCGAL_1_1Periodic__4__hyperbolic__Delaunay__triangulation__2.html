@@ -196,10 +196,10 @@ Point insertion</h2></td></tr>
 <tr class="memitem:a6ab429f8e5470cffce77610b16e690a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ae37a45a43a0779b701935108f09fe2b0">Vertex_handle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a6ab429f8e5470cffce77610b16e690a4">insert</a> (const <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad8dd8dbc69e7924f1dbf34f85ac707d4">Point</a> &amp;p, <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a> start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle</a>())</td></tr>
 <tr class="memdesc:a6ab429f8e5470cffce77610b16e690a4"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a6ab429f8e5470cffce77610b16e690a4">More...</a><br /></div></td></tr>
 <tr class="separator:a6ab429f8e5470cffce77610b16e690a4"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ad82986bc9c4c247aeae2a224613028b9"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:ad82986bc9c4c247aeae2a224613028b9"><td class="memTemplItemLeft" align="right" valign="top">std::ptrdiff_t </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad82986bc9c4c247aeae2a224613028b9">insert</a> (<a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> first, <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> last)</td></tr>
-<tr class="memdesc:ad82986bc9c4c247aeae2a224613028b9"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#ad82986bc9c4c247aeae2a224613028b9">More...</a><br /></div></td></tr>
-<tr class="separator:ad82986bc9c4c247aeae2a224613028b9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a448a9b516bd4dc1bf99f45b3b10ad14d"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a448a9b516bd4dc1bf99f45b3b10ad14d"><td class="memTemplItemLeft" align="right" valign="top">std::ptrdiff_t </td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a448a9b516bd4dc1bf99f45b3b10ad14d">insert</a> (<a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> first, <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> last, const bool flag_clean_dummy_points=true)</td></tr>
+<tr class="memdesc:a448a9b516bd4dc1bf99f45b3b10ad14d"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a448a9b516bd4dc1bf99f45b3b10ad14d">More...</a><br /></div></td></tr>
+<tr class="separator:a448a9b516bd4dc1bf99f45b3b10ad14d"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Vertex removal</h2></td></tr>
@@ -693,8 +693,8 @@ template&lt;class GT , class TDS &gt; </div>
 
 </div>
 </div>
-<a id="ad82986bc9c4c247aeae2a224613028b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad82986bc9c4c247aeae2a224613028b9">◆ </a></span>insert() <span class="overload">[2/2]</span></h2>
+<a id="a448a9b516bd4dc1bf99f45b3b10ad14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448a9b516bd4dc1bf99f45b3b10ad14d">◆ </a></span>insert() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +713,13 @@ template&lt;class InputIterator &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> </td>
-          <td class="paramname"><em>last</em> </td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool </td>
+          <td class="paramname"><em>flag_clean_dummy_points</em> = <code>true</code> </td>
         </tr>
         <tr>
           <td></td>
@@ -725,7 +731,7 @@ template&lt;class InputIterator &gt; </div>
 
 <p> </p><div class="CGALModification">  
 <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000004">Modifications:</a></b></dt><dd>Inserts all points in the input iterator into the triangulation.</dd></dl>
-<p>Note that this function does not remove unnecessary dummy points at the end of the insertion process. The removal, if desired, should be done by manually calling the function <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a81f5519962a93b707d2e2e90d3314f4a" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">clean_dummy_points()</a></code>.</p>
+<p>Note that this function by default tries to remove unnecessary dummy points at the end of the insertion process. This behavior is controlled by the optional boolean parameter <code>flag_clean_dummy_points</code>; if automatic removal of the dummy points is not desired, set the flag to <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a81f5519962a93b707d2e2e90d3314f4a" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">clean_dummy_points()</a></code>  </dd></dl></div>  
 
 </div>
@@ -786,7 +792,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../Manual/namespaceCGAL.html">CGAL</a></li><li class="navelem"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></li>
-    <li class="footer">Generated on Tue Sep 4 2018 14:45:17 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Wed Sep 5 2018 09:31:34 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

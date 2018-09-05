@@ -9,7 +9,7 @@ var classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2 =
     [ "dual", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#afe630134b25dd6c11dce6fa38ca84ffd", null ],
     [ "find_conflicts", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a1c324d4927d70fe83213b4217b8e692c", null ],
     [ "insert", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a6ab429f8e5470cffce77610b16e690a4", null ],
-    [ "insert", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ad82986bc9c4c247aeae2a224613028b9", null ],
+    [ "insert", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a448a9b516bd4dc1bf99f45b3b10ad14d", null ],
     [ "is_dummy_vertex", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a7f598f8ae79fb95428f8fd35b489a48c", null ],
     [ "is_valid", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#af798753827b44258c1086d3752e93642", null ],
     [ "number_of_dummy_points", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ae85445e20fd5a5f85fb80ac3581cd3ec", null ],
