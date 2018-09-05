@@ -181,9 +181,9 @@ Representation</h1>
 <p>The Delaunay triangulation of \(\mathcal{M}\) defined by a point set \(\mathcal{P}\) is defined as the projection by \(\pi\) of the Delaunay triangulation in the plane \(\mathbb H^2\) of the (infinite) set of points \(\mathcal{G P}\) onto \(\mathcal{M}\), under some validity conditions that will be detailed in  </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000024">Modifications:</a></b></dt><dd>Section <a class="el" href="index.html#P4HT2_validity">Validity</a>.  </dd></dl></div> 
 <p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000025">Modifications:</a></b></dt><dd>TODO add ref to sec validity [done] </dd></dl></div> 
 <p>We require that all input points lie inside \(\mathcal D\). As for orbits of points, all faces of the Delaunay triangulation of \(\mathcal{G P}\) that are in the same orbit under the action of \(\mathcal{G}\) project by \(\pi\) onto the same face on the surface \(\mathcal{M}\); the data structure stores a unique <em>canonical</em> representative of each orbit, which has at least one vertex in \(\mathcal D\). Some faces have vertices both inside and outside \(\mathcal D\). Such faces can be uniquely specified by three pairs of points in \(\mathcal D\) and (reduced) translations of \(\mathcal{G}\); points in the original domain are paired with the identity translation \(\mathbb 1\). The underlying combinatorial triangulation is a <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgTDS2Summary">2D Triangulation Data Structure</a>, enriched in each face by the three translations that are paired with the point in each vertex. See <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 43.3</a>.</p>
-<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000026">Modifications:</a></b></dt><dd>TODO make the translation more visible than the rest on the fig  </dd></dl></div> 
+<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000026">Modifications:</a></b></dt><dd>TODO make the translation more visible than the rest on the fig [modified]  </dd></dl></div> 
 <p><a class="anchor" id="fig__P4HTriangulationOrientationDS"></a></p><center> <div class="image">
-<object type="image/svg+xml" data="ds_cgal.svg" style="max-width:75%; width=75%;"></object>
+<object type="image/svg+xml" data="ds_cgal.svg" style="max-width:40%; width: 1000px;"></object>
 </div>
  </center><p>  </p><div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HTriangulationOrientationDS">Figure 43.3</a> Representation of a face \(f\) stored in the triangulation data structure. Each vertex \(v_i\) stores a point \(p_i\) paired with a translation \(\tau_i\). Opposite to vertex \(i\) is the \(i\)-th neighbor of \(f\).  </div>  <br />
 
@@ -193,9 +193,9 @@ either all vertices of the representative lie in \(\mathcal D\), or </li>
 <li>
 the representative has at least one vertex in \(\mathcal D\) and is as close as possible to \(abcd\) in the ordering defined above. </li>
 </ul>
-<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000027">Modifications:</a></b></dt><dd>todo show p,q,r on the fig, otherwise the caption makes no sense...  </dd></dl></div> 
+<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000027">Modifications:</a></b></dt><dd>todo show p,q,r on the fig, otherwise the caption makes no sense... [modified]  </dd></dl></div> 
 <p><a class="anchor" id="fig__P4HTriangulationCanonicalRepExample"></a></p><center> <div class="image">
-<object type="image/svg+xml" data="periodic_face.svg" style="max-width:35%; width=35%; display: inline-block;"></object>
+<object type="image/svg+xml" data="periodic_face.svg" style="max-width:45%; width=45%; display: inline-block;"></object>
 </div>
  </center><p>  </p><div class="cgal_figure_caption">  <a class="el" href="index.html#fig__P4HTriangulationCanonicalRepExample">Figure 43.4</a> Among the three faces in the orbit that have at least one vertex in \(\mathcal D\), the canonical representative is the green one: it is closest, in the counterclockwise order, to the region labeled \(abcd\). The translations \(\mathbb 1, a\), and \(\overline{b}\), corresponding to the points \(p, q\), and \(r\) are stored in the face in the data structure.  </div>  <br />
 
@@ -305,7 +305,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 5 2018 17:00:20 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Wed Sep 5 2018 18:03:47 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>
