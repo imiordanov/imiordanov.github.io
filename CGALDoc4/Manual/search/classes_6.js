@@ -10,6 +10,7 @@ var searchData=
   ['generaldistance',['GeneralDistance',['../../Spatial_searching/classGeneralDistance.html',1,'']]],
   ['generalized_5fbarycentric_5fcoordinates_5f2',['Generalized_barycentric_coordinates_2',['../../Barycentric_coordinates_2/classCGAL_1_1Barycentric__coordinates_1_1Generalized__barycentric__coordinates__2.html',1,'CGAL::Barycentric_coordinates']]],
   ['generalized_5fmap',['Generalized_map',['../../Generalized_map/classCGAL_1_1Generalized__map.html',1,'CGAL']]],
+  ['generalized_5fmap_3c_20d_2c_20items_2c_20alloc_20_3e',['Generalized_map&lt; d, Items, Alloc &gt;',['../../Generalized_map/classCGAL_1_1Generalized__map.html',1,'CGAL']]],
   ['generalizedmap',['GeneralizedMap',['../../Generalized_map/classGeneralizedMap.html',1,'']]],
   ['generalpolygon_5f2',['GeneralPolygon_2',['../../Boolean_set_operations_2/classGeneralPolygon__2.html',1,'']]],
   ['generalpolygonsetdcel',['GeneralPolygonSetDcel',['../../Boolean_set_operations_2/classGeneralPolygonSetDcel.html',1,'']]],

@@ -119,7 +119,7 @@ var searchData=
   ['get_5fsquared_5fwidth',['get_squared_width',['../../Polytope_distance_d/classCGAL_1_1Width__3.html#abbdf5bd949aea7e58875226e1f62da51',1,'CGAL::Width_3']]],
   ['get_5ftrace',['get_trace',['../../Geomview/classCGAL_1_1Geomview__stream.html#a87e1cd01dd6c056c4ffe8af719f427b9',1,'CGAL::Geomview_stream']]],
   ['get_5ftraits',['get_traits',['../../Arrangement_on_surface_2/classCGAL_1_1Arrangement__2.html#acdad1373cb6a4780267291d23b564b7d',1,'CGAL::Arrangement_2']]],
-  ['get_5ftranslation_5fflag',['get_translation_flag',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationDSVertexBase__2.html#a42295962f61304a727d9bfdf8b9a1249',1,'Periodic_4HyperbolicTriangulationDSVertexBase_2']]],
+  ['get_5ftranslation_5fflag',['get_translation_flag',['../../Periodic_4_hyperbolic_triangulation_2/classPeriodic__4HyperbolicTriangulationVertexBase__2.html#adb5edc44492839dce527f1b48066182e',1,'Periodic_4HyperbolicTriangulationVertexBase_2']]],
   ['get_5fu',['get_u',['../../QP_solver/classLinearProgram.html#a91725045a68c60d49dfafc7acc48d5e8',1,'LinearProgram::get_u()'],['../../QP_solver/classQuadraticProgram.html#aa16966440a708004cd67a1290107c446',1,'QuadraticProgram::get_u()']]],
   ['get_5funion',['get_union',['../../Nef_3/classCGAL_1_1Nef__nary__union__3.html#a20e41c6d52198e1cd5c6dd602b7cd02c',1,'CGAL::Nef_nary_union_3']]],
   ['get_5fvalue',['get_value',['../../Modular_arithmetic/classCGAL_1_1Residue.html#a0b592698d1f7f87aa3f578cbdfaa093c',1,'CGAL::Residue']]],

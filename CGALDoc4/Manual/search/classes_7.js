@@ -24,6 +24,7 @@ var searchData=
   ['halfedgeds_5flist',['HalfedgeDS_list',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__list.html',1,'CGAL']]],
   ['halfedgeds_5fmin_5fitems',['HalfedgeDS_min_items',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__min__items.html',1,'CGAL']]],
   ['halfedgeds_5fvector',['HalfedgeDS_vector',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__vector.html',1,'CGAL']]],
+  ['halfedgeds_5fvector_3c_20traits_2c_20items_2c_20alloc_20_3e',['HalfedgeDS_vector&lt; Traits, Items, Alloc &gt;',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__vector.html',1,'CGAL']]],
   ['halfedgeds_5fvertex_5fbase',['HalfedgeDS_vertex_base',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__vertex__base.html',1,'CGAL']]],
   ['halfedgeds_5fvertex_5fmax_5fbase_5fwith_5fid',['HalfedgeDS_vertex_max_base_with_id',['../../BGL/classCGAL_1_1HalfedgeDS__vertex__max__base__with__id.html',1,'CGAL']]],
   ['halfedgeds_5fvertex_5fmin_5fbase',['HalfedgeDS_vertex_min_base',['../../HalfedgeDS/classCGAL_1_1HalfedgeDS__vertex__min__base.html',1,'CGAL']]],

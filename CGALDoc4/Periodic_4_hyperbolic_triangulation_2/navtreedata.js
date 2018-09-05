@@ -4,13 +4,12 @@ var NAVTREE =
     [ "User Manual", "index.html", [
       [ "The Bolza surface", "index.html#P4HT2_thespace", null ],
       [ "Representation", "index.html#P4HT2_representation", null ],
-      [ "Hyperbolic Delaunay triangulation", "index.html#P4HT2_Delaunay", null ],
-      [ "Dummy points", "index.html#P4HT2_Dummy_points", null ],
+      [ "Validity", "index.html#P4HT2_validity", null ],
       [ "Software Design", "index.html#P4HT2_design", [
         [ "The Geometric Traits Parameter", "index.html#P4HT2_traits", null ],
         [ "The Triangulation Data Structure Parameter", "index.html#P4HT2_datastructure", null ]
       ] ],
-      [ "Examples", "index.html#P4HT2_examples", null ],
+      [ "Example", "index.html#P4HT2_examples", null ],
       [ "Performance", "index.html#P4HT2_Performance", null ],
       [ "Design and Implementation History", "index.html#P4HT2_Design", null ]
     ] ],
