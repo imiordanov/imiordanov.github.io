@@ -136,8 +136,15 @@ $(document).ready(function(){initNavTree('classPeriodic__4HyperbolicTriangulatio
 <p></p>
 <a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
 <div class="textblock">  <dl class="refines"><dt><b><a class="el" href="refines.html#_refines000003">Refines:</a></b></dt><dd><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></dd></dl>
-<p>The concept <code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code> refines the concept <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code>. It describes the set of requirements to be fulfilled by any class used to instantiate the first template parameter of the class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>. In addition to the geometric types and the operations defined on them in <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code>, it defines the hyperbolic translations that allow to encode the periodicity of the triangulation. </p>
-</div><table class="memberdecls">
+<p>The concept <code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code> refines the concept <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code>. It describes the set of requirements to be fulfilled by any class used to instantiate the first template parameter of the class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>. In addition to the geometric types and the operations defined on them in <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code>, it defines the hyperbolic translations that allow to encode the periodicity of the triangulation.</p>
+<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000023">Modifications:</a></b></dt><dd>The concept requires that two nested types are provided: </dd></dl>
+<ul>
+<li>
+A field number type <code>FT</code> that must support exact computations with algebraic numbers, in particular with nested square roots; </li>
+<li>
+A <code>Hyperbolic_translation</code> type, which satisfies the requirements described in the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code>. </li>
+</ul>
+<p> </p></div>  </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Types</h2></td></tr>
 <tr class="memitem:a3bb0b5d810585ce69e3ad4f955b7604a"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html#a3bb0b5d810585ce69e3ad4f955b7604a">Circle_2</a></td></tr>
@@ -186,7 +193,7 @@ Operations</h2></td></tr>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000016">Modifications:</a></b></dt><dd>Represents a hyperbolic circle, i.e., a circle contained in the unit disk.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000024">Modifications:</a></b></dt><dd>Represents a hyperbolic circle, i.e., a circle contained in the unit disk.</dd></dl>
 <p> </p></div>  
 </div>
 </div>
@@ -204,7 +211,7 @@ Operations</h2></td></tr>
 
 <p>Construction type. </p>
 <p>Must provide the function operator</p>
-<p><code>Point_2 operator() ( const Point_2&amp; pt, const <a class="el" href="classHyperbolicOctagonTranslation.html" title="The concept HyperbolicOctagonTranslation describes the requirements for the class of hyperbolic trans...">HyperbolicOctagonTranslation</a>&amp; tr ) const,</code></p>
+<p><code>Point_2 operator() ( const Point_2&amp; pt, const <a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a>&amp; tr ) const,</code></p>
 <p>which returns the image of the point <code>pt</code> under the action of the hyperbolic translation <code>tr</code>. </p>
 
 </div>
@@ -222,7 +229,7 @@ Operations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents a hyperbolic translation. </p>
-<p>Must be a model of the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title="The concept HyperbolicOctagonTranslation describes the requirements for the class of hyperbolic trans...">HyperbolicOctagonTranslation</a></code>. </p>
+<p>Must be a model of the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code>. </p>
 
 </div>
 </div>
@@ -255,7 +262,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></li>
-    <li class="footer">Generated on Wed Sep 5 2018 18:03:47 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Fri Sep 7 2018 11:18:55 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

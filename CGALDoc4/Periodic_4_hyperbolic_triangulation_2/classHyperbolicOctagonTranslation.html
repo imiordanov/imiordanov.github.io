@@ -135,28 +135,38 @@ $(document).ready(function(){initNavTree('classHyperbolicOctagonTranslation.html
 
 <p></p>
 <a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
-<div class="textblock"><p>The concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title="The concept HyperbolicOctagonTranslation describes the requirements for the class of hyperbolic trans...">HyperbolicOctagonTranslation</a></code> describes the requirements for the class of hyperbolic translations specific to the Bolza surface. </p>
-<p> Generally, a hyperbolic translation \(g\) is an orientation-preserving isometry acting on the hyperbolic plane, and is specified by two complex numbers \(\alpha\) and \(\beta\): </p><p class="formulaDsp">
-\[ g(z) = \frac{\alpha \cdot z + \beta}{\overline{\beta} \cdot z + \overline{\alpha}}, \qquad |\alpha|^2 - |\beta|^2 = 1. \]
+<div class="textblock"><p> </p><div class="CGALModification">  
+  <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000014">Modifications:</a></b></dt><dd>The concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code> describes the requirements for an object that represents a hyperbolic translation in the fundamental group \(\mathcal G\) of the the Bolza surface. </dd></dl>
+<p>Generally, a hyperbolic translation \(g\) is an orientation-preserving isometry acting on the hyperbolic plane, and is specified by two complex numbers \(\alpha\) and \(\beta\): </p><p class="formulaDsp">
+\[ g(z) = \frac{\alpha \cdot z + \beta}{\overline{\beta} \cdot z + \overline{\alpha}}, \qquad |\alpha|^2 - |\beta|^2 = 1, \]
 </p>
-<p> A hyperbolic translation is also a word on the generators of the fundamental group of a hyperbolic surface.</p>
-<p>In our particular case, we consider an application specific to the Bolza surface. For our application, we only need to deal with a finite set of hyperbolic translations from the fundamental group of the Bolza surface. A notable property of these translations is that their word length is at most four; the composition of two translation always gives a translation that can be simplified so that its length is at most four. For more details, see <a class="el" href="citelist.html#CITEREF_cgal:btv-dtosl-16">[1]</a> and <a class="el" href="citelist.html#CITEREF_cgal:it-idtbs-17">[4]</a>.</p>
-<dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000001">Has Models:</a></b></dt><dd><a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html" title="The class Hyperbolic_octagon_translation is the default model for the concept HyperbolicOctagonTransl...">CGAL::Hyperbolic_octagon_translation</a> </dd></dl>
+<p> where \(\overline{a}\) and \(\overline{b}\) denote the complex conjugates of \(a\) and \(b\) respectively. A hyperbolic translation is also a word on the generators of the fundamental group of a hyperbolic surface.</p>
+<p>Specifically for the group \(\mathcal G\), let \([g_0, g_1, \ldots, g_7]\) be the set of its generators, ordered counter-clockwise around the origin, with \(g_k\) translating the origin \(O\) along the real axis in the positive direction. The coefficients \(\alpha_k\) and \(\beta_k\) of each generator of this ordered set are given as </p><p class="formulaDsp">
+\[ \alpha_k = 1 + \sqrt{2}, \qquad \beta_k = \exp\left(\tfrac{ik\pi}{4}\right)\sqrt{2}\sqrt{1+\sqrt{2}}. \]
+</p>
+<p> Note that with the notation given in Section <a class="el" href="index.html#P4HT2_thespace">The Bolza surface</a> of the User manual, the ordered set of generators can be written also as </p><p class="formulaDsp">
+\[ [g_k, k = 0, \ldots, 7] = [ a, \overline{b}, c, \overline{d}, \overline{a}, b, \overline{c}, d ]. \]
+</p>
+<p>  </p></div> <dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000001">Has Models:</a></b></dt><dd><a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html" title="The class Hyperbolic_octagon_translation is the default model for the concept HyperbolicOctagonTransl...">CGAL::Hyperbolic_octagon_translation</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Types</h2></td></tr>
-<tr class="memitem:aa94e0099959151a052a2d3ba293d263e"><td class="memItemLeft" align="right" valign="top"><a id="aa94e0099959151a052a2d3ba293d263e"></a>
-typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a></td></tr>
-<tr class="memdesc:aa94e0099959151a052a2d3ba293d263e"><td class="mdescLeft"> </td><td class="mdescRight">Number type of the coefficients of \(\alpha\) and \(\beta\). <br /></td></tr>
+<tr class="memitem:aa94e0099959151a052a2d3ba293d263e"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a></td></tr>
+<tr class="memdesc:aa94e0099959151a052a2d3ba293d263e"><td class="mdescLeft"> </td><td class="mdescRight">Number type of the coefficients of \(\alpha\) and \(\beta\).  <a href="#aa94e0099959151a052a2d3ba293d263e">More...</a><br /></td></tr>
 <tr class="separator:aa94e0099959151a052a2d3ba293d263e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a8b3a8b746a93986574ecf99f51b06d6f"><td class="memItemLeft" align="right" valign="top"><a id="a8b3a8b746a93986574ecf99f51b06d6f"></a>
-typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a></td></tr>
-<tr class="memdesc:a8b3a8b746a93986574ecf99f51b06d6f"><td class="mdescLeft"> </td><td class="mdescRight">Represents a single letter of the word corresponding to the translation. <br /></td></tr>
-<tr class="separator:a8b3a8b746a93986574ecf99f51b06d6f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb964ee0616864d9d9ce4f0517aff3d7"><td class="memItemLeft" align="right" valign="top">typedef unsigned short int </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a></td></tr>
+<tr class="memdesc:acb964ee0616864d9d9ce4f0517aff3d7"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#acb964ee0616864d9d9ce4f0517aff3d7">More...</a><br /></div></td></tr>
+<tr class="separator:acb964ee0616864d9d9ce4f0517aff3d7"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa7bd9d932fe09299e0dd46668d40e1fa"><td class="memItemLeft" align="right" valign="top"><a id="aa7bd9d932fe09299e0dd46668d40e1fa"></a>
-typedef std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aa7bd9d932fe09299e0dd46668d40e1fa">Word</a></td></tr>
+typedef std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aa7bd9d932fe09299e0dd46668d40e1fa">Word</a></td></tr>
 <tr class="memdesc:aa7bd9d932fe09299e0dd46668d40e1fa"><td class="mdescLeft"> </td><td class="mdescRight">Word representation of the translation, a sequence of elements of type <code>Word_letter</code>. <br /></td></tr>
 <tr class="separator:aa7bd9d932fe09299e0dd46668d40e1fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d3d15934224bf479143877c6cab7983"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>, <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a></td></tr>
+<tr class="memdesc:a5d3d15934224bf479143877c6cab7983"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a5d3d15934224bf479143877c6cab7983">More...</a><br /></div></td></tr>
+<tr class="separator:a5d3d15934224bf479143877c6cab7983"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:adafdf01e695ff4cf28ca766b705097b7"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a>, <a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#adafdf01e695ff4cf28ca766b705097b7">Coefficients</a></td></tr>
+<tr class="memdesc:adafdf01e695ff4cf28ca766b705097b7"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#adafdf01e695ff4cf28ca766b705097b7">More...</a><br /></div></td></tr>
+<tr class="separator:adafdf01e695ff4cf28ca766b705097b7"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Creation</h2></td></tr>
@@ -169,19 +179,19 @@ Creation</h2></td></tr>
 <tr class="memdesc:a32dcafff8c2cf0442db79eb4e375206b"><td class="mdescLeft"> </td><td class="mdescRight">Creates the translation described by the word <code>w</code>. <br /></td></tr>
 <tr class="separator:a32dcafff8c2cf0442db79eb4e375206b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:acc2b373b1e014f3f0ad775f861be1e5d"><td class="memItemLeft" align="right" valign="top"><a id="acc2b373b1e014f3f0ad775f861be1e5d"></a>
- </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#acc2b373b1e014f3f0ad775f861be1e5d">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> l)</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#acc2b373b1e014f3f0ad775f861be1e5d">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> l)</td></tr>
 <tr class="memdesc:acc2b373b1e014f3f0ad775f861be1e5d"><td class="mdescLeft"> </td><td class="mdescRight">Creates the translation described by the one-letter word <code>l</code>. <br /></td></tr>
 <tr class="separator:acc2b373b1e014f3f0ad775f861be1e5d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aff1da172d08412373939ae6067462c26"><td class="memItemLeft" align="right" valign="top"><a id="aff1da172d08412373939ae6067462c26"></a>
- </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aff1da172d08412373939ae6067462c26">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> m)</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#aff1da172d08412373939ae6067462c26">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> m)</td></tr>
 <tr class="memdesc:aff1da172d08412373939ae6067462c26"><td class="mdescLeft"> </td><td class="mdescRight">Creates the translation described by the two-letter word <code>lm</code>. <br /></td></tr>
 <tr class="separator:aff1da172d08412373939ae6067462c26"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a5aea4bfa8a437f2f0231961186bc4376"><td class="memItemLeft" align="right" valign="top"><a id="a5aea4bfa8a437f2f0231961186bc4376"></a>
- </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a5aea4bfa8a437f2f0231961186bc4376">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> m, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> n)</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a5aea4bfa8a437f2f0231961186bc4376">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> m, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> n)</td></tr>
 <tr class="memdesc:a5aea4bfa8a437f2f0231961186bc4376"><td class="mdescLeft"> </td><td class="mdescRight">Creates the translation described by the three-letter word <code>lmn</code>. <br /></td></tr>
 <tr class="separator:a5aea4bfa8a437f2f0231961186bc4376"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a2f0eb8296ee6f1b45f4195d1921ee336"><td class="memItemLeft" align="right" valign="top"><a id="a2f0eb8296ee6f1b45f4195d1921ee336"></a>
- </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a2f0eb8296ee6f1b45f4195d1921ee336">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> m, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> n, <a class="el" href="classHyperbolicOctagonTranslation.html#a8b3a8b746a93986574ecf99f51b06d6f">Word_letter</a> o)</td></tr>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a2f0eb8296ee6f1b45f4195d1921ee336">HyperbolicOctagonTranslation</a> (<a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> l, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> m, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> n, <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">Word_letter</a> o)</td></tr>
 <tr class="memdesc:a2f0eb8296ee6f1b45f4195d1921ee336"><td class="mdescLeft"> </td><td class="mdescRight">Creates the translation described by the four-letter word <code>lmno</code>. <br /></td></tr>
 <tr class="separator:a2f0eb8296ee6f1b45f4195d1921ee336"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
@@ -217,26 +227,104 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyp
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Access Functions</h2></td></tr>
-<tr class="memitem:a8c00ecb8afdbaecd5fda85735b976461"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>, <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a8c00ecb8afdbaecd5fda85735b976461">alpha</a> () const</td></tr>
-<tr class="memdesc:a8c00ecb8afdbaecd5fda85735b976461"><td class="mdescLeft"> </td><td class="mdescRight">Returns the coefficient \(\alpha\) of the translation's matrix.  <a href="#a8c00ecb8afdbaecd5fda85735b976461">More...</a><br /></td></tr>
-<tr class="separator:a8c00ecb8afdbaecd5fda85735b976461"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ae65ca64957bc68bce27a1d0f85ee19c7"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>, <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#ae65ca64957bc68bce27a1d0f85ee19c7">beta</a> () const</td></tr>
-<tr class="memdesc:ae65ca64957bc68bce27a1d0f85ee19c7"><td class="mdescLeft"> </td><td class="mdescRight">Returns the coefficient \(\beta\) of the translation's matrix.  <a href="#ae65ca64957bc68bce27a1d0f85ee19c7">More...</a><br /></td></tr>
-<tr class="separator:ae65ca64957bc68bce27a1d0f85ee19c7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab66a4189b38dbf47b56fa0b242e8a0a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#ab66a4189b38dbf47b56fa0b242e8a0a9">alpha</a> () const</td></tr>
+<tr class="memdesc:ab66a4189b38dbf47b56fa0b242e8a0a9"><td class="mdescLeft"> </td><td class="mdescRight">Returns the coefficient \(\alpha\) of the translation's matrix.  <a href="#ab66a4189b38dbf47b56fa0b242e8a0a9">More...</a><br /></td></tr>
+<tr class="separator:ab66a4189b38dbf47b56fa0b242e8a0a9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a89765c6da41b2c9953e5c37e1617b955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a89765c6da41b2c9953e5c37e1617b955">beta</a> () const</td></tr>
+<tr class="memdesc:a89765c6da41b2c9953e5c37e1617b955"><td class="mdescLeft"> </td><td class="mdescRight">Returns the coefficient \(\beta\) of the translation's matrix.  <a href="#a89765c6da41b2c9953e5c37e1617b955">More...</a><br /></td></tr>
+<tr class="separator:a89765c6da41b2c9953e5c37e1617b955"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:afd9b65e38715d9dde5f6fcb8e58eaf79"><td class="memItemLeft" align="right" valign="top"><a id="afd9b65e38715d9dde5f6fcb8e58eaf79"></a>
 bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#afd9b65e38715d9dde5f6fcb8e58eaf79">is_identity</a> ()</td></tr>
 <tr class="memdesc:afd9b65e38715d9dde5f6fcb8e58eaf79"><td class="mdescLeft"> </td><td class="mdescRight">Returns <code>true</code> if the current translation represents the identity element of the group. <br /></td></tr>
 <tr class="separator:afd9b65e38715d9dde5f6fcb8e58eaf79"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
+Static Access Functions</h2></td></tr>
+<tr class="memitem:a15555cd8b9c76aafbadb967afccf6468"><td class="memItemLeft" align="right" valign="top">static void </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a15555cd8b9c76aafbadb967afccf6468">get_generator_coefficients</a> (std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#adafdf01e695ff4cf28ca766b705097b7">Coefficients</a> &gt; &amp;gens)</td></tr>
+<tr class="memdesc:a15555cd8b9c76aafbadb967afccf6468"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a15555cd8b9c76aafbadb967afccf6468">More...</a><br /></div></td></tr>
+<tr class="separator:a15555cd8b9c76aafbadb967afccf6468"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a59140a4a4080d5e70a9904cf049c8918"><td class="memItemLeft" align="right" valign="top">static void </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyperbolicOctagonTranslation.html#a59140a4a4080d5e70a9904cf049c8918">get_generators</a> (std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a> &gt; &amp;gens)</td></tr>
+<tr class="memdesc:a59140a4a4080d5e70a9904cf049c8918"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a59140a4a4080d5e70a9904cf049c8918">More...</a><br /></div></td></tr>
+<tr class="separator:a59140a4a4080d5e70a9904cf049c8918"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8c00ecb8afdbaecd5fda85735b976461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c00ecb8afdbaecd5fda85735b976461">◆ </a></span>alpha()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adafdf01e695ff4cf28ca766b705097b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafdf01e695ff4cf28ca766b705097b7">◆ </a></span>Coefficients</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>,<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>&gt; HyperbolicOctagonTranslation::alpha </td>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a>,<a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a>&gt; <a class="el" href="classHyperbolicOctagonTranslation.html#adafdf01e695ff4cf28ca766b705097b7">HyperbolicOctagonTranslation::Coefficients</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000017">Modifications:</a></b></dt><dd>Represents the coefficients \(\alpha\) and \(\beta\) of a hyperbolic translation. </dd></dl></div>  
+
+</div>
+</div>
+<a id="a5d3d15934224bf479143877c6cab7983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d3d15934224bf479143877c6cab7983">◆ </a></span>Complex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>,<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>&gt; <a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">HyperbolicOctagonTranslation::Complex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000016">Modifications:</a></b></dt><dd>Represents a complex number with coefficients of type <code>NT</code>. </dd></dl></div>  
+
+</div>
+</div>
+<a id="aa94e0099959151a052a2d3ba293d263e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94e0099959151a052a2d3ba293d263e">◆ </a></span>NT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> <a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">HyperbolicOctagonTranslation::NT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number type of the coefficients of \(\alpha\) and \(\beta\). </p>
+<p>This number type must be compatible with the field type <code>FT</code> of the concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code>. </p>
+
+</div>
+</div>
+<a id="acb964ee0616864d9d9ce4f0517aff3d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb964ee0616864d9d9ce4f0517aff3d7">◆ </a></span>Word_letter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short int <a class="el" href="classHyperbolicOctagonTranslation.html#acb964ee0616864d9d9ce4f0517aff3d7">HyperbolicOctagonTranslation::Word_letter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000015">Modifications:</a></b></dt><dd>Represents a single letter of the word corresponding to the translation. </dd></dl></div>  
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab66a4189b38dbf47b56fa0b242e8a0a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66a4189b38dbf47b56fa0b242e8a0a9">◆ </a></span>alpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a> HyperbolicOctagonTranslation::alpha </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -249,14 +337,14 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyp
 
 </div>
 </div>
-<a id="ae65ca64957bc68bce27a1d0f85ee19c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae65ca64957bc68bce27a1d0f85ee19c7">◆ </a></span>beta()</h2>
+<a id="a89765c6da41b2c9953e5c37e1617b955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89765c6da41b2c9953e5c37e1617b955">◆ </a></span>beta()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>,<a class="el" href="classHyperbolicOctagonTranslation.html#aa94e0099959151a052a2d3ba293d263e">NT</a>&gt; HyperbolicOctagonTranslation::beta </td>
+          <td class="memname"><a class="el" href="classHyperbolicOctagonTranslation.html#a5d3d15934224bf479143877c6cab7983">Complex</a> HyperbolicOctagonTranslation::beta </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,6 +355,70 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="classHyp
 <p>Returns the coefficient \(\beta\) of the translation's matrix. </p>
 <p>The first element of the returned <code>pair</code> contains the real part of \(\beta\). The second element contains its imaginary part. </p>
 
+</div>
+</div>
+<a id="a15555cd8b9c76aafbadb967afccf6468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15555cd8b9c76aafbadb967afccf6468">◆ </a></span>get_generator_coefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void HyperbolicOctagonTranslation::get_generator_coefficients </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html#adafdf01e695ff4cf28ca766b705097b7">Coefficients</a> &gt; &amp; </td>
+          <td class="paramname"><em>gens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000018">Modifications:</a></b></dt><dd>Returns a vector containing the coefficients of the generators of \(\mathcal G\) and of their inverses.</dd></dl>
+<p>The translations must be given in the order: </p><p class="formulaDsp">
+\[ [g_0, g_1, \ldots, g_7]. \]
+</p>
+<p>  </p></div>  
+</div>
+</div>
+<a id="a59140a4a4080d5e70a9904cf049c8918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59140a4a4080d5e70a9904cf049c8918">◆ </a></span>get_generators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void HyperbolicOctagonTranslation::get_generators </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a> &gt; &amp; </td>
+          <td class="paramname"><em>gens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000019">Modifications:</a></b></dt><dd>Returns a vector containing the generators of \(\mathcal G\) and their inverses.</dd></dl>
+<p>The translations must be given in the order: </p><p class="formulaDsp">
+\[ [g_0, g_1, \ldots, g_7]. \]
+</p>
+<p>  </p></div>  
 </div>
 </div>
 <a id="adb0891a4a0bcf39d9cce77a1ad83dced"></a>
@@ -300,7 +452,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classHyperbolicOctagonTranslation.html">HyperbolicOctagonTranslation</a></li>
-    <li class="footer">Generated on Wed Sep 5 2018 18:03:47 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Fri Sep 7 2018 11:18:55 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>
