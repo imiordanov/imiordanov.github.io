@@ -1,6 +1,7 @@
 var classPeriodic__4HyperbolicTriangulationFaceBase__2 =
 [
-    [ "Hyperbolic_translation", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#ad2146295ab7185db16d816306fcb5c27", null ],
+    [ "Geometric_traits", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#a2685c16bd605ad0474eef0fccff0b2f4", null ],
+    [ "Hyperbolic_translation", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#ade0ef51744f62950141989dc72093444", null ],
     [ "Periodic_4HyperbolicTriangulationFaceBase_2", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#afb53cda22107cc8f3b5680a1625e0b48", null ],
     [ "Periodic_4HyperbolicTriangulationFaceBase_2", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#a1406a41ea4e925cf0eb73232ef29e961", null ],
     [ "Periodic_4HyperbolicTriangulationFaceBase_2", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html#a5b6760e84fd902965434e255963d5e1c", null ],

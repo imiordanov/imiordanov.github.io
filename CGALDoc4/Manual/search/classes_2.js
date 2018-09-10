@@ -13,7 +13,7 @@ var searchData=
   ['cc_5fsafe_5fhandle',['CC_safe_handle',['../../STL_Extension/classCGAL_1_1CC__safe__handle.html',1,'CGAL']]],
   ['cell',['Cell',['../../TDS_3/classTriangulationDataStructure__3_1_1Cell.html',1,'TriangulationDataStructure_3']]],
   ['cell_5fattribute',['Cell_attribute',['../../Combinatorial_map/classCGAL_1_1Cell__attribute.html',1,'CGAL']]],
-  ['cell_5fattribute_3c_20lcc_2c_20info_5f_2c_20tag_2c_20onmerge_2c_20onsplit_20_3e',['Cell_attribute&lt; LCC, Info_, Tag, OnMerge, OnSplit &gt;',['../../Combinatorial_map/classCGAL_1_1Cell__attribute.html',1,'CGAL']]],
+  ['cell_5fattribute_3c_20lcc_2c_20info_5f_2c_20tag_2c_20onmerge_2c_20onsplit_20_3e',['Cell_attribute&lt; LCC, Info_, Tag, OnMerge, OnSplit &gt;',['../../Combinatorial_map/classCGAL_1_1Cell__attribute.html',1,'']]],
   ['cell_5fattribute_5fwith_5fid',['Cell_attribute_with_id',['../../Combinatorial_map/classCGAL_1_1Cell__attribute__with__id.html',1,'CGAL']]],
   ['cell_5fattribute_5fwith_5fpoint',['Cell_attribute_with_point',['../../Linear_cell_complex/classCGAL_1_1Cell__attribute__with__point.html',1,'CGAL']]],
   ['cell_5fattribute_5fwith_5fpoint_5fand_5fid',['Cell_attribute_with_point_and_id',['../../Linear_cell_complex/classCGAL_1_1Cell__attribute__with__point__and__id.html',1,'CGAL']]],

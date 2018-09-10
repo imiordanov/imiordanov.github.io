@@ -136,26 +136,19 @@ $(document).ready(function(){initNavTree('classPeriodic__4HyperbolicDelaunayTria
 <p></p>
 <a name="details" id="details"></a><h2 class="groupheader">Definition</h2>
 <div class="textblock">  <dl class="refines"><dt><b><a class="el" href="refines.html#_refines000001">Refines:</a></b></dt><dd><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></dd></dl>
-<p>The concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> refines the concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code>. It adds a requirement that needs to be fulfilled by any class used to instantiate the first template parameter of the class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code>. The added requirement is essential for the removal of existing vertices in a Delaunay triangulation of the Bolza surface.</p>
-<p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000020">Modifications:</a></b></dt><dd>The concept requires that two nested types are provided: </dd></dl>
-<ul>
-<li>
-A field number type <code>FT</code> that must support exact computations with algebraic numbers, in particular with nested square roots; </li>
-<li>
-A <code>Hyperbolic_translation</code> type, which satisfies the requirements described in the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code>. </li>
-</ul>
-<p> </p></div> <dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000002">Has Models:</a></b></dt><dd><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__traits__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_traits_2 is a model of the concept Periodic_4H...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_traits_2</a> </dd></dl>
+<p>The concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> adds a requirement to <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> that needs to be fulfilled by any class used to instantiate the first template parameter of the class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code>. The added requirement is essential for the removal of existing vertices in a Delaunay triangulation of the Bolza surface.</p>
+<dl class="hasModels"><dt><b><a class="el" href="hasModels.html#_hasModels000001">Has Models:</a></b></dt><dd><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__traits__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_traits_2 is a model of the concept Periodic_4H...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_traits_2</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Computation Types</h2></td></tr>
 <tr class="memitem:a5eaeae3225aac22b0fbbf300be1b2a78"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classunspecified__type.html">unspecified_type</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html#a5eaeae3225aac22b0fbbf300be1b2a78">Compute_approximate_hyperbolic_diameter</a></td></tr>
-<tr class="memdesc:a5eaeae3225aac22b0fbbf300be1b2a78"><td class="mdescLeft"> </td><td class="mdescRight">Type that permits to compute the hyperbolic diameter of a circle.  <a href="#a5eaeae3225aac22b0fbbf300be1b2a78">More...</a><br /></td></tr>
+<tr class="memdesc:a5eaeae3225aac22b0fbbf300be1b2a78"><td class="mdescLeft"> </td><td class="mdescRight"> <div class="CGALModification">   <a href="#a5eaeae3225aac22b0fbbf300be1b2a78">More...</a><br /></div></td></tr>
 <tr class="separator:a5eaeae3225aac22b0fbbf300be1b2a78"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group" id="member-group"></a>
 Operations</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp456d0deba6a86c9585590550c797502d"></a> </p><div class="CGALModification"> 
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000021">Modifications:</a></b></dt><dd>The following function gives access to the computation object:  </dd></dl></div>  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000019">Modifications:</a></b></dt><dd>The following function gives access to the computation object:  </dd></dl></div>  
 </td></tr>
 <tr class="memitem:a8e6bd081ec6afc187bd47ae8c11bbee5"><td class="memItemLeft" align="right" valign="top"><a id="a8e6bd081ec6afc187bd47ae8c11bbee5"></a>
 <a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html#a5eaeae3225aac22b0fbbf300be1b2a78">Compute_approximate_hyperbolic_diameter</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html#a8e6bd081ec6afc187bd47ae8c11bbee5">compute_approximate_hyperbolic_diameter_object</a> () const</td></tr>
@@ -174,11 +167,11 @@ Operations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Type that permits to compute the hyperbolic diameter of a circle. </p>
+<p> </p><div class="CGALModification">  
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000018">Modifications:</a></b></dt><dd>Type that permits to compute the hyperbolic diameter of a circle.</dd></dl>
 <p>Must provide the function operator</p>
-<p><code>double operator()(Circle_2 c),</code></p>
-<p>which returns a floating-point approximation of the hyperbolic diameter of the circle <code>c</code>. </p>
-
+<p><code>double operator()(Hyperbolic_point_2 p1, Hyperbolic_point_2 p2, Hyperbolic_point_2 p3),</code></p>
+<p>which returns a floating-point approximation of the hyperbolic diameter of the circle defined by the points <code>p1, p2,</code> and <code>p3</code>.  </p></div>  
 </div>
 </div>
 </div><!-- contents -->
@@ -191,7 +184,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></li>
-    <li class="footer">Generated on Fri Sep 7 2018 11:18:55 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Sep 10 2018 10:45:44 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

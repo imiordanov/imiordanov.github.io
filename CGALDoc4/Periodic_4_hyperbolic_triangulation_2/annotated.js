@@ -1,7 +1,6 @@
 var annotated =
 [
     [ "CGAL", "namespaceCGAL.html", "namespaceCGAL" ],
-    [ "HyperbolicOctagonTranslation", "classHyperbolicOctagonTranslation.html", "classHyperbolicOctagonTranslation" ],
     [ "Periodic_4HyperbolicDelaunayTriangulationTraits_2", "classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html", "classPeriodic__4HyperbolicDelaunayTriangulationTraits__2" ],
     [ "Periodic_4HyperbolicTriangulationFaceBase_2", "classPeriodic__4HyperbolicTriangulationFaceBase__2.html", "classPeriodic__4HyperbolicTriangulationFaceBase__2" ],
     [ "Periodic_4HyperbolicTriangulationTraits_2", "classPeriodic__4HyperbolicTriangulationTraits__2.html", "classPeriodic__4HyperbolicTriangulationTraits__2" ],

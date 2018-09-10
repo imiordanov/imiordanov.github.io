@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['a',['A',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da4ead79d6ef637af4c126ec9a2440fecc',1,'CGAL::Hyperbolic_octagon_translation']]],
+  ['a_5fbar',['A_BAR',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da7094843f065ec4e065aae01695efc83d',1,'CGAL::Hyperbolic_octagon_translation']]],
   ['abort',['ABORT',['../../STL_Extension/group__PkgStlExtensionAssertions.html#ggac5eee7bb7edcc41dd3251042c5934deeafd47edae67791f804b5f1b616f2782ff',1,'CGAL::ABORT()'],['../../STL_Extension/group__PkgStlExtensionAssertions.html#ggac5eee7bb7edcc41dd3251042c5934deeafd47edae67791f804b5f1b616f2782ff',1,'ABORT()(Global Namespace)']]],
   ['absolute_5findexing',['ABSOLUTE_INDEXING',['../../Polyhedron/classCGAL_1_1Polyhedron__incremental__builder__3.html#a9170b2b38da4c51af6112903240e4c0ca556e93184fde3f2a89aa80de54463f4c',1,'CGAL::Polyhedron_incremental_builder_3']]],
   ['acute',['ACUTE',['../../Kernel_23/group__kernel__enums.html#gga8be07b00890ca29c0653be379113e8b0ace2a11071ccbc32967b0792e5bb7377b',1,'CGAL::ACUTE()'],['../../Kernel_23/group__kernel__enums.html#gga8be07b00890ca29c0653be379113e8b0ace2a11071ccbc32967b0792e5bb7377b',1,'ACUTE()(Global Namespace)']]],

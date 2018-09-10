@@ -3,6 +3,7 @@ var group__PkgHyperbolicTriangulation2Concepts =
     [ "HyperbolicDelaunayTriangulationTraits_2", "classHyperbolicDelaunayTriangulationTraits__2.html", [
       [ "Construct_hyperbolic_bisector_2", "classHyperbolicDelaunayTriangulationTraits__2.html#a75799476ff11f160774ee983d4ef8492", null ],
       [ "Construct_hyperbolic_circumcenter_2", "classHyperbolicDelaunayTriangulationTraits__2.html#a0bd22f37f2f58be27e73809604d24bea", null ],
+      [ "Construct_hyperbolic_point_2", "classHyperbolicDelaunayTriangulationTraits__2.html#a297b1b03450819677e85390eb9c78dcf", null ],
       [ "Construct_hyperbolic_segment_2", "classHyperbolicDelaunayTriangulationTraits__2.html#a74c0de3a8ba108edecfa9a1f3405d09f", null ],
       [ "FT", "classHyperbolicDelaunayTriangulationTraits__2.html#aabca21366ba08ad661b1fa9944b3afcf", null ],
       [ "Hyperbolic_point_2", "classHyperbolicDelaunayTriangulationTraits__2.html#a24d67ea80a1d5186969ab50d613d74d9", null ],
@@ -14,6 +15,7 @@ var group__PkgHyperbolicTriangulation2Concepts =
       [ "Side_of_oriented_hyperbolic_segment_2", "classHyperbolicDelaunayTriangulationTraits__2.html#aebec9df154230dbdd74be4ab13010cf5", null ],
       [ "construct_hyperbolic_bisector_2_object", "classHyperbolicDelaunayTriangulationTraits__2.html#ab6666c6a8e2d1f68f8c73f3833a3e361", null ],
       [ "construct_hyperbolic_circumcenter_2_object", "classHyperbolicDelaunayTriangulationTraits__2.html#ad35de208d15b950a4cc3e940460a7f6d", null ],
+      [ "construct_hyperbolic_point_2_object", "classHyperbolicDelaunayTriangulationTraits__2.html#a5a59c0d3a98ef7d1397e9c4f4fdbc610", null ],
       [ "construct_hyperbolic_segment_2_object", "classHyperbolicDelaunayTriangulationTraits__2.html#a765f0320d9db5a6e7386a4b06cbc4aeb", null ],
       [ "is_Delaunay_hyperbolic_object", "classHyperbolicDelaunayTriangulationTraits__2.html#a4a8ede9657aee02c185396b79d86a461", null ],
       [ "orientation_2_object", "classHyperbolicDelaunayTriangulationTraits__2.html#a5ece604982a9d276d13872cb052bfe4c", null ],

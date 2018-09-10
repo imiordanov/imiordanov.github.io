@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['b',['B',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da8aea3697456cb0be249905c3d5d948a0',1,'CGAL::Hyperbolic_octagon_translation']]],
+  ['b_5fbar',['B_BAR',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da701b8165b5a1e3d80edb73c710bb5560',1,'CGAL::Hyperbolic_octagon_translation']]],
   ['bad',['BAD',['../../Mesh_2/group__PkgMesh2.html#gga6d26ab50a4dcc8432e7090d8f6acdd84ada12eb5d3b4a033690acf1c771b2c3f3',1,'CGAL::Mesh_2::BAD()'],['../../Mesh_2/group__PkgMesh2.html#gga6d26ab50a4dcc8432e7090d8f6acdd84ada12eb5d3b4a033690acf1c771b2c3f3',1,'BAD()(Global Namespace)']]],
   ['barycentric_5fcoordinates_5finvalid',['BARYCENTRIC_COORDINATES_INVALID',['../../Surface_mesh_shortest_path/namespaceCGAL_1_1Surface__mesh__shortest__paths__3.html#a5a0848571076ddb998924ce9ca771dc3af91728c3e3b6d8e0e4eaf99d5ea5b886',1,'CGAL::Surface_mesh_shortest_paths_3']]],
   ['barycentric_5fcoordinates_5fon_5fboundary',['BARYCENTRIC_COORDINATES_ON_BOUNDARY',['../../Surface_mesh_shortest_path/namespaceCGAL_1_1Surface__mesh__shortest__paths__3.html#a5a0848571076ddb998924ce9ca771dc3abd8049939dac668997e37a931179845e',1,'CGAL::Surface_mesh_shortest_paths_3']]],

@@ -69,7 +69,6 @@ var searchData=
   ['hyperbolic_5foctagon_5ftranslation',['Hyperbolic_octagon_translation',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html',1,'CGAL']]],
   ['hyperbolic_5ftriangulation_5fface_5fbase_5f2',['Hyperbolic_triangulation_face_base_2',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__triangulation__face__base__2.html',1,'CGAL']]],
   ['hyperbolicdelaunaytriangulationtraits_5f2',['HyperbolicDelaunayTriangulationTraits_2',['../../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html',1,'']]],
-  ['hyperbolicoctagontranslation',['HyperbolicOctagonTranslation',['../../Periodic_4_hyperbolic_triangulation_2/classHyperbolicOctagonTranslation.html',1,'']]],
   ['hyperbolictriangulationfacebase_5f2',['HyperbolicTriangulationFaceBase_2',['../../Hyperbolic_triangulation_2/classHyperbolicTriangulationFaceBase__2.html',1,'']]],
   ['hyperplane_5fd',['Hyperplane_d',['../../Kernel_d/classCGAL_1_1Hyperplane__d.html',1,'CGAL']]]
 ];

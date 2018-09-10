@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['halfedge_5findex_5ft',['halfedge_index_t',['../../BGL/group__PkgBGLProperties.html#gab9975429768c90e61fa06fa88fa11bbf',1,'boost::halfedge_index_t()'],['../../BGL/group__PkgBGLProperties.html#gab9975429768c90e61fa06fa88fa11bbf',1,'halfedge_index_t()(Global Namespace)']]]
+  ['generator',['Generator',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3d',1,'CGAL::Hyperbolic_octagon_translation']]]
 ];

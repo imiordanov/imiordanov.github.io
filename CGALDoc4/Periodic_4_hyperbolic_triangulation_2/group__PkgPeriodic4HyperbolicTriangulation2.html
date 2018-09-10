@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
  <b>License:</b> <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/preliminaries.html#licensesGPL">GPL</a> <br />
  <b>Windows Demo:</b> <a href="http://www.cgal.org/demo/4.12/Periodic_4_hyperbolic_Delaunay_triangulation_2.zip">Periodic Hyperbolic Delaunay Triangulation</a><br />
 <b>Common Demo Dlls:</b> <a href="http://www.cgal.org/demo/4.12/CGAL-demoDLLs.zip">dlls</a><br />
- </div><p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000030">Modifications:</a></b></dt><dd></dd></dl>
+ </div><p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000027">Modifications:</a></b></dt><dd></dd></dl>
 <p><span style="font-variant: small-caps;">CGAL</span> traditionally represents a triangulation via its faces and vertices. We represent a triangulation of the Bolza surface via the canonical representatives of its faces in the hyperbolic plane. This package provides the necessary objects and functions to work with Delaunay triangulations of the Bolza surface.</p>
 <p>Each vertex gives access to one of its incident faces, and stores an input point. We additionally allow each vertex to store (temporarily) a hyperbolic translation to facilitate the insertion of new points and the removal of existing vertices.</p>
 <p>Each face gives access to its three incident vertices and to its three adjacent faces. We enable a face to store additionally three hyperbolic translations. When applied to the three points stored in the vertices of the face, these translations produce the canonical representative of the face in the hyperbolic plane.</p>
@@ -161,9 +161,6 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
 <li><code>Periodic_4HyperbolicTriangulationDSFaceBase_2</code></li>
 <li><code>Periodic_4HyperbolicTriangulationDSVertexBase_2</code></li>
 </ul>
-<p>Finally, the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code> describes the requirements for an object that represents a hyperbolic translation.</p><ul>
-<li><code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code></li>
-</ul>
 <h2>Classes</h2>
 <p>The main class of the 2D Periodic Triangulation package is <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code>. This class allows to construct and modify Delaunay triangulations of the Bolza surface. A secondary class made available is <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>, which gives access to the elements of the triangulation (vertices, edges, and faces), and functionality common to triangulations in general, such as point location. The class <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code> does <em>not</em> support insertion or removal of points. <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html" title="The class Periodic_4_hyperbolic_Delaunay_triangulation_2 allows the construction and handling of Dela...">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2</a></code> inherits <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code>.</p><ul>
 <li><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html" title="The class Periodic_4_hyperbolic_triangulation_2 offers base functionalities needed by Periodic_4_hype...">CGAL::Periodic_4_hyperbolic_triangulation_2</a></code></li>
@@ -176,8 +173,8 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
 <li><code>CGAL::Periodic_4_hyperbolic_triangulation_ds_face_base_2</code></li>
 <li><code>CGAL::Periodic_4_hyperbolic_triangulation_ds_vertex_base_2</code></li>
 </ul>
-<p>Finally, the class provides a model for the concept <code><a class="el" href="classHyperbolicOctagonTranslation.html" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">HyperbolicOctagonTranslation</a></code>.</p><ul>
-<li><code><a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html" title="The class Hyperbolic_octagon_translation is the default model for the concept HyperbolicOctagonTransl...">CGAL::Hyperbolic_octagon_translation</a></code>  </li></ul></div>  
+<p>Finally, the package provides a class to represent hyperbolic translations of the fundamental group \(\mathcal G\) of the Bolza surface.</p><ul>
+<li><code><a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html" title="The class Hyperbolic_octagon_translation defines an object to represent a hyperbolic translation of t...">CGAL::Hyperbolic_octagon_translation</a></code>  </li></ul></div>  
 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups" id="groups"></a>
@@ -202,7 +199,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 7 2018 11:18:55 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Sep 10 2018 10:45:44 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

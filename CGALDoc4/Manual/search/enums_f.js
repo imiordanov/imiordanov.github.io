@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['topology',['Topology',['../../Box_intersection_d/namespaceCGAL_1_1Box__intersection__d.html#ac1b7703e33d0fe5d9d484493189c9cd8',1,'CGAL::Box_intersection_d']]],
-  ['type_5fof_5falgorithm',['Type_of_algorithm',['../../Barycentric_coordinates_2/namespaceCGAL_1_1Barycentric__coordinates.html#a5e5682512438422f23d6080edc49c05b',1,'CGAL::Barycentric_coordinates']]]
+  ['setting',['Setting',['../../Box_intersection_d/namespaceCGAL_1_1Box__intersection__d.html#a7539d6db67bbedc4e4dc9ffe53d13d42',1,'CGAL::Box_intersection_d']]],
+  ['sign',['Sign',['../../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525',1,'CGAL::Sign()'],['../../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525',1,'Sign()(Global Namespace)']]],
+  ['site_5fof_5fpoint',['Site_of_point',['../../Arrangement_on_surface_2/classCGAL_1_1Arr__algebraic__segment__traits__2.html#ad530631780d2cf6e1a859def9710a8d1',1,'CGAL::Arr_algebraic_segment_traits_2']]]
 ];

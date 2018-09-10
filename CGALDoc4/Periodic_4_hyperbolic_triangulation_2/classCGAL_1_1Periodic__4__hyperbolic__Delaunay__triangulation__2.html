@@ -563,7 +563,7 @@ template&lt;class InputIterator &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000001">Modifications:</a></b></dt><dd>Point range constructor.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000005">Modifications:</a></b></dt><dd>Point range constructor.</dd></dl>
 <p>Initializes a triangulation and then inserts all points in the <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a></code>.  </p></div>  
 </div>
 </div>
@@ -586,7 +586,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000006">Modifications:</a></b></dt><dd>Tries to remove the dummy points from the triangulation one by one.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000010">Modifications:</a></b></dt><dd>Tries to remove the dummy points from the triangulation one by one.</dd></dl>
 <p>Returns the number of dummy points that could not be removed and are still present in the triangulation.  </p></div>  
 </div>
 </div>
@@ -687,7 +687,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000003">Modifications:</a></b></dt><dd>Inserts the point <code>p</code> in the triangulation.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000007">Modifications:</a></b></dt><dd>Inserts the point <code>p</code> in the triangulation.</dd></dl>
 <p>The face <code>start</code>, if given, is used as a starting place for the location of the point. Note that this function does not remove unnecessary dummy points. The removal, if desired, should be done by manually calling the function <code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a81f5519962a93b707d2e2e90d3314f4a" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">clean_dummy_points()</a></code>.</p>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a81f5519962a93b707d2e2e90d3314f4a" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">clean_dummy_points()</a></code>  </dd></dl></div>  
 
@@ -730,7 +730,7 @@ template&lt;class InputIterator &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000004">Modifications:</a></b></dt><dd>Inserts all points in the input iterator into the triangulation.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000008">Modifications:</a></b></dt><dd>Inserts all points in the input iterator into the triangulation.</dd></dl>
 <p>Note that this function by default tries to remove unnecessary dummy points at the end of the insertion process. This behavior is controlled by the optional boolean parameter <code>flag_clean_dummy_points</code>; if automatic removal of the dummy points is not desired, set the flag to <code>false</code>.</p>
 <dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a81f5519962a93b707d2e2e90d3314f4a" title=" &lt;div class=&quot;CGALModification&quot;&gt;  ">clean_dummy_points()</a></code>  </dd></dl></div>  
 
@@ -755,7 +755,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000002">Modifications:</a></b></dt><dd>Checks the combinatorial validity of the triangulation, and also the validity of its geometric embedding.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000006">Modifications:</a></b></dt><dd>Checks the combinatorial validity of the triangulation, and also the validity of its geometric embedding.</dd></dl>
 <p> </p></div>  
 </div>
 </div>
@@ -778,7 +778,7 @@ template&lt;class GT , class TDS &gt; </div>
 </div><div class="memdoc">
 
 <p> </p><div class="CGALModification">  
-<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000005">Modifications:</a></b></dt><dd>Removes the vertex <code>v</code> from the triangulation.</dd></dl>
+<dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000009">Modifications:</a></b></dt><dd>Removes the vertex <code>v</code> from the triangulation.</dd></dl>
 <p>The triangulation is fixed locally by triangulating the resulting hole. Note that <code>v</code> is removed from the triangulation only if the resulting triangulation remains a simplicial complex. The function returns <code>true</code> if the vertex <code>v</code> is removed from the triangulation, otherwise it returns <code>false</code>.  </p></div>  
 </div>
 </div>
@@ -792,7 +792,7 @@ move the footer to the bottom of the page. -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../Manual/namespaceCGAL.html">CGAL</a></li><li class="navelem"><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html">Periodic_4_hyperbolic_Delaunay_triangulation_2</a></li>
-    <li class="footer">Generated on Fri Sep 7 2018 11:18:55 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Mon Sep 10 2018 10:45:46 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>

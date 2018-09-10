@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ridge_5forder',['Ridge_order',['../../Ridges_3/group__PkgRidges__3Enums.html#ga00a3b23ecc61f7b02492e79cf7cf1b91',1,'CGAL::Ridge_order()'],['../../Ridges_3/group__PkgRidges__3Enums.html#ga00a3b23ecc61f7b02492e79cf7cf1b91',1,'Ridge_order()(Global Namespace)']]],
-  ['ridge_5ftype',['Ridge_type',['../../Ridges_3/group__PkgRidges__3Enums.html#ga52a2c136a49dc8f32e146aa8204cb65a',1,'CGAL::Ridge_type()'],['../../Ridges_3/group__PkgRidges__3Enums.html#ga52a2c136a49dc8f32e146aa8204cb65a',1,'Ridge_type()(Global Namespace)']]],
-  ['row_5ftype',['Row_type',['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()'],['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()'],['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()']]]
+  ['quadratic_5fprogram_5fpricing_5fstrategy',['Quadratic_program_pricing_strategy',['../../QP_solver/group__PkgQPSolverFunctions.html#ga5e4c5717fab328c4e94c3d58e1bd4517',1,'CGAL::Quadratic_program_pricing_strategy()'],['../../QP_solver/group__PkgQPSolverFunctions.html#ga5e4c5717fab328c4e94c3d58e1bd4517',1,'Quadratic_program_pricing_strategy()(Global Namespace)']]],
+  ['quadratic_5fprogram_5fstatus',['Quadratic_program_status',['../../QP_solver/group__PkgQPSolverClasses.html#gad1152456fa1f4b03083fea7a83772d63',1,'CGAL::Quadratic_program_status()'],['../../QP_solver/group__PkgQPSolverClasses.html#gad1152456fa1f4b03083fea7a83772d63',1,'Quadratic_program_status()(Global Namespace)']]],
+  ['query_5fpoint_5flocation',['Query_point_location',['../../Barycentric_coordinates_2/namespaceCGAL_1_1Barycentric__coordinates.html#aedeeb072a2024053a016afd15e591331',1,'CGAL::Barycentric_coordinates']]]
 ];

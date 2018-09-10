@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['setting',['Setting',['../../Box_intersection_d/namespaceCGAL_1_1Box__intersection__d.html#a7539d6db67bbedc4e4dc9ffe53d13d42',1,'CGAL::Box_intersection_d']]],
-  ['sign',['Sign',['../../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525',1,'CGAL::Sign()'],['../../Kernel_23/group__kernel__enums.html#ga59bee58a806ccde81562ea315ff75525',1,'Sign()(Global Namespace)']]],
-  ['site_5fof_5fpoint',['Site_of_point',['../../Arrangement_on_surface_2/classCGAL_1_1Arr__algebraic__segment__traits__2.html#ad530631780d2cf6e1a859def9710a8d1',1,'CGAL::Arr_algebraic_segment_traits_2']]]
+  ['ridge_5forder',['Ridge_order',['../../Ridges_3/group__PkgRidges__3Enums.html#ga00a3b23ecc61f7b02492e79cf7cf1b91',1,'CGAL::Ridge_order()'],['../../Ridges_3/group__PkgRidges__3Enums.html#ga00a3b23ecc61f7b02492e79cf7cf1b91',1,'Ridge_order()(Global Namespace)']]],
+  ['ridge_5ftype',['Ridge_type',['../../Ridges_3/group__PkgRidges__3Enums.html#ga52a2c136a49dc8f32e146aa8204cb65a',1,'CGAL::Ridge_type()'],['../../Ridges_3/group__PkgRidges__3Enums.html#ga52a2c136a49dc8f32e146aa8204cb65a',1,'Ridge_type()(Global Namespace)']]],
+  ['row_5ftype',['Row_type',['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()'],['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()'],['../../QP_solver/structQPSolverTraits.html#a28c6e38a778dfff1e5a2403f296d8977',1,'QPSolverTraits::Row_type()']]]
 ];

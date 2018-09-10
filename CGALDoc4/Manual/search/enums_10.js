@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['umbilic_5ftype',['Umbilic_type',['../../Ridges_3/group__PkgRidges__3Enums.html#ga4a6962972d77b9dcc9dfd82fdb5cf822',1,'CGAL::Umbilic_type()'],['../../Ridges_3/group__PkgRidges__3Enums.html#ga4a6962972d77b9dcc9dfd82fdb5cf822',1,'Umbilic_type()(Global Namespace)']]]
+  ['topology',['Topology',['../../Box_intersection_d/namespaceCGAL_1_1Box__intersection__d.html#ac1b7703e33d0fe5d9d484493189c9cd8',1,'CGAL::Box_intersection_d']]],
+  ['type_5fof_5falgorithm',['Type_of_algorithm',['../../Barycentric_coordinates_2/namespaceCGAL_1_1Barycentric__coordinates.html#a5e5682512438422f23d6080edc49c05b',1,'CGAL::Barycentric_coordinates']]]
 ];

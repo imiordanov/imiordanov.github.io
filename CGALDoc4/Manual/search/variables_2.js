@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['c',['C',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da9fe586db8dd96718764d573152efb220',1,'CGAL::Hyperbolic_octagon_translation']]],
+  ['c_5fbar',['C_BAR',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html#ad8d7068cd336de2c5a59b841b6d32b3da8bc2157cf8ac46166bd9b561858da329',1,'CGAL::Hyperbolic_octagon_translation']]],
   ['cant_5fimprove_5fanymore',['CANT_IMPROVE_ANYMORE',['../../Mesh_2/group__PkgMesh2Enum.html#ggab9fe60482a45120b3c061a8a4ec9018da9c7c2f09314491da054f3f5d7d7ab3b9',1,'CGAL::CANT_IMPROVE_ANYMORE()'],['../../Mesh_2/group__PkgMesh2Enum.html#ggab9fe60482a45120b3c061a8a4ec9018da9c7c2f09314491da054f3f5d7d7ab3b9',1,'CANT_IMPROVE_ANYMORE()(Global Namespace)']]],
   ['cell',['CELL',['../../Triangulation_3/classCGAL_1_1Triangulation__3.html#a5bea7d3470854571f97c18a675daca75aa264f5df83d639caa57ea1def2f16f36',1,'CGAL::Triangulation_3::CELL()'],['../../Periodic_3_triangulation_3/classCGAL_1_1Periodic__3__triangulation__3.html#aea197e602957a638211eb9f3f7f2c295afd2f506e985e2d91473fab7f31245bcc',1,'CGAL::Periodic_3_triangulation_3::CELL()'],['../../Periodic_3_triangulation_3/classCGAL_1_1Periodic__3__triangulation__3.html#aea197e602957a638211eb9f3f7f2c295afd2f506e985e2d91473fab7f31245bcc',1,'Periodic_3_triangulation_3&lt; PT, TDS &gt;::CELL()']]],
   ['circle',['circle',['../../Bounding_volumes/classMinCircle2Traits.html#a9216dd130e0c628b7f41b3ecf13072b9',1,'MinCircle2Traits']]],
