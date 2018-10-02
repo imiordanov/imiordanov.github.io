@@ -8,7 +8,7 @@ var group__PkgPeriodic4HyperbolicTriangulation2MainClasses =
       [ "clear", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ae7c12c91f13ea54df126e9c22b02c9dc", null ],
       [ "dual", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a270b7d899609698a96173fa57de9c9ae", null ],
       [ "dual", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#afe630134b25dd6c11dce6fa38ca84ffd", null ],
-      [ "find_conflicts", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a1c324d4927d70fe83213b4217b8e692c", null ],
+      [ "find_conflicts", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ac310c352e4544dff97a948ff5f2e36b5", null ],
       [ "insert", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a6ab429f8e5470cffce77610b16e690a4", null ],
       [ "insert", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a448a9b516bd4dc1bf99f45b3b10ad14d", null ],
       [ "is_dummy_vertex", "classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a7f598f8ae79fb95428f8fd35b489a48c", null ],

@@ -139,19 +139,19 @@ $(document).ready(function(){initNavTree('group__PkgPeriodic4HyperbolicTriangula
 </div>
  </div><div class="PkgSummary"> <div class="PkgAuthors">Iordan Iordanov and Monique Teillaud</div> <div class="PkgDescription">This package allows to build and handle triangulations of point sets on the two dimensional hyperbolic Bolza surface. Triangulations are built incrementally and can be modified by insertion or removal of vertices. Point location facilities are also offered. The package provides Delaunay triangulations and offers primitives to build the dual Voronoi diagrams.</div><p> <br />
  </p></div><div class="PkgShortInfo"> <b>Introduced in:</b> <span style="font-variant: small-caps;">CGAL</span> 4.14<br />
- <b>Depends on:</b> <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgHyperbolicTriangulation2Summary">2D Hyperbolic Triangulations</a> <br />
+ <b>Depends on:</b> <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/packages.html#PkgHyperbolicTriangulation2Summary">2D Hyperbolic Triangulations</a> <br />
  <b>BibTeX:</b> <a href="../Manual/how_to_cite_cgal.html#cgal:i-p4ht2-17-18b">cgal:i-p4ht2-17-18b</a><br />
- <b>License:</b> <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/preliminaries.html#licensesGPL">GPL</a> <br />
+ <b>License:</b> <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/preliminaries.html#licensesGPL">GPL</a> <br />
  <b>Windows Demo:</b> <a href="http://www.cgal.org/demo/4.12/Periodic_4_hyperbolic_Delaunay_triangulation_2.zip">Periodic Hyperbolic Delaunay Triangulation</a><br />
 <b>Common Demo Dlls:</b> <a href="http://www.cgal.org/demo/4.12/CGAL-demoDLLs.zip">dlls</a><br />
- </div><p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000027">Modifications:</a></b></dt><dd></dd></dl>
+ </div><p> </p><div class="CGALModification"> <dl class="Modification"><dt><b><a class="el" href="Modification.html#_Modification000028">Modifications:</a></b></dt><dd></dd></dl>
 <p><span style="font-variant: small-caps;">CGAL</span> traditionally represents a triangulation via its faces and vertices. We represent a triangulation of the Bolza surface via the canonical representatives of its faces in the hyperbolic plane. This package provides the necessary objects and functions to work with Delaunay triangulations of the Bolza surface.</p>
 <p>Each vertex gives access to one of its incident faces, and stores an input point. We additionally allow each vertex to store (temporarily) a hyperbolic translation to facilitate the insertion of new points and the removal of existing vertices.</p>
 <p>Each face gives access to its three incident vertices and to its three adjacent faces. We enable a face to store additionally three hyperbolic translations. When applied to the three points stored in the vertices of the face, these translations produce the canonical representative of the face in the hyperbolic plane.</p>
 <p>The three vertices of a face are indexed with 0, 1, and 2 in positive (counter-clockwise) orientation. The orientation of faces on the Bolza surface is defined as the orientation of their canonical representatives in the hyperbolic plane.</p>
 <p> </p><h2 class="groupheader">Classified Reference Pages</h2> 
 <h2>Concepts</h2>
-<p>The concepts in this package provide an interface for working with objects in the hyperbolic plane, including hyperbolic translations, which allow us to represent a triangulation of the Bolza surface. The concept <code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code> refines the concept <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code> and adds the functionality needed to apply hyperbolic translations to geometric objects in the hyperbolic plane.</p><ul>
+<p>The concepts in this package provide an interface for working with objects in the hyperbolic plane, including hyperbolic translations, which allow us to represent a triangulation of the Bolza surface. The concept <code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code> refines the concept <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a></code> and adds the functionality needed to apply hyperbolic translations to geometric objects in the hyperbolic plane.</p><ul>
 <li><code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code></li>
 </ul>
 <p>The concept <code><a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html">Periodic_4HyperbolicDelaunayTriangulationTraits_2</a></code> refines <code><a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a></code> and adds functionality needed for the removal of vertices from a Delaunay triangulation of the Bolza surface.</p><ul>
@@ -199,7 +199,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 10 2018 10:45:44 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
+    <li class="footer">Generated on Tue Oct 2 2018 14:20:46 for CGAL 4.12 - 2D Periodic Hyperbolic Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>
