@@ -216,3 +216,7 @@ img {
   }
 }
 
+
+.parallax img {
+  -webkit-mask-image: radial-gradient(40em circle, rgba(0,0,0,1) 38em, rgba(0,0,0,0));
+}
