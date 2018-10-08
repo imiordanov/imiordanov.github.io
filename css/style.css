@@ -90,6 +90,7 @@ footer.page-footer {
 
 html {
   font-family: textFont;
+  font-size: 13pt;
   background-image: url("../img/bg.png"); 
 }
 
