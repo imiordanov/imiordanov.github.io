@@ -8,7 +8,12 @@
         background: transparent;
     }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@font-face {
+    font-family: textFont;
+    src: url(../fonts/cardo/Cardo-Regular.ttf);
+}
+
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -84,7 +89,7 @@ footer.page-footer {
 }
 
 html {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: textFont;
   background-image: url("../img/bg.png"); 
 }
 
@@ -215,6 +220,15 @@ img {
     width: 100%;
   }
 }
+
+
+@media (max-width: 1200px) {
+  .quote {
+    display: none;
+  }
+}
+
+
 
 
 .parallax img {
