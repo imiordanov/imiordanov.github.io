@@ -10,8 +10,13 @@
 
 
 @font-face {
+    font-family: headFont;
+    src: url(../fonts/concrete/cmunobx.otf);
+}
+
+@font-face {
     font-family: textFont;
-    src: url(../fonts/cardo/Cardo-Regular.ttf);
+    src: url(../fonts/concrete/cmunorm.otf);
 }
 
 /* Custom Stylesheet */
@@ -90,12 +95,13 @@ footer.page-footer {
 
 html {
   font-family: textFont;
-  font-size: 13pt;
+  font-size: 1em;
   background-image: url("../img/bg.png"); 
 }
 
 .img-text {
   color: white;
+  font-family: headFont;
   font-weight: 300;
   color: #fff !important;
   text-shadow:
