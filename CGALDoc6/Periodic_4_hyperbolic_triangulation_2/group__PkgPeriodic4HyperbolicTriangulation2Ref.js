@@ -1,4 +1,4 @@
-var group__PkgPeriodic4HyperbolicTriangulation2 =
+var group__PkgPeriodic4HyperbolicTriangulation2Ref =
 [
     [ "Concepts", "group__PkgPeriodic4HyperbolicTriangulation2Concepts.html", "group__PkgPeriodic4HyperbolicTriangulation2Concepts" ],
     [ "Main Classes", "group__PkgPeriodic4HyperbolicTriangulation2MainClasses.html", "group__PkgPeriodic4HyperbolicTriangulation2MainClasses" ],

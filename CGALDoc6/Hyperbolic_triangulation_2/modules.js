@@ -1,4 +1,4 @@
 var modules =
 [
-    [ "2D Hyperbolic Triangulations Reference", "group__PkgHyperbolicTriangulation2.html", "group__PkgHyperbolicTriangulation2" ]
+    [ "2D Hyperbolic Delaunay Triangulations Reference", "group__PkgHyperbolicTriangulation2Ref.html", "group__PkgHyperbolicTriangulation2Ref" ]
 ];
