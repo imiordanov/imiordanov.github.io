@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/Modification.html"/>
+
+<link rel="canonical" href="https://doc.cgal.org/latest/Periodic_4_hyperbolic_triangulation_2/Modification.html" />
+
+<link rel="icon" type="image/png" href="../Manual/g-196x196-doc.png" />
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="generator" content="Doxygen 1.8.13" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CGAL 4.14 - 2D Periodic Hyperbolic Triangulations: MODIFICATIONS</title>
+<!-- <link href="../Manual/tabs.css" rel="stylesheet" type="text/css"/> -->
+<script type="text/javascript" src="../Manual/jquery.js"></script>
+<script type="text/javascript" src="../Manual/dynsections.js"></script>
+<!-- Manually include treeview and search to avoid bloat and to fix
+     paths to the directory Manual . -->
+<!-- $.treeview -->
+<!-- $.search -->
+<link href="navtree.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/search/searchdata.js"></script>
+<script type="text/javascript" src="../Manual/search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../Manual/search/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../Manual/search/search.js"></script>
+<!-- Manually done below. -->
+<link href="../Manual/stylesheet.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../Manual/cgal_stylesheet.css" rel="stylesheet" type="text/css" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
+<script src="../Manual/hacks.js" type="text/javascript"></script>
+<script src="modules.js" type="text/javascript"></script>
+<link href="customstyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Custom mathjax -->
+<!-- TODO: Remove this with MATHJAX_CODEFILE -->
+<span style="display:none">\( \newcommand{\E}{\mathrm{E}} \) \( \newcommand{\A}{\mathrm{A}} \)
+\( \newcommand{\R}{\mathrm{R}} \) \( \newcommand{\N}{\mathrm{N}} \) \( \newcommand{\Q}{\mathrm{Q}} \) \( \newcommand{\Z}{\mathrm{Z}} \)
+\(
+\def\ccSum #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}
+\def\ccProd #1#2#3{
+  \sum_{#1}^{#2}{#3}
+}\)
+</span>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://www.cgal.org/">cgal.org</a></li>
+    <li><a href="../Manual/index.html">Top</a></li>
+    <li><a href="../Manual/general_intro.html">Getting Started</a></li>
+    <li><a href="../Manual/tutorials.html">Tutorials</a></li>
+    <li><a href="../Manual/packages.html">Package Overview</a></li>
+    <li><a href="../Manual/how_to_cite_cgal.html">Acknowledging CGAL</a></li>
+  </ul>
+  <!-- In a package SEARCHENGINE = false, so we cannot use 
+       insertion. That's why we have to do it manually here. Notice
+       that we also take pngs from the Manual. -->
+  <div id="MSearchBox" class="MSearchBoxInactive">
+    <span class="left">
+      <img id="MSearchSelect" src="../Manual/search/mag_sel.png" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" alt="" />
+      <input type="text" id="MSearchField" value="Search" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" />
+    </span><span class="right">
+      <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../Manual/search/close.png" alt="" /></a>
+    </span>
+  </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CGAL 4.14 - 2D Periodic Hyperbolic Triangulations
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- Code below is usually inserted by doxygen when SEARCHENGINE =
+     true. Notice that the path to the search directory is adjusted to
+     the top-level.-->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../Manual/search",false,'Search');
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.13 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync" style="display: none"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Modification.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">MODIFICATIONS </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_Modification000001"></a>Class <a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html">CGAL::Hyperbolic_octagon_translation&lt; FT &gt;</a>  </dt>
+<dd>A translation \(g\) in \(\mathcal G\) is a mapping acting on the hyperbolic plane \(\mathbb H^2\). It has the form <p class="formulaDsp">
+\[ g(z) = \frac{ \alpha\cdot z + \beta }{ \overline{\beta}\cdot z + \overline{\alpha} }, \qquad \alpha,\beta \in \mathbb C, \qquad z \in \mathbb H^2, \qquad |\alpha|^2 - |\beta|^2 = 1, \]
+</p>
+ where \(\overline{\alpha}\) ane \(\overline{\beta}\) are the complex conjugates of \(\alpha\) and \(\beta\) respectively. In this implementation, the translation \(g\) is uniquely defined by its coefficients \(\alpha\) and \(\beta\).  </dd>
+<dt><a class="anchor" id="_Modification000004"></a>Member <a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html#aaf97d55846cac76b7b1cf54f174efea8">CGAL::Hyperbolic_octagon_translation&lt; FT &gt;::generator</a>  (const Word_letter wl)</dt>
+<dd>Return the generator <code>wl</code> of the group \(\mathcal G\). </dd>
+<dt><a class="anchor" id="_Modification000003"></a>Member <a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html#a5bb2708ed54de82fbba0ada80709191f">CGAL::Hyperbolic_octagon_translation&lt; FT &gt;::Word</a>  </dt>
+<dd>Represents a word on the alphabet \(\mathcal A\). </dd>
+<dt><a class="anchor" id="_Modification000002"></a>Member <a class="el" href="classCGAL_1_1Hyperbolic__octagon__translation.html#a5b9e99efa74ee9276c20d9b92587c0a9">CGAL::Hyperbolic_octagon_translation&lt; FT &gt;::Word_letter</a>  </dt>
+<dd>Represents a single letter of the alphabet \(\mathcal A\). </dd>
+<dt><a class="anchor" id="_Modification000006"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#ac310c352e4544dff97a948ff5f2e36b5">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::find_conflicts</a>  (const Point &amp;p, OutputFaceIterator it, Face_handle start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle()</a>, Hyperbolic_translation ltr=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7fcc7a09aef396a6e02d6634d4e04652">Hyperbolic_translation()</a>) const</dt>
+<dd>Computes the conflict zone induced by <code>p</code>. </dd>
+<dt><a class="anchor" id="_Modification000008"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#abe1244616e8b12326d63f715a846fb18">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::insert</a>  (<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> first, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> last, const bool flag_try_to_remove_dummy_vertices=true)</dt>
+<dd>Inserts all points in the input iterator into the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000007"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a6ab429f8e5470cffce77610b16e690a4">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::insert</a>  (const Point &amp;p, Face_handle start=<a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7cb1725a5f11fd4ed53b0130efbfe007">Face_handle()</a>)</dt>
+<dd>Inserts the point <code>p</code> in the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000005"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a80bf3949107c8287326a35a1d0a2a43a">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::Periodic_4_hyperbolic_Delaunay_triangulation_2</a>  (<a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> first, <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Manual.tag:../Manual/" href="../Manual/classInputIterator.html">InputIterator</a> last, const Geom_traits &amp;gt=Geom_traits())</dt>
+<dd>Point range constructor. </dd>
+<dt><a class="anchor" id="_Modification000009"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a4524c33a3fda149aa65f702b02d763ad">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::remove</a>  (Vertex_handle v)</dt>
+<dd>Removes the vertex <code>v</code> from the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000010"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#a13dd5c6bb176b592f565c94dd715b2ff">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::remove</a>  (VertexRemoveIterator first, VertexRemoveIterator last)</dt>
+<dd>Removes the vertices in the iterator range <code>[firs, last)</code> from the triangulation. </dd>
+<dt><a class="anchor" id="_Modification000011"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__Delaunay__triangulation__2.html#aaa7ff8045af0ec754a7d5d1b80870549">CGAL::Periodic_4_hyperbolic_Delaunay_triangulation_2&lt; GT, TDS &gt;::try_to_remove_dummy_vertices</a>  ()</dt>
+<dd>Tries to remove the dummy points from the triangulation one by one. </dd>
+<dt><a class="anchor" id="_Modification000017"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9996b21621ce235fbd5502d5856c8cc1">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::adjacent_vertices</a>  (Vertex_handle v) const</dt>
+<dd>Starts at an arbitrary vertex incident to <code>v</code>. </dd>
+<dt><a class="anchor" id="_Modification000018"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a83fb42962258c2c3359beb57b888505d">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::adjacent_vertices</a>  (Vertex_handle v, Face_handle f) const</dt>
+<dd>Starts at the first vertex of <code>f</code> adjacent to <code>v</code> in counterclockwise order around <code>v</code>. </dd>
+<dt><a class="anchor" id="_Modification000015"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a42bfde2e714960b9f203df99d68e9728">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::edges_begin</a>  () const</dt>
+<dd>Starts at an arbitrary edge. </dd>
+<dt><a class="anchor" id="_Modification000016"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad41e2e641144563cdd42d4c9b8ef730f">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::faces_begin</a>  () const</dt>
+<dd>Starts at an arbitrary face. </dd>
+<dt><a class="anchor" id="_Modification000013"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a7c99929bbfdac02cf8a7900288048e86">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::has_vertex</a>  (const Face_handle f, const Vertex_handle v, const int i) const</dt>
+<dd>Tests whether face <code>f</code> has <code>v</code> as a vertex. </dd>
+<dt><a class="anchor" id="_Modification000012"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#ad8dd8dbc69e7924f1dbf34f85ac707d4">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::Point</a>  </dt>
+<dd>Represents a point in the hyperbolic plane. </dd>
+<dt><a class="anchor" id="_Modification000014"></a>Member <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__2.html#a9680245b9423626ababd7cb634ab58de">CGAL::Periodic_4_hyperbolic_triangulation_2&lt; GT, TDS &gt;::vertices_begin</a>  () const</dt>
+<dd>Starts at an arbitrary vertex. </dd>
+<dt><a class="anchor" id="_Modification000019"></a>Class <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__face__base__2.html">CGAL::Periodic_4_hyperbolic_triangulation_face_base_2&lt; GT, FB &gt;</a>  </dt>
+<dd><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__face__base__2.html" title="The class Periodic_4_hyperbolic_triangulation_face_base_2 is the default model for the concept Period...">Periodic_4_hyperbolic_triangulation_face_base_2</a></code> can be simply plugged in the triangulation data structure of a periodic hyperbolic triangulation, or used as a base class to derive other base vertex classes tuned for specific applications.  </dd></dl></div>  
+<dt><a class="anchor" id="_Modification000020"></a>Class <a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__vertex__base__2.html">CGAL::Periodic_4_hyperbolic_triangulation_vertex_base_2&lt; GT, Vb &gt;</a>  </dt>
+<dd><code><a class="el" href="classCGAL_1_1Periodic__4__hyperbolic__triangulation__vertex__base__2.html" title="The class Periodic_4_hyperbolic_triangulation_vertex_base_2 is the default model for the concept Peri...">Periodic_4_hyperbolic_triangulation_vertex_base_2</a></code> can be simply plugged in the triangulation data structure of a periodic hyperbolic triangulation, or used as a base class to derive other base vertex classes tuned for specific applications.  </dd></div>  
+<dt><a class="anchor" id="_Modification000021"></a>Member <a class="el" href="classPeriodic__4HyperbolicDelaunayTriangulationTraits__2.html#a5eaeae3225aac22b0fbbf300be1b2a78">Periodic_4HyperbolicDelaunayTriangulationTraits_2::Compute_approximate_hyperbolic_diameter</a>  </dt>
+<dd>Must provide the function operator </dd>
+<dt><a class="anchor" id="_Modification000022"></a>Class <a class="el" href="classPeriodic__4HyperbolicTriangulationFaceBase__2.html">Periodic_4HyperbolicTriangulationFaceBase_2</a>  </dt>
+<dd></dd>
+<dt><a class="anchor" id="_Modification000023"></a>Class <a class="el" href="classPeriodic__4HyperbolicTriangulationTraits__2.html">Periodic_4HyperbolicTriangulationTraits_2</a>  </dt>
+<dd>The concept requires that the field number type <code>FT</code> defined in the concept <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Hyperbolic_triangulation_2.tag:../Hyperbolic_triangulation_2/" href="../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html">HyperbolicDelaunayTriangulationTraits_2</a> supports exact computations with algebraic numbers, in particular with nested square roots.  </dd></div>  
+<dt><a class="anchor" id="_Modification000024"></a>Class <a class="el" href="classPeriodic__4HyperbolicTriangulationVertexBase__2.html">Periodic_4HyperbolicTriangulationVertexBase_2</a>  </dt>
+<dd><p class="startdd"></p>
+<p class="enddd">A boolean flag indicates whether the face stores a translation or not. The value of the flag is automatically set when storing or removing a translation.    </p></dd>
+<dt><a class="anchor" id="_Modification000026"></a>Module <a class="el" href="group__PkgPeriodic4HyperbolicTriangulation2Ref.html">PkgPeriodic4HyperbolicTriangulation2Ref</a>  </dt>
+<dd></dd>
+
+<!-- contents -->
+<!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.13-->
+<!-- start footer part -->
+<!-- The footer div is not part of the default but we require it to
+move the footer to the bottom of the page. -->
+<div id="footer">
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Thu Nov 22 2018 20:48:27 for CGAL 4.14 - 2D Periodic Hyperbolic Triangulations by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
+  </ul>
+</div>
+</div>
+</body>
+
+
+</html>
