@@ -3,8 +3,6 @@
 <head>
 <link rel="canonical" href="https://doc.cgal.org/latest/Manual/preliminaries.html"/>
 
-<link rel="canonical" href="https://doc.cgal.org/latest/Manual/preliminaries.html" />
-
 <link rel="icon" type="image/png" href="../Manual/g-196x196-doc.png" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -188,7 +186,7 @@ Deprecated Code</h2>
 <p>In order to help users manage the changes to apply to their code, we attempt to make <span style="font-variant: small-caps;">CGAL</span> code emit warnings when deprecated code is used. This can be done using some compiler specific features. Those warnings can be disabled by defining the macro <code>CGAL_NO_DEPRECATION_WARNINGS</code>. On top of this, we also provide a macro, <code>CGAL_NO_DEPRECATED_CODE</code>, which, when defined, disables all deprecated features. This allows users to easily test if their code relies on deprecated features.</p>
 <h1><a class="anchor" id="Preliminaries_namespace"></a>
 Namespace CGAL</h1>
-<p>All names introduced by <span style="font-variant: small-caps;">CGAL</span>, especially those documented in these manuals, are in a namespace called <code><a class="el" href="namespaceCGAL.html">CGAL</a></code>, which is in global scope. A user can either qualify names from <span style="font-variant: small-caps;">CGAL</span> by adding <code><a class="el" href="namespaceCGAL.html">CGAL</a>::</code>, e.g., <code><a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__2.html">CGAL::Point_2</a>&lt; <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</a> &gt;</code>, make a single name from <span style="font-variant: small-caps;">CGAL</span> visible in a scope via a <code>using</code> statement, e.g., <code>using <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__2.html">CGAL::Point_2</a>;</code>, and then use this name unqualified in this scope, or even make all names from namespace <code><a class="el" href="namespaceCGAL.html">CGAL</a></code> visible in a scope with <code>using namespace <a class="el" href="namespaceCGAL.html">CGAL</a>;</code>. The latter, however, is likely to give raise to name conflicts and is therefore not recommended.</p>
+<p>All names introduced by <span style="font-variant: small-caps;">CGAL</span>, especially those documented in these manuals, are in a namespace called <code><a class="el" href="namespaceCGAL.html">CGAL</a></code>, which is in global scope. A user can either qualify names from <span style="font-variant: small-caps;">CGAL</span> by adding <code><a class="el" href="namespaceCGAL.html">CGAL</a>::</code>, e.g., <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__2.html">CGAL::Point_2</a>&lt; <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Exact__predicates__inexact__constructions__kernel.html">CGAL::Exact_predicates_inexact_constructions_kernel</a> &gt;</code>, make a single name from <span style="font-variant: small-caps;">CGAL</span> visible in a scope via a <code>using</code> statement, e.g., <code>using <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Kernel_23.tag:../Kernel_23/" href="../Kernel_23/classCGAL_1_1Point__2.html">CGAL::Point_2</a>;</code>, and then use this name unqualified in this scope, or even make all names from namespace <code><a class="el" href="namespaceCGAL.html">CGAL</a></code> visible in a scope with <code>using namespace <a class="el" href="namespaceCGAL.html">CGAL</a>;</code>. The latter, however, is likely to give raise to name conflicts and is therefore not recommended.</p>
 <h1><a class="anchor" id="Preliminaries_thread_safety"></a>
 Thread Safety</h1>
 <p><span style="font-variant: small-caps;">CGAL</span> is progressively being made thread-safe. The guidelines which are followed are:</p>
@@ -203,10 +201,10 @@ C++11 Support</h1>
 <p><span style="font-variant: small-caps;">CGAL</span> attempts to support this mode progressively, and already makes use of some of these features if they are available, although no extensive support has been implemented yet.</p>
 <h1><a class="anchor" id="Preliminaries_functor"></a>
 Functor Return Types</h1>
-<p><span style="font-variant: small-caps;">CGAL</span> functors support the <a href="https://www.boost.org/doc/libs/release/libs/utility/utility.htm#result_of">result_of</a> protocol. If a functor <code>F</code> has the same return type across all overloads of <code>operator()</code>, the nested type <code>F::result_type</code> is defined to be that type. Otherwise the return type of calling the functor with an argument of type <code>Arg</code> can be accessed through <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1cpp11_1_1result__of.html#a0116f3bad73d2c51520c134dffbf1449"><code>CGAL::cpp11::result_of&lt;F(Arg)&gt;::type</code> </a>.</p>
+<p><span style="font-variant: small-caps;">CGAL</span> functors support the <a href="https://www.boost.org/doc/libs/release/libs/utility/utility.htm#result_of">result_of</a> protocol. If a functor <code>F</code> has the same return type across all overloads of <code>operator()</code>, the nested type <code>F::result_type</code> is defined to be that type. Otherwise the return type of calling the functor with an argument of type <code>Arg</code> can be accessed through <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/structCGAL_1_1cpp11_1_1result__of.html#a0116f3bad73d2c51520c134dffbf1449"><code>CGAL::cpp11::result_of&lt;F(Arg)&gt;::type</code> </a>.</p>
 <h1><a class="anchor" id="preliminaries_secchecks"></a>
 Checks</h1>
-<p>Much of the <span style="font-variant: small-caps;">CGAL</span> code contains assert statements for preconditions, and postconditions of functions as well as in the code. These assertions can be switched on and off per package and the user can change the error behaviour. For details see Section <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/index.html#secchecks">Checks</a> of Chapter <a class="elRef" doxygen="/home/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/index.html#Chapter_STL_Extensions_for_CGAL">Chapter_STL_Extensions_for_CGAL</a>.</p>
+<p>Much of the <span style="font-variant: small-caps;">CGAL</span> code contains assert statements for preconditions, and postconditions of functions as well as in the code. These assertions can be switched on and off per package and the user can change the error behaviour. For details see Section <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/index.html#secchecks">Checks</a> of Chapter <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/STL_Extension.tag:../STL_Extension/" href="../STL_Extension/index.html#Chapter_STL_Extensions_for_CGAL">Chapter_STL_Extensions_for_CGAL</a>.</p>
 <h1><a class="anchor" id="seccgal_version"></a>
 Identifying the Version of CGAL</h1>
 <p><code>&lt;CGAL/config.h&gt;</code></p>
@@ -252,13 +250,12 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Dec 5 2018 07:33:32 for CGAL 4.14 - Manual by
+    <li class="footer">Generated on Thu Dec 6 2018 11:13:31 for CGAL 4.14 - Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>
 </div>
 </div>
 </body>
-
 
 </html>
