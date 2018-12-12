@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('index.html','');});
  </center><p>This package enables the computation of Delaunay triangulations of point sets in the Poincaré disk model of the hyperbolic plane.</p>
 <h1><a class="anchor" id="HT2_Poincare_model"></a>
 The Poincaré Disk Model of the Hyperbolic Plane</h1>
-<p>The Poincaré disk model represents the hyperbolic plane \(\mathbb H^2\) as the open unit disk centered at the origin in the Euclidean plane. The unit circle represents the set \(\mathcal H_\infty\) of points at infinity.</p>
+<p>The Poincaré disk model represents the hyperbolic plane \(\mathbb H^2\) in the unit disk centered at the origin in the Euclidean plane: points of \(\mathbb H^2\) lie in the interior of the disk, while its boundary, the unit circle, represents the set \(\mathcal H_\infty\) of points at infinity.</p>
 <p>In this model, a hyperbolic line is either an arc of circle perpendicular to the unit circle or, if it passes through the origin, a diameter of the unit disk. A hyperbolic circle is a Euclidean circle contained in the unit disk; however, its hyperbolic center and radius are not the same as its Euclidean center and radius.</p>
 <p><a class="anchor" id="fig__Hyperbolic_triangulation_2Poincare_disk"></a></p><center> <div class="image">
 <object type="image/svg+xml" data="poincare-disk.svg" style="max-width:27%; width=27%;"></object>
@@ -148,13 +148,13 @@ The Poincaré Disk Model of the Hyperbolic Plane</h1>
 
 <h1><a class="anchor" id="HT2_Euclidean_and_hyperbolic_Delaunay_triangulations"></a>
 Euclidean and Hyperbolic Delaunay Triangulations</h1>
-<p>As hyperbolic circles coincide with Euclidean circles contained in the unit disk, the combinatorial structure of the hyperbolic Delaunay triangulation of a set \(\mathcal P\) of points in \(\mathbb H^2\) is a subset of the Euclidean Delaunay triangulation of \(\mathcal P\). More precisely, the hyperbolic Delaunay triangulation of \(\mathcal P\) is a connected simplicial complex that only contains the simplices of the Euclidean Delaunay triangulation that are <em>hyperbolic</em>: </p><ul>
+<p>As hyperbolic circles coincide with Euclidean circles contained in the unit disk, the combinatorial structure of the hyperbolic Delaunay triangulation of a set \(\mathcal P\) of points in \(\mathbb H^2\) is a subset of the Euclidean Delaunay triangulation of \(\mathcal P\) (see <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Euclidean_vs_hyperbolic">Figure 42.2</a> - Left). More precisely, the hyperbolic Delaunay triangulation of \(\mathcal P\) only contains the simplices of the Euclidean Delaunay triangulation that are <em>hyperbolic</em>: </p><ul>
 <li>
 A Euclidean Delaunay face is hyperbolic if its circumscribing circle is contained in \(\mathbb H^2\). </li>
 <li>
-An Euclidean Delaunay edge is hyperbolic if one of the empty disks (i.e., not containing any point of \(\mathcal P\)) passing through its endpoints is contained in \(\mathbb H^2\). </li>
+A Euclidean Delaunay edge is hyperbolic if one of the empty disks (i.e., not containing any point of \(\mathcal P\)) passing through its endpoints is contained in \(\mathbb H^2\). </li>
 </ul>
-<p>In the Euclidean Delaunay triangulation, there is a bijection between non-hyperbolic faces and non-hyperbolic edges <a class="el" href="citelist.html#CITEREF_cgal:bdt-hdcvd-14">[1]</a>. For an example of a hyperbolic Delaunay triangulation and the underlying Euclidean Delaunay triangulation, as well as for an example of a non-hyperbolic Delaunay edge, see <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Euclidean_vs_hyperbolic">Figure 42.2</a>.</p>
+<p>In the Euclidean Delaunay triangulation, there is a bijection between non-hyperbolic faces and non-hyperbolic edges <a class="el" href="citelist.html#CITEREF_cgal:bdt-hdcvd-14">[1]</a>, illustrated by <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Euclidean_vs_hyperbolic">Figure 42.2</a> - Right.</p>
 <p><a class="anchor" id="fig__Hyperbolic_triangulation_2Euclidean_vs_hyperbolic"></a></p><center> <div class="image">
 <object type="image/svg+xml" data="hyperbolic-vs-euclidean.svg" style="max-width:27%; width=27%; display: inline-block; text-align:right;"></object>
 </div>
@@ -163,6 +163,13 @@ An Euclidean Delaunay edge is hyperbolic if one of the empty disks (i.e., not co
 </div>
  </center><p>  </p><div class="cgal_figure_caption">  <a class="el" href="index.html#fig__Hyperbolic_triangulation_2Euclidean_vs_hyperbolic">Figure 42.2</a> <b>Left:</b> The Euclidean (red) and hyperbolic (black) Delaunay triangulations of a given set of points in the unit disk. Only the colored faces are faces of the hyperbolic Delaunay triangulation. The hyperbolic and Euclidean geometric embeddings of a Delaunay face that exists in both triangulations are different. <b>Right:</b> The shaded face is non-hyperbolic. Its dashed edge is non-hyperbolic, as no empty circle through its endpoints is contained in \(\mathbb H^2\). Its other two edges are hyperbolic.  </div>  <br />
 
+<p>The hyperbolic Delaunay triangulation is a simplicial complex, i.e., a set of simplices such that </p><ul>
+<li>
+any face of a simplex is a simplex, </li>
+<li>
+two simplices either are disjoint or share a common face. </li>
+</ul>
+<p>Moreover, it is connected <a class="el" href="citelist.html#CITEREF_cgal:bdt-hdcvd-14">[1]</a>.</p>
 <h1><a class="anchor" id="HT2_Software_design"></a>
 Software Design</h1>
 <p>From what was said above, it is natural that the class <code><a class="el" href="classCGAL_1_1Hyperbolic__Delaunay__triangulation__2.html" title="The class Hyperbolic_Delaunay_triangulation_2 is the main class of the 2D Hyperbolic Delaunay Triangu...">Hyperbolic_Delaunay_triangulation_2</a></code> privately inherits from the class <code><a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/classCGAL_1_1Delaunay__triangulation__2.html">Delaunay_triangulation_2</a></code>. Consequently, users are encouraged to look at Chapter <a class="elRef" doxygen="/Users/iordanov/Documents/Code/builds/cgal-iordan-clean/doc_tags/Triangulation_2.tag:../Triangulation_2/" href="../Triangulation_2/index.html#Chapter_2D_Triangulations">2D Triangulation</a> of the CGAL manual to know more in particular about the representation of triangulations in <a class="el" href="namespaceCGAL.html">CGAL</a> and the flexibility of the design.</p>
@@ -205,11 +212,13 @@ a Euclidean Delaunay triangulation with <code><a class="elRef" doxygen="/Users/i
 <tr>
 <td>Hyperbolic (CK traits) </td><td>330 sec. </td><td>1 sec. </td><td>289 sec. </td><td>1 sec. </td></tr>
 <tr>
-<td>Euclidean (EPICK) </td><td>131 sec. </td><td>&lt; 1 sec. </td><td>114 sec. </td><td>&lt; 1 sec. </td></tr>
+<td>Euclidean (EPICK) </td><td>131 sec. </td><td>0.71 sec. </td><td>114 sec. </td><td>0.68 sec. </td></tr>
 </table>
 </center><h1><a class="anchor" id="HT2_Design"></a>
 Design and Implementation History</h1>
-<p>This package implements the algorithms for computing Delaunay complexes in the hyperbolic plane, described by Mikhail Bogdanov, Olivier Devillers, and Monique Teillaud <a class="el" href="citelist.html#CITEREF_cgal:bdt-hdcvd-14">[1]</a>. </p>
+<p>This package implements the algorithms for computing Delaunay complexes in the hyperbolic plane, described by Mikhail Bogdanov, Olivier Devillers, and Monique Teillaud <a class="el" href="citelist.html#CITEREF_cgal:bdt-hdcvd-14">[1]</a>.</p>
+<p>Mikhail Bogdanov wrote most of the code. Iordan Iordanov added the traits class <code><a class="el" href="classCGAL_1_1Hyperbolic__Delaunay__triangulation__traits__2.html" title="The class Hyperbolic_Delaunay_triangulation_traits_2 is designed as one of the default models for the...">CGAL::Hyperbolic_Delaunay_triangulation_traits_2</a></code> and worked on the documentations. Both were PhD candidates advised by Monique Teillaud.</p>
+<p>Authors acknowledge partial support from <a href="https://members.loria.fr/Monique.Teillaud/collab/SoS/">ANR SoS</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
@@ -219,7 +228,7 @@ move the footer to the bottom of the page. -->
 <div id="footer">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Dec 12 2018 15:31:32 for CGAL 4.14 - 2D Hyperbolic Delaunay Triangulations by
+    <li class="footer">Generated on Wed Dec 12 2018 18:04:43 for CGAL 4.14 - 2D Hyperbolic Delaunay Triangulations by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen" /></a> 1.8.13 </li>
   </ul>
