@@ -65,7 +65,7 @@ var searchData=
   ['hyperbolic_5fdelaunay_5ftriangulation_5f2',['Hyperbolic_Delaunay_triangulation_2',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__Delaunay__triangulation__2.html',1,'CGAL']]],
   ['hyperbolic_5fdelaunay_5ftriangulation_5fck_5ftraits_5f2',['Hyperbolic_Delaunay_triangulation_CK_traits_2',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__Delaunay__triangulation__CK__traits__2.html',1,'CGAL']]],
   ['hyperbolic_5fdelaunay_5ftriangulation_5ftraits_5f2',['Hyperbolic_Delaunay_triangulation_traits_2',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__Delaunay__triangulation__traits__2.html',1,'CGAL']]],
-  ['hyperbolic_5fdelaunay_5ftriangulation_5ftraits_5f2_3c_20kernel_20_3e',['Hyperbolic_Delaunay_triangulation_traits_2&lt; Kernel &gt;',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__Delaunay__triangulation__traits__2.html',1,'']]],
+  ['hyperbolic_5fdelaunay_5ftriangulation_5ftraits_5f2_3c_20kernel_20_3e',['Hyperbolic_Delaunay_triangulation_traits_2&lt; Kernel &gt;',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__Delaunay__triangulation__traits__2.html',1,'CGAL']]],
   ['hyperbolic_5foctagon_5ftranslation',['Hyperbolic_octagon_translation',['../../Periodic_4_hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__octagon__translation.html',1,'CGAL']]],
   ['hyperbolic_5ftriangulation_5fface_5fbase_5f2',['Hyperbolic_triangulation_face_base_2',['../../Hyperbolic_triangulation_2/classCGAL_1_1Hyperbolic__triangulation__face__base__2.html',1,'CGAL']]],
   ['hyperbolicdelaunaytriangulationtraits_5f2',['HyperbolicDelaunayTriangulationTraits_2',['../../Hyperbolic_triangulation_2/classHyperbolicDelaunayTriangulationTraits__2.html',1,'']]],
