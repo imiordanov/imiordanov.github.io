@@ -95,7 +95,7 @@ footer.page-footer {
 
 html {
   font-family: textFont;
-  font-size: 1em;
+  font-size: 1.1em;
   background-image: url("../img/bgperiodic2.png"); 
 }
 
@@ -133,7 +133,7 @@ html {
 img {
   float: left;
   margin-right: 20px;
-  border-radius: 35px 15px;
+  border-radius: 35px 10px;
 }
 
 
@@ -237,7 +237,7 @@ img {
 
 
 
-
+/*
 .parallax img {
   -webkit-mask-image: radial-gradient(40em circle, rgba(0,0,0,1) 38em, rgba(0,0,0,0));
-}
+}*/
