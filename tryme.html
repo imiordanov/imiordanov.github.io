@@ -10,14 +10,14 @@
         <script type="text/javascript">
             var canvas;
             var jdata;
+            var info;
 
             function loadJSON(callback) {   
                 var xobj = new XMLHttpRequest();
                 xobj.overrideMimeType("application/json");
-                xobj.open('GET', 'viz.json', true); // Replace 'my_data' with the path to your file
+                xobj.open('GET', 'viz.json', true); 
                 xobj.onreadystatechange = function () {
                     if (xobj.readyState == 4 && xobj.status == "200") {
-                        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
                         callback(xobj.responseText);
                     }
                 };
@@ -42,13 +42,21 @@
 
             function draw() {
                 canvas = document.getElementById('canvas');
-                rect = canvas.getBoundingClientRect();
+                info = document.getElementById('info');
+
+                canvas.onmousemove = function(event) {
+                    res = getCoords(event.offsetX, event.offsetY);
+                    info.style.position = "absolute";
+                    info.style.top = event.clientY + "px";
+                    info.style.left = event.clientX + "px";
+                    info.innerHTML = jdata[res.y][res.x]
+                };
+                canvas.onmouseenter = function(event) {
+                    info.style.display = "inline-block";
+                };
+
                 if (canvas.getContext) {
                     var ctx = canvas.getContext('2d');
-                    canvas.onmousemove = function(event) {
-                        res = getCoords(event.offsetX, event.offsetY);
-                        console.log( res.x + ", " + res.y);
-                    };
                     var img = new Image();
                     img.onload = function() {
                         canvas.width = this.width;
@@ -73,6 +81,12 @@
         <div style="margin: auto; text-align: center; vertical-align: middle;">
             <canvas style="border: 1pt solid black;" id="canvas" width="150" height="150"></canvas>
         </div>
+
+
+        <span id="info" style="z-index: 10; position: absolute; top: 0; left: 0; display: none; background: #FFF;">
+            This is some random text.
+        </span>
+
     </body>
 </html>
 
