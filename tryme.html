@@ -9,6 +9,7 @@
 
         <script type="text/javascript">
             var canvas;
+            var container;
             var jdata;
             var info;
 
@@ -41,20 +42,21 @@
             }
 
             function draw() {
+                container = document.getElementById('container');
                 canvas = document.getElementById('canvas');
                 info = document.getElementById('info');
 
-                canvas.onmousemove = function(event) {
+                canvas.onmouseup = function(event) {
                     res = getCoords(event.offsetX, event.offsetY);
                     info.style.position = "absolute";
                     info.style.top = event.clientY + "px";
                     info.style.left = event.clientX + "px";
                     info.innerHTML = jdata[res.y][res.x];
-                };
-                canvas.onmouseenter = function(event) {
                     info.style.display = "inline-block";
                 };
-
+                canvas.onmousemove = function(event) {
+                    info.style.display = "none";
+                };
                 if (canvas.getContext) {
                     var ctx = canvas.getContext('2d');
                     var img = new Image();
@@ -78,9 +80,9 @@
 
     </head>
 
-    <body onload="draw();">
-        <div style="margin: auto; text-align: center; vertical-align: middle;">
-            <canvas style="border: 1pt solid black;" id="canvas" width="150" height="150"></canvas>
+    <body onload="draw();" style="user-select: none;">
+        <div style="margin: auto; text-align: center; vertical-align: middle; user-select: none;" id="container">
+            <canvas style="border: 1pt solid black; user-select: none;" id="canvas" width="150" height="150"></canvas>
         </div>
 
 
