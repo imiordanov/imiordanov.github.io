@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>TryMe!</title>
+        <meta name="description" content="Test page">
+
+        <script type="text/javascript">
+            var canvas;
+            var jdata;
+
+            function loadJSON(callback) {   
+                var xobj = new XMLHttpRequest();
+                xobj.overrideMimeType("application/json");
+                xobj.open('GET', 'viz.json', true); // Replace 'my_data' with the path to your file
+                xobj.onreadystatechange = function () {
+                    if (xobj.readyState == 4 && xobj.status == "200") {
+                        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                        callback(xobj.responseText);
+                    }
+                };
+                xobj.send(null);  
+            }
+
+            function getCoords(cx, cy) {
+                if (cx < 0) {
+                    cx = 0;
+                }
+                if (cx > canvas.width) {
+                    cx = canvas.width-1;
+                }
+                if (cy < 0) {
+                    cy = 0;
+                }
+                if (cy > canvas.height) {
+                    cy = canvas.height - 1;
+                }
+                return {x: cx, y: cy }
+            }
+
+            function draw() {
+                canvas = document.getElementById('canvas');
+                rect = canvas.getBoundingClientRect();
+                if (canvas.getContext) {
+                    var ctx = canvas.getContext('2d');
+                    canvas.onmousemove = function(event) {
+                        res = getCoords(event.offsetX, event.offsetY);
+                        console.log( res.x + ", " + res.y);
+                    };
+                    var img = new Image();
+                    img.onload = function() {
+                        canvas.width = this.width;
+                        canvas.height = this.height;
+                        ctx.drawImage(img, 0, 0);
+                        loadJSON(function(response) {
+                            // Parse JSON string into object
+                            jdata = JSON.parse(response);
+                            alert("JSON data loaded!");
+                        });
+                    }
+                    img.src = 'viz.png';
+                }
+
+                
+            }
+        </script>
+
+    </head>
+
+    <body onload="draw();">
+        <div style="margin: auto; text-align: center; vertical-align: middle;">
+            <canvas style="border: 1pt solid black;" id="canvas" width="150" height="150"></canvas>
+        </div>
+    </body>
+</html>
+
+
+
+
