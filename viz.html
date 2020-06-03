@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>TryMe!</title>
+        <meta name="description" content="Test page">
+
+        <script type="text/javascript">
+            var canvas;
+            var container;
+            var jdata;
+            var jlabels;
+            var info;
+
+            function format(data) {
+                var res = "";
+                for (var i = 0; i < jlabels.length; i++) {
+                    res += jlabels[i] + ": " + data[i] + "<br>";
+                } 
+                return res;
+            }
+
+            function loadJSON(callback) {   
+                var xobj = new XMLHttpRequest();
+                xobj.overrideMimeType("application/json");
+                xobj.open('GET', 'viz2.json', true); 
+                xobj.onreadystatechange = function () {
+                    if (xobj.readyState == 4 && xobj.status == "200") {
+                        callback(xobj.responseText);
+                    }
+                };
+                xobj.send(null);  
+            }
+
+            function getCoords(cx, cy) {
+                if (cx < 0) {
+                    cx = 0;
+                }
+                if (cx > canvas.width) {
+                    cx = canvas.width-1;
+                }
+                if (cy < 0) {
+                    cy = 0;
+                }
+                if (cy > canvas.height) {
+                    cy = canvas.height - 1;
+                }
+                return {x: cx, y: cy }
+            }
+
+            function draw() {
+                container = document.getElementById('container');
+                canvas = document.getElementById('canvas');
+                info = document.getElementById('info');
+
+                canvas.onmouseup = function(event) {
+                    res = getCoords(event.offsetX, event.offsetY);
+                    info.style.position = "absolute";
+                    info.style.top = event.clientY + "px";
+                    info.style.left = event.clientX + "px";
+                    info.innerHTML = format(jdata[res.y][res.x]);
+                    info.style.display = "inline-block";
+                };
+                canvas.onmousemove = function(event) {
+                    info.style.display = "none";
+                };
+                if (canvas.getContext) {
+                    var ctx = canvas.getContext('2d');
+                    var img = new Image();
+                    img.onload = function() {
+                        canvas.width = this.width;
+                        canvas.height = this.height;
+                        ctx.drawImage(img, 0, 0);
+                        loadJSON(function(response) {
+                            // Parse JSON string into object
+                            jdata = JSON.parse(response);
+                            jdata = atob(jdata.data);
+                            jlabels = jdata.labels;
+                            alert("JSON data loaded!");
+                        });
+                    }
+                    img.src = 'viz2.png';
+                }
+
+                
+            }
+        </script>
+
+    </head>
+
+    <body onload="draw();" style="user-select: none;">
+        <div style="margin: auto; text-align: center; vertical-align: middle; user-select: none;" id="container">
+            <canvas style="border: 1pt solid black; user-select: none;" id="canvas" width="150" height="150"></canvas>
+        </div>
+
+
+        <span id="info" style="z-index: 10; position: absolute; top: 0; left: 0; display: none; background: #FFF;">
+            This is some random text.
+        </span>
+
+    </body>
+</html>
+
+
+
+
