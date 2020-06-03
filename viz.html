@@ -17,7 +17,7 @@
             function format(data) {
                 var res = "";
                 for (var i = 0; i < jlabels.length; i++) {
-                    res += jlabels[i] + ": " + data[i] + "%<br>";
+                    res += jlabels[i] + ": " + data[i]/100 + "%<br>";
                 } 
                 return res;
             }
