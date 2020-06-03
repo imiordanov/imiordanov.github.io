@@ -76,7 +76,7 @@
                         loadJSON(function(response) {
                             // Parse JSON string into object
                             jdata = JSON.parse(response);
-                            jdata = atob(jdata.data);
+                            jdata = jdata.data;
                             jlabels = jdata.labels;
                             alert("JSON data loaded!");
                         });
