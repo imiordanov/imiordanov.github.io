@@ -14,10 +14,30 @@
             var jlabels;
             var info;
 
+            function maxidx(data) {
+                var idx = 0;
+                var val = data[0];
+                for (var i = 1; i < data.length; i++) {
+                    if (data[i] > val) {
+                        val = data[i];
+                        idx = i;
+                    }
+                }
+                return idx;
+            }
+
             function format(data) {
+                midx = maxidx(data);
                 var res = "";
                 for (var i = 0; i < jlabels.length; i++) {
-                    res += jlabels[i] + ": " + data[i]/100 + "%<br>";
+                    if (i == midx) {
+                        res += "<b><font color='red'>";
+                    }
+                    res += jlabels[i] + ": " + data[i]/100 + "%";
+                    if (i == midx) {
+                        res += "</font></b>";
+                    }
+                    res += "<br>";
                 } 
                 return res;
             }
