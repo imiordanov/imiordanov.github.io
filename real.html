@@ -33,7 +33,7 @@
                     if (i == midx) {
                         res += "<b><font color='red'>";
                     }
-                    res += jlabels[i] + ": " + data[i]/10000 + "%";
+                    res += jlabels[i] + ": " + 100*data[i]/65535 + "%";
                     if (i == midx) {
                         res += "</font></b>";
                     }
