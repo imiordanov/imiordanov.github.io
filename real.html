@@ -27,36 +27,17 @@
                 return idx;
             }
 
-            function smaxidx(data, midx) {
-                var idx = 0;
-                if (midx == 0) {
-                    idx = 1;
-                }
-                var val = data[idx];
-                for (var i = 0; i < data.length; i++) {
-                    if (data[i] > val && i != midx) {
-                        val = data[i];
-                        idx = i;
-                    }
-                }
-                return idx;
-            }
 
             function format(data) {
                 midx = maxidx(data);
-                smidx = smaxidx(data, midx);
                 var res = "";
                 for (var i = 0; i < jlabels.length; i++) {
                     if (i == midx) {
                         res += "<b><font color='red'>";
-                    } else if (i == smidx) {
-                        res += "<i><font color='blue'>";
                     }
                     res += jlabels[i] + ": " + (100*data[i]/65535).toFixed(4) + "%";
                     if (i == midx) {
                         res += "</font></b>";
-                    } else if (i == smidx) {
-                        res += "</font></i>";
                     }
                     res += "<br>";
                 } 
