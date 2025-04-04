@@ -1,826 +1,1348 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head profile="http://www.w3.org/2005/10/profile">
-	<link rel="icon" href="img/myicon.ico">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>imiordanov</title>
-
-	<!-- CSS  -->
-	<link rel="stylesheet" href="dist/semantic/semantic.min.css">
-	<link rel="stylesheet" href="dist/style.css">
-
-	<!-- JavaScript -->
-	<script type="text/javascript" src="dist/jquery.min.js"></script>
-	<script type="text/javascript" src="dist/semantic/semantic.min.js"></script>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iordan Iordanov | Senior Technology Leader</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/myicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/semantic/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dist/style.css">
+    
+    <!-- JavaScript -->
+    <script src="dist/jquery.min.js"></script>
+    <script src="dist/semantic/semantic.min.js"></script>
 </head>
 
 <body>
-	<div class="ui fluid inverted segment" style="position: fixed; width: 100%; top: 0; z-index: 100; border-radius: 0px;">
-		<div class="ui inverted secondary pointing menu">
-			<a class="active item" href="#home">
-				Home
-			</a>
-			<a class="item" href="#work">
-				Work
-			</a>
-			<a class="item" href="#studies">
-				Studies
-			</a>
-			<a class="item" href="#trivia">
-				Trivia
-			</a>
-			<a class="item" href="#contact">
-				Contact
-			</a>
-			<div class="right middle aligned menu">
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://www.linkedin.com/in/imiordanov/">
-					<i class="large linkedin in icon"></i>
-				</a>
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://twitter.com/imiordanov">
-					<i class="large twitter icon"></i>
-				</a>
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://www.facebook.com/i.m.iordanov">
-					<i class="large facebook icon"></i>
-				</a>
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://www.instagram.com/i.m.iordanov/">
-					<i class="large instagram icon"></i>
-				</a>
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://github.com/imiordanov">
-					<i class="large github icon"></i>
-				</a>
-				<a style="margin-top: 5px; margin-right: 5px; color: white;" target="_blank" href="https://zababablog.wordpress.com/">
-					<i class="large wordpress icon"></i>
-				</a>
-				<a href="https://corpy.co.jp" target="_blank">
-					<img class="ui small image" style="margin-top: 5px;" src="img/corpy.png">
-				</a>
-			</div>
-		</div>
-	</div>
+    <!-- Header -->
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a href="#home" class="header item">
+                <img class="ui mini circular image" src="img/me.jpg">
+                <span class="logo-text">Iordan Iordanov</span>
+            </a>
+            <a class="item" href="#about">About</a>
+            <a class="item" href="#skills">Skills</a>
+            <a class="item" href="#work">Experience</a>
+            <a class="item" href="#education">Education</a>
+            <a class="item" href="#projects">Projects</a>
+            <a class="item" href="#trivia">Insights</a>
+            <a class="item" href="#contact">Contact</a>
+            <div class="right menu">
+                <a class="item" href="docs/cv-iordanov.pdf" target="_blank">
+                    <i class="file pdf outline icon"></i> CV
+                </a>
+                <a class="item" href="https://www.linkedin.com/in/imiordanov/" target="_blank">
+                    <i class="linkedin icon"></i>
+                </a>
+                <a class="item" href="https://github.com/imiordanov" target="_blank">
+                    <i class="github icon"></i>
+                </a>
+                <a class="item" href="mailto:i.m.iordanov@gmail.com" target="_blank">
+                    <i class="envelope icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
-	<section id="home" class="ui fluid grid">
-		<div class="one column row">
-			<div class="column"> 
-				<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-			</div>
-		</div>
-		<div class="one wide column"> <!-- just empty space --> </div>
-		<div class="five wide column">
-			<img class="ui large circular centered image" src="img/me.jpg">
-		</div>
-		<div class="nine wide column">
-			<div class="ui basic segment" style="text-align: justify;">
-				<h1 class="ui header">Hi! My name is Iordan!</h1>
+    <!-- Hero Section -->
+    <section id="home" class="ui vertical segment hero-section fade-in">
+        <div class="ui container grid">
+            <div class="row">
+                <div class="eight wide column">
+                    <h1 class="ui header">Hi, I'm Iordan</h1>
+                    <h2 class="ui header">Senior Technology Leader</h2>
+                    <p class="hero-description">
+                        CTO and Director at Corpy&Co. with expertise in AI/ML, computational geometry, 
+                        and technical leadership. Passionate about transforming complex research into practical solutions 
+                        to real-world problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#work" class="ui primary button">View My Experience</a>
+                        <a href="#contact" class="ui basic button">Contact Me</a>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <div class="hero-image-container">
+                        <img src="img/me.jpg" alt="Iordan Iordanov" class="ui large circular image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>About Me</h2>
+                <div class="ui divider"></div>
+            </div>
+            
+            <div class="ui stackable grid">
+                <div class="ten wide column">
+                    <div class="ui basic segment">
+                        <p>
+                            I am an accomplished technology leader with a Ph.D. in Computational Geometry. 
+                            Currently serving as CTO and Director at <a href="https://corpy.co.jp/" target="_blank">Corpy&Co.</a> in Tokyo, Japan, where I lead a team that has grown from 10 to 70 engineers during my tenure.
+                        </p>
+                        <p>
+                            During my five and a half years at Corpy, my team and I have successfully delivered over 50 client-facing R&D projects. I specialize in translating complex research into practical applications while managing cross-cultural teams and high-profile client relationships. In parallel, I've led my team to build <a href="https://factory.confide.tech/" target="_blank">CONFIDE</a>, a cutting-edge AIOps application to enable adoption of mission-critical AI in manufacturing environments.
+                        </p>
+                        <p>
+                            During the past few years, my interest has naturally shifted to the broad topic of Responsible AI, which covers Explainable AI and Quality-Assurable AI, as well as AI Ethics, AI Safety, and other related fields. My interest was developed initially due to the focus of CONFIDE, however I have come to find personal interest in these areas, as I firmly believe that such issues are critical in today's world where AI is evolving rapidly and there are so many initiatives for its adoption in multiple fields. My opinion is that such adoption must be accompanied by appropriate measures, including ethical concerns, regulation, and legislation.
+                        </p>
+                        <p>
+                            My academic background is in Applied Mathematics and Computational Geometry. I find excitement in combining seemingly unrelated fields or ideas to create new solutions to real problems. During my PhD, I contributed to the <a href="http://www.cgal.org/" target="_blank">CGAL</a>, the largest open-source library for computational geometry. The algorithm 
+                            developed during my doctoral research is now <a href="https://www.cgal.org/2019/02/25/Hyperbolic_triangulations/" target="_blank">part of the library</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <div class="ui segments">
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="brain icon"></i>
+                                <div class="content">AI Leadership</div>
+                            </div>
+                            <p>Expertise in building and deploying AI-based systems for Mobility, Manufacturing, and Healthcare. Strong interest and proven experience with Quality Assurance for AI.</p>
+                        </div>
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="code branch icon"></i>
+                                <div class="content">Technical Excellence</div>
+                            </div>
+                            <p>Expertise in design and analysis of algorithms for academia and industry. Long track record of delivering high-quality software solutions.</p>
+                        </div>
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="users icon"></i>
+                                <div class="content">Leadership and Team Building</div>
+                            </div>
+                            <p>Grown engineering team from 10 to 70 members. Brought together people from different backgrounds to build an inclusive and supportive environment.</p>
+                        </div>
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="globe icon"></i>
+                                <div class="content">Global Perspective</div>
+                            </div>
+                            <p>Multilingual professional experienced in cross-cultural environments across Europe and Asia. Experience in balancing business, technical, and ethical requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Core Competencies</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    Key skills and technologies I've developed throughout my professional journey
+                </p>
+            </div>
+            
+            <div class="ui stackable grid">
+                <!-- Technical Skills -->
+                <div class="eight wide column">
+                    <h3 class="ui header"><i class="code icon"></i> Technical</h3>
+                    <div class="ui relaxed divided list">
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">AI/ML Research & Development</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Design and Analysis of Algorithms</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">C++</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Python</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Git, CI/CD, DevOPS</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Docker</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Full-stack Web Development</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Database Management Systems (SQL)</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">System Administration (UNIX/Windows)</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Leadership Skills -->
+                <div class="eight wide column">
+                    <h3 class="ui header"><i class="users icon"></i> Leadership & Management</h3>
+                    <div class="ui relaxed divided list">
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Remote Team Leadership</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Team Building & Talent Development</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Communication & Influence</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Decision Making & Problem Solving</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Innovation Leadership</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Conflict Resolution</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Crisis Management</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Cross-cultural Communication</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item skill-item">
+                            <div class="content">
+                                <div class="ui grid">
+                                    <div class="twelve wide column">
+                                        <div class="skill-name">Strategic Vision & Planning</div>
+                                    </div>
+                                    <div class="four wide column right aligned">
+                                        <div class="skill-level">
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle icon"></i>
+                                            <i class="circle outline icon"></i>
+                                            <i class="circle outline icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Professional Experience</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    Professional journey: technical and leadership roles in AI R&D, as well as software engineering in four countries
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- CTO / Director -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="meta">
+                                        <span class="date">July 2023 - Present</span>
+                                    </div>
+                                    <div class="header">CTO / Director</div>
+                                    <div class="meta">
+                                        <span>Corpy&Co., Inc. - Tokyo, Japan</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            Expanded my responsibilities at Corpy to include higher management and strategic decision making, growing the Engineering team to 70 members while continuing to oversee technical R&D initiatives.
+                                        </p>
+                                        <div class="ui bulleted list">
+                                            <div class="item">Established international connections for overseas expansion</div>
+                                            <div class="item">Implemented OKRs across the company to drive measurable outcomes</div>
+                                            <div class="item">Developed a custom attendance management system integrated with Slack</div>
+                                            <div class="item">Formed and led an internal research projects team focused on innovation</div>
+                                            <div class="item">Recruited highly skilled professionals to ensure department scalability</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chief Scientist -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="meta">
+                                        <span class="date">July 2019 - June 2023</span>
+                                    </div>
+                                    <div class="header">Chief Scientist</div>
+                                    <div class="meta">
+                                        <span>Corpy&Co., Inc. - Tokyo, Japan</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            Led technical R&D efforts across multiple AI/ML projects, while simultaneously establishing the foundations for a cutting-edge AIOps platform.
+                                        </p>
+                                        <div class="ui bulleted list">
+                                            <div class="item">Directed multiple client projects for Toyota, AISIN, AIST, Nikon, and other major companies</div>
+                                            <div class="item">Developed the first version of CONFIDE, a unique MLOps platform with XAI and QAAI tools for manufacturing processes</div>
+                                            <div class="item">Guided the engineering team to establish technical excellence during COVID challenges</div>
+                                            <div class="item">Translated theoretical knowledge into practical applications with measurable business value</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- R&D Engineer -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="ui items">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="meta">
+                                        <span class="date">January 2019 - June 2019</span>
+                                    </div>
+                                    <div class="header">R&D Engineer</div>
+                                    <div class="meta">
+                                        <span>Gamestream - Ludres, France</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            Developed a game streaming client applications for Samsung TVs using proprietary SDK.
+                                        </p>
+                                        <div class="ui bulleted list">
+                                            <div class="item">Created a client for streaming video games to Samsung TVs with minimal latency</div>
+                                            <div class="item">Utilized proprietary SDK to enable Full HD gaming at 60fps</div>
+                                            <div class="item">Researched proprietary methods for frame upscaling and sharpening using neural networks</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- Ph.D. Candidate -->
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<div class="ui items">
+							<div class="item">
+								<div class="content">
+									<div class="meta">
+										<span class="date">January 2016 - December 2018</span>
+									</div>
+									<div class="header">Ph.D. Candidate</div>
+									<div class="meta">
+										<span>University of Lorraine (LORIA) - Nancy, France</span>
+									</div>
+									<div class="description">
+										<p>
+											Conducted applied research in Computational Geometry, resulting in one package contributed to the CGAL library.
+										</p>
+										<div class="ui bulleted list">
+											<div class="item">Formulated and developed an algorithm for constructing periodic triangulations of hyperbolic surfaces</div>
+											<div class="item">Published research that is now part of the CGAL open-source library</div>
+											<div class="item">Collaborated with international researchers through the ASTONISHING associate team</div>
+											<div class="item">Participated in the SoS ANR project with researchers from France, Luxembourg, and the Netherlands</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <!-- Earlier Positions Toggle -->
+                <div class="ui center aligned basic segment">
+                    <button id="showMoreExperience" class="ui white button">
+                        <i class="chevron down icon"></i> Show Earlier Positions
+                    </button>
+                </div>
+                
+                <!-- Earlier Positions (Initially Hidden) -->
+                <div id="earlierPositions" class="hidden-content">
+                    
+                    
+                    <!-- Graduate Research Assistant -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="ui items">
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="meta">
+                                            <span class="date">December 2014 - October 2015</span>
+                                        </div>
+                                        <div class="header">Graduate Research Assistant</div>
+                                        <div class="meta">
+                                            <span>IACM-FORTH - Heraklion, Greece</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Applied geometric processing to medical research focused on abdominal aortic aneurysms.
+                                            </p>
+                                            <div class="ui bulleted list">
+                                                <div class="item">Formulated and implemented geometry-based methods to determine morphological changes in aortic aneurysms</div>
+                                                <div class="item">Collaborated with medical researchers to apply computational solutions to clinical problems</div>
+                                                <div class="item">Published findings in a peer-reviewed scientific journal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Software Developer at 01S -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="ui items">
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="meta">
+                                            <span class="date">May 2013 - June 2014</span>
+                                        </div>
+                                        <div class="header">Software Developer</div>
+                                        <div class="meta">
+                                            <span>01Sistemi - Sansepolcro, Italy</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Developed software solutions for business applications using InstantDeveloper.
+                                            </p>
+                                            <div class="ui bulleted list">
+                                                <div class="item">Built custom tools for parsing data from Italian cadastral PDFs in Java</div>
+                                                <div class="item">Re-implemented the calculations engine for the 730 Italian Tax Declaration module</div>
+                                                <div class="item">Gained extensive experience with enterprise software development patterns</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Software Developer at Nanosoft -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="ui items">
+                                <div class="item">
+                                    <div class="content">
+                                        <div class="meta">
+                                            <span class="date">December 2009 - March 2012</span>
+                                        </div>
+                                        <div class="header">Software Developer</div>
+                                        <div class="meta">
+                                            <span>Nanosoft - Chania, Greece</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                Developed applications for Windows and Windows CE devices.
+                                            </p>
+                                            <div class="ui bulleted list">
+                                                <div class="item">Created order-taking applications in VB.NET for Windows and Windows CE devices</div>
+                                                <div class="item">Gained experience with MS Access DB, cash register integration, and client interaction</div>
+                                                <div class="item">Expanded skills into WPF and Android development</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Education & Research</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    Strong foundation in applied mathematics, computer science, and computational geometry
+                </p>
+            </div>
+            
+            <div class="ui stackable grid">
+                <div class="sixteen wide column">
+                    <!-- Ph.D. -->
+                    <div class="ui segment education-item">
+                        <div class="ui grid">
+                            <div class="three wide center aligned column">
+                                <div class="education-icon">
+                                    <i class="huge graduation cap icon"></i>
+                                </div>
+                                <div class="education-time">Jan 2016 ~ Dec 2018</div>
+                            </div>
+                            <div class="thirteen wide column">
+                                <h3 class="ui header">Ph.D. in Computer Science</h3>
+                                <h4 class="ui header">University of Lorraine, Nancy, France</h4>
+                                <p>
+                                    Thesis: <a href="docs/PhD-thesis.pdf" target="_blank">Delaunay triangulations of a family of symmetric hyperbolic surfaces in practice</a>
+                                </p>
+                                <p>
+                                    Researched the properties of triangulations of the Bolza surface. Formulated and implemented algorithms for the computations of such periodic triangulations. The implementation of my research is now part of the CGAL library, the largest open-source library for computational geometry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- M.Sc. -->
+                    <div class="ui segment education-item">
+                        <div class="ui grid">
+                            <div class="three wide center aligned column">
+                                <div class="education-icon">
+                                    <i class="huge graduation cap icon"></i>
+                                </div>
+                                <div class="education-time">Sep 2014 ~ Dec 2015</div>
+                            </div>
+                            <div class="thirteen wide column">
+                                <h3 class="ui header">M.Sc. in Applied Mathematics</h3>
+                                <h4 class="ui header">University of Crete, Heraklion, Greece</h4>
+                                <p>
+                                    Thesis: <a href="docs/MSc-thesis.pdf" target="_blank">Shape-Preserving Interpolation on the Sphere</a>
+                                </p>
+                                <p>
+                                    Implemented and analyzed shape-preserving interpolation techniques on the unit sphere. Developed a novel approach to find optimal tension parameters that preserve the shape defined by control points on a sphere. The code is available on <a href="https://github.com/imiordanov/nu-spline" target="_blank">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- B.Sc. -->
+                    <div class="ui segment education-item">
+                        <div class="ui grid">
+                            <div class="three wide center aligned column">
+                                <div class="education-icon">
+                                    <i class="huge graduation cap icon"></i>
+                                </div>
+                                <div class="education-time">Sep 2005 ~ Mar 2013</div>
+                            </div>
+                            <div class="thirteen wide column">
+                                <h3 class="ui header">B.Sc. in Applied Mathematics</h3>
+                                <h4 class="ui header">University of Crete, Heraklion, Greece</h4>
+                                <p>
+                                    Thesis: <a href="docs/BSc-thesis.pdf" target="_blank">The Euclidean <i>InSphere</i> Predicate</a>
+                                </p>
+                                <p>
+                                    Developed a robust method to compute the InSphere predicate in 3D by computing the sign of expressions of algebraic degree at most 10. Previous methods relied on expressions of degree at most 14, so my work was a significant improvement of the state of the art.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Featured Projects</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    A small sample of projects in which I was directly involved as developer or researcher
+                </p>
+            </div>
+            
+            <!-- Featured Project: CONFIDE -->
+            <div class="ui segment featured-project">
+                <div class="ui stackable grid">
+                    <div class="six wide column">
+                        <div class="featured-img">
+                            <img src="img/confide.webp" alt="CONFIDE Platform" class="ui rounded image">
+						</div>
+                    </div>
+                    <div class="ten wide column">
+                        <div class="ui tiny teal label">AIOps Platform</div>
+                        <h3 class="ui header">CONFIDE</h3>
+                        <p>
+                            CONFIDE is an AIOps platform developed to facilitate the adoption of AI solutions in mission-critical contexts in the manufacturing industry. Composed of multiple modules, CONFIDE offers the tools to manage, annotate, generate, and evaluate the quality of image data (text and tabular data are on the roadmap). Once the data fulfils business requirements, AI models can be trained and compared in order to identify the one that fits best the targets of the company. The model can be evaluated and compared with other models in a transparent manner, with meaningful metrics, directly addressing the main barriers to AI adoption 
+                            in manufacturing: the lack of understanding and trust in "black box" AI systems.
+                        </p>
+                        <p>
+                            The platform implements rigorous quality assurance methods implemented by leading research institutes in Japan, enabling manufacturing teams to confidently integrate AI into critical processes while maintaining compliance with quality standards. CONFIDE is currently being introduced to major clients and is in the process of adapting to fit their business needs.
+                        </p>
+                        <div class="ui small labels">
+                            <div class="ui label">Explainable AI</div>
+                            <div class="ui label">QA4AI</div>
+							<div class="ui label">Data Management</div>
+							<div class="ui label">Data Annotation</div>
+							<div class="ui label">Data Generation</div>
+							<div class="ui label">Model Management</div>
+							<div class="ui label">Workflow Analysis</div>
+                            <div class="ui label">Manufacturing</div>
+                        </div>
+                        <div class="ui basic segment">
+                            <a href="https://corpy.co.jp/en/business/services" target="_blank" class="ui primary button">
+                                <i class="external alternate icon"></i> View Project
+                            </a>
+                            <a href="https://medium.com/@corpy.ai.lab/explainable-artificial-intelligence-or-how-to-confide-in-a-machine-134097cc2a98" target="_blank" class="ui button">
+                                <i class="file alternate icon"></i> Read Article
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Grid -->
+             <!-- style="width: 1216px; margin-left: -44px;" -->
+              <div class="project-cards-container">
+            <div class="ui stackable cards project-cards" >
+                
+                <!-- QA for LLM -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny black label" style="margin-bottom: 10px;">AI/ML</div>
+                        <div class="header">QA for LLMs</div>
+                        <div class="description">
+                            <p>
+                                Fundamental research on Quality Assurance for black-box and white-box LLMs. Investigated the robustness of two LLMs to various transformations of the input prompt, and presented preliminary principles for the formulation of Quality Assurance guidelines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">Research</div>
+                            <div class="ui label">LLM</div>
+							<div class="ui label">QA4AI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QA for self-driving cars -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny black label" style="margin-bottom: 10px;">AI/ML</div>
+                        <div class="header">QA for Object Detection</div>
+                        <div class="description">
+                            <p>
+                                Quality Assurance for Object Detection systems in the context of Autonomous Vehicles. Considering the SOTIF and PEGASUS principles, implemented a comparative study of different Object Detection models to demonstrate their suitability for ADAS applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">Research</div>
+                            <div class="ui label">QA4AI</div>
+							<div class="ui label">ADAS</div>
+                        </div>
+                    </div>
+                </div>
+
 				
-				<p>
-					I'm the CTO at <a href="https://corpy.co.jp" target="_blank">Corpy&Co.</a> in Tokyo, Japan. I would describe myself as a mixture of Software Engineer and Applied Mathematician. <i>Some</i> people have called me a reasonably good cook. No one has called me funny (yet). My main duties are to provide snacks and comfort for my colleagues.
-				</p>
 				
-				<p>
-					Lately my interests focus on Explainable AI and Quality-Assurable AI. These past months I've been working with my colleagues on <a href="https://factory.confide.tech/" target="_blank">CONFIDE</a>, our amazing (naturally) tool to introduce Explainable and Quality-Assurable AI to manufacturing companies. We have great plans for CONFIDE, so stay tuned, the demo will be live soon! I wrote an <a href="https://medium.com/@corpy.ai.lab/explainable-artificial-intelligence-or-how-to-confide-in-a-machine-134097cc2a98" target="_blank">article about it</a>, feel free to have a look. 
-				</p>
-
-				<p>
-					I have a Ph.D. in Computer Science from the <a href="http://welcome.univ-lorraine.fr/en" target="_blank">University of Lorraine</a>, Nancy, France. I was member of the research team <a target="_blank" href="http://gamble.loria.fr/">GAMBLE</a> for three years, and I worked with <a target="_blank" href="https://members.loria.fr/Monique.Teillaud/">Monique Teillaud</a> on the subject <a href="docs/PhD-thesis.pdf" target="_blank"><b><i>Delaunay triangulations of a family of symmetric hyperbolic surfaces in practice</i></b></a>. Sounds quite serious, I know. I will only say that one of the people who established Hyperbolic Geometry was warned by his own father that <a href="https://theiff.org/publications/cab16-crochet.html" target="_blank">it would drive him crazy</a>, and there is a lettuce involved. I won't spoil any more than that. 
-				</p>
-
-				<p>
-					The algorithm that we proposed with Monique is implemented in C++ and is open source. It was inspired by <a target="_blank" href="http://www.cgal.org/">CGAL</a>, the largest open-source library for computational geometry. Our implementation is now proudly <a href="https://www.cgal.org/2019/02/25/Hyperbolic_triangulations/" target="_blank">a part of the library</a>. While working on my PhD, I participated in the <a href="http://homepages.loria.fr/MTeillaud/collab/Astonishing/" target="_blank">ASTONISHING associate team</a> and in the <a href="https://members.loria.fr/Monique.Teillaud/collab/SoS/" target="_blank">SoS ANR project</a>.
-				</p>
-			</div>
-		</div>
-		<div class="one wide column"> <!-- just empty space --> </div>
-	</section>
-
-	<section id="work" class="ui fluid grid">
-		<div class="one column row">
-			<div class="column"> 
-				<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-			</div>
-		</div>
-
-		<div class="one column row">
-			<div class="column">
-				<h1 class="ui centered header">What keeps me busy?</h1>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="three wide column"> <!-- empty space, as always --> </div>
-			<div class="ten wide column"> 
-				<div class="ui basic segment" style="text-align: justify;">
-					Mahatma Gandhi said that <i>whatever we do in life is insignificant, but it is important that we do it</i>. You might be thinking, yes, but Oscar Wilde said that <i>quotation is a serviceable substitute for wit</i>. The irony is not lost on me, but there you have it. Anyway, here you can see what I'm working on these days, and also some older stuff.
-				</div>
-			</div>
-			<div class="three wide column"> <!-- empty space, as always --> </div>
-
-			<div class="three wide column"> <!-- empty space, as always --> </div>
-			<div class="ten wide column"> 
-				<div class="ui basic segment" style="text-align: justify;">
-					<h3 class="ui header">Work experience (at least the one I can put on my CV)</h3>
-					<div class="ui styled fluid accordion">
-
-						<div class="active title">
-							<i class="dropdown icon"></i>
-							July 2019 ~ present: Corpy&Co., CTO
-						</div>
-						<div class="active content">
-							<p>
-								I moved to Japan in July 2019 and started my work at <a href="https://corpy.co.jp" target="_blank">Corpy</a> as Chief Scientist. I was promoted to CTO in April 2022. My duties are mainly to handle projects and the people working on them, to give advice, direction, and counseling (in multiple senses).
-							</p>
-							<p>
-								Until now, I've worked on projects for Toyota, AISIN, AIST, Ishida, Nikon, Ryoki, GS Yuasa, and many more. However, the most exciting and long-lasting one for me personally is CONFIDE, our own in-house XAI and QAAI solution. The motivation behind CONFIDE can be summarized in the following tweet.
-							</p> 
-							<p>
-								<blockquote style="margin: auto !important;" class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">AI is like teenage sex: everyone talks about it, nobody knows how to do it, everyone thinks everyone else is doing it &amp; so claims to do it</p>&mdash; Mariya Yao (@thinkmariya) <a href="https://twitter.com/thinkmariya/status/849476338331373568?ref_src=twsrc%5Etfw">April 5, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-							</p>
-							<p>
-								CONFIDE is a tool that gives practical understanding and ease of use to companies that want to use AI in their manufacturing process. What is more, it implements Quality Assurance for AI, which is something still lacking from many other commercial solutions. This is one of the main reasons why companies are hesitant to adopt AI -- how can they trust something that works as a black box? We're working on solving that.
-							</p>
-							<p>
-								One step at a time, we are building CONFIDE and along with it our understanding of AI and related techniques. Once we are confident in our CONFIDE (ha!), we plan to expand our services to other, more challenging domains.
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							February 2019 ~ June 2019: Gamestream Srl., R&D Engineer
-						</div>
-						<div class="content">
-							<p>
-								<a href="https://gamestream.biz/" target="_blank">Gamestream</a> is a gem hidden in Ludres, in the Lorraine region of France. The company offers game streaming services -- you can play AAA games on your smartphone, cheap laptop, or TV, even on your toaster (if it can run the right software). The only thing you need is a good Internet connection, a gamepad, and the necessary software. I have mentioned the software twice because that's what I worked on, so it's important.
-							</p>
-							<p>
-								In my time with the company, I developed a client for a Samsung TV, so that people could play games on it effortlessly, in Full HD at 60fps. That was a game-changer (second ha!) for hotels and hospitals. I was particularly touched by the motivation of Ivan, the CEO of the company, who wanted to install this software in hospitals to make a positive difference in people's lives. It was a privilege to contribute to this project and to learn so many things from the many talented people at Gamestream.  
-							</p>
-							<p>
-								Oh, and the barbecue! Every once in a while, we would just have barbecue for lunch. Can you picture that? Freshly cooked meat, a cold beer, French countryside -- such nice memories! 
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							January 2016 ~ March 2019: University of Lorraine, Ph.D. Candidate
-						</div>
-						<div class="content">
-							<p>
-								Does this really count as work experience? I would say so, I think I worked during these three years.
-							</p>
-							<p>
-								During my thesis I had the opportunity to collaborate with some extraordinary researchers, crushing my own confidence and self-esteem in the process. In parallel, the occasional anxiety attack would manifest, so I guess the experience was quite unique and formative. They say that whatever doesn't kill you, makes you stronger, right? Right?!  
-							</p>
-							<p>
-								Aside from that, I had the chance to go to Australia, to collaborate closely with researchers from Groningen and Luxembourg, and, of course, to include my work in CGAL. This is something that I'm actually proud of, if I may say so myself.  
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							January 2015 ~ September 2015: IACM-FORTH, Graduate Research Assistant
-						</div>
-						<div class="content">
-							<p>
-								The <a href="https://www.iacm.forth.gr/" target="_blank">Institute for Applied and Computational Mathematics</a> at the <a href="https://www.forth.gr/" target="_bkank">Foundation for Research and Technology Hellas</a> is quite a mouthful, if not anything else. It is one of the major research institutions in Greece, and I had the luck to work there during my Master's thesis. Luck and persistence, I should say -- you see, needing money to survive is a very strong motivation to work and study at the same time.
-							</p>
-							<p>
-								In my time at IACM, I was surprised to learn that the little knowledge that I have can find applications in practice and save human lives. I worked with an extraordinary Post-doctoral researcher, <a href="https://www.linkedin.com/in/eleni-metaxa-bba928b1" target="_blank">Eleni Metaxa</a>, who taught me so many things about hemodynamics (the way in which blood flows through veins). After many struggles, we managed to publish a scientific paper, my first publication ever! That was a truly great experience, with all its ups and downs.  
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							May 2013 ~ June 2014: 01S Community Company, Software developer
-						</div>
-						<div class="content">
-							<p>
-								Ah yes, my first full-time programming job! Such a great experience with the <a href="http://www.01s.it/" target="_blank">people from 01S</a>! With them, I learned this insanely powerful tool called <a href="https://www.instantdeveloper.com/en/" target="_blank">InstantDeveloper</a>, and I had to re-implement the calculation engine for the Italian 730 tax declaration. The result? I blocked over 2000 operators on a national level for a whole morning. That was the first time I cried at work. Ah, fun times!
-							</p>
-							<p>
-								01S was and still is one of the best professional experiences I have ever had. Not only for all the things that I learned and for the projects to which I had the chance to contribute, but mainly for the people that I met and still respect until today. I still remember the food parties that we used to have whenever someone would have their birthday. And, oh my goodness, the porchetta that Daniele brought one day -- that was exquisite!
-							</p>
-							<p>
-								I'm telling you, unforgettable moments!
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							December 2009 ~ June 2012: Nanosoft, Software developer
-						</div>
-						<div class="content">
-							<p>
-								This was the first time that I was actually paid to write code. Such an amazing feeling. Out of nowhere, my High School teacher, who had <a href="https://nanosoft.gr/" target="_blank">his own business</a>, approached me and offered me to work with him. In my time with them, I worked on Windows and Windows CE devices (the palmtops, for those who remember). This is when I really got deep into programming and I also started playing around with Android applications. 
-							</p>
-							<p>
-								I guess one can say that my teacher taught me in more than one ways. I would not be here, today, without the experience I got with him. Both on the development side, and on the business side -- he would always tell me that the user doesn't really know what they want, and, surprise surprise, 10 years later I'm finding myself remembering his words very vividly.
-							</p>
-						</div>
-
-						<div class="title">
-							<i class="dropdown icon"></i>
-							July 2007 ~ October 2009: Erbamea Srl., Warehouse manager
-						</div>
-						<div class="content">
-							<p>
-								I couldn't skip mentioning my experience at <a href="https://www.erbamea.it/" target="_blank">Erbamea</a> because it taught be so many things. I became an expert in medicinal plants and I could literally smell the bad from the good stuff. We were not only packaging herbal products from all over the world, but we were also cultivating and collecting local products as well. The comany has now grows beyond recognition, but I'm very happy that I could be there during the initial stage.
-							</p>
-							<p>
-								In Erbamea I was given a responsibility that I never had before, so this sense of owning my mistakes was developed to a considerable degree. More than that, I realized just how motivating it is to do my best when my work is appreciated, and this has had a very big impact on how I treat my colleagues today. Erbamea is a solid the stepping stone for me, and for that I am forever grateful. I keep only the fondest memories of my colleagues there, and especially Fausto, also known as Dr. Mearelli, the chess enthusiast who could talk about plants for hours with growing excitement.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="three wide column"> <!-- empty space, as always --> </div>
-		</div>		
-	</section>
-
-	<section id="studies" class="ui fluid grid"> 
-		<div class="one column row">
-			<div class="column"> 
-				<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-			</div>
-		</div>
-
-		<div class="one column row">
-			<div class="column">
-				<h1 class="ui centered header">What have I learned so far?</h1>
-			</div>
-		</div>
-
-		<div class="three wide column"> <!-- empty space, as always --> </div>
-		<div class="ten wide column"> 
-			<div class="ui basic segment" style="text-align: justify;">
-
-				<div class="ui basic segment">
-					Here is a list of the milestones in my education. You can find links to the fruits of my labor in there, feel free to explore the material. If you have critiques, that would be nice. If you don't, that would be even nicer.
-				</div>
-
-				<div class="ui styled fluid accordion">
-					<div class="title">
-						<i class="dropdown icon"></i>
-						January 2016 ~ March 2019: Ph.D. in Computer Science, University of Lorraine
-					</div>
-					<div class="content">
-						<p>
-							The topic of my Ph.D. lies in the domain of Computational Geometry. <a href="docs/PhD-thesis.pdf" target="_blank">You can have a look if you want</a>, but I warn you, it's quite technical. I was drawn to this topic mainly because of its strong practical component -- it was planned from the beginning that the resulting code would be a part of CGAL, and this was extremely exciting for me. The experience that I gained from this process is unique, having the chance to work with so many bright people is quite enlightening.
-						</p>
-						<p>
-							Aside from that, I learned French, I collaborated with people from different backgrounds on something completely new for me, and I failed multiple times. I want to believe that I have learned through this experience, and hopefully my work will help someone else do something even nicer. One can only hope, right?
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						September 2014 ~ December 2015: M.Sc. in Applied and Computational Mathematics, University of Crete
-					</div>
-					<div class="content">
-						<p>
-							I actually left my job at 01S to go back to Greece and continue my studies. During the entry interview, one of the examiners thought I was joking, they couldn't believe I actually did that. But I did, and I would do it again.
-						</p>
-						<p>
-							The reason for me returning to Greece for my Master's studies is that I wanted to work with <a href="http://users.tem.uoc.gr/~mkaravel/" target="_blank">Prof. Karavelas</a>, with whom I also worked during my Bachelor's thesis. I was inspired by him and wanted to continue in the same line of work, which ultimately led to my Ph.D. so I would definitely do it all over.
-						</p>
-						<p>
-							For my Master's thesis, I worked on something that I find very interesting -- cubic splines on the sphere! The splines that we worked with include a "tension" parameter and by varying this parameter, the spline becomes more or less smooth. The goal is to find the optimal parameters such that the shape defined by control points is preserved by the spline. There's a whole discussion on this, <a target="_blank" href="docs/MSc-thesis.pdf">the manuscript is here</a>. If you're up to it, you can also <a target="_blank" href="https://github.com/imiordanov/nu-spline">play around with the code</a>.
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						September 2005 ~ March 2013: B.Sc. in Applied Mathematics, University of Crete
-					</div>
-					<div class="content">
-						<p>
-							Right, that was a long one. The thing is, I interrupted my studies from 2007 to 2009, that's when I switched countries and was working at Erbamea. There was a family emergency that I needed to take care of, so I needed that time off. Looks bad on r&eacute;sum&eacute;s, but family comes first.
-						</p>
-						<p>
-							When I started my studies, I was feeling quite disappointed because I always wanted to be a programmer. I felt like I would miss out on so many things, studying Applied Math instead. Well, it turns out that I was bitterly mistaken -- there's actually a lot of coding, and it's actually not just mindless coding, there is a lot of thought behind it. I feel like this has given me a unique perspective not only on problems and solutions, but on life itself. It might also be the reason why I'm overthinking everything, but that's a discussion for my therapist. Note taken.
-						</p>
-						<p>
-							It was not obligatory at my University to submit a thesis at the Bachelor level, but I wanted to do it anyway, it sounded like a fun final project. It was one of the best decisions I've ever made. I had the chance to work with <a href="http://users.tem.uoc.gr/~mkaravel/" target="_blank">Prof. Karavelas</a> on a topic that was ultimately related to my Ph.D. Funny how life does that, right? Anyway, <a target="_blank" href="docs/BSc-thesis.pdf">the thesis is here</a>, but I must say that I myself cringe when I read it now, it feels so badly written... so please excuse undergraduate me.
-						</p>
-					</div>
-				</div>
-
-				<div class="ui basic segment">
-					And here is a list of the events that I have attended, either as a speaker or as a listener. Why am I giving you this list? Well... why not? It's not like I have anything better to do, right?
-				</div>
-
-				<div class="ui styled fluid accordion">
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Speaker -- the events where I have given a presentation myself
-					</div>
-					<div class="content">
-						<div class="ui relaxed divided list">
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://cs2018.sciencesconf.org/">
-										9th International Conference on Curves and Surfaces (CS 2018) 
-									</a>
-									<div class="description">
-										Palais des Congr&egrave;s, Arcachon, France, Jun 28 -- Jul 4, 2018 <br>
-										<i class="download icon"></i> <a href="docs/slides-cs-2018.pdf" target="_blank" title="slides">presentation slides (pdf)</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										CGAL Developers Meeting
-									</div>
-									<div class="description">
-										INRIA - LORIA, Nancy, France, Mar 13 -- 16, 2018 <br> 
-										<i class="download icon"></i> <a href="docs/slides-cgal-2018.pdf" target="_blank" title="slides">presentation slides (pdf)</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://jga2017.sciencesconf.org/">
-										Journ&eacute;es de G&eacute;om&eacute;trie Algorithmique (JGA 2017) 
-									</a>
-									<div class="description">
-										Centre Paul Langevin, Aussois, France, Dec 10 -- 15, 2017 <br>
-										<i class="download icon"></i> <a href="docs/slides-jga-2017.pdf" target="_blank" title="slides">presentation slides (pdf)</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://members.loria.fr/MTeillaud/collab/Astonishing/2017_workshop.html">
-										Astonishing Workshop 
-									</a>
-									<div class="description">
-										INRIA - LORIA, Nancy, France, Sep 25 -- 26, 2017 <br>
-										<i class="download icon"></i> <a href="docs/slides-astonishing-2017.pdf" target="_blank" title="slides">presentation slides (pdf)</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/aus.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="http://socg2017.smp.uq.edu.au/index.html">
-										33rd International Symposium on Computational Geometry (SoCG 2017) 
-									</a>
-									<div class="description">
-										The University of Queensland, Brisbane, Australia, Jul 4 -- 7, 2017 <br>
-										<i class="download icon"></i> <a href="docs/slides-socg-2017.pdf" target="_blank" title="slides">presentation slides (pdf)</a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Listener -- the events where I was doing my best to understand what's going on
-					</div>
-					<div class="content">
-						<div class="ui relaxed divided list">
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://members.loria.fr/MTeillaud/collab/SoS/">
-										SoS kickoff meeting 
-									</a>
-									<div class="description">
-										INRIA - LORIA, Nancy, France, May 3 -- 4, 2018
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/dm.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://indico.nbi.ku.dk/conferenceDisplay.py?confId=938">
-										Geometry and Topology in Contemporary Material Science
-									</a>
-									<div class="description">
-										The Niels Bohr Institute, Copenhagen, Denmark, Sep 3 -- 9, 2017
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/aus.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="http://cs.slu.edu/~chambers/cgweek2017.html">
-										Workshop: Algorithms for the Medial Axis
-									</a>
-									<div class="description">
-										The University of Queensland, Brisbane, Australia, Jul 7, 2017
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/aus.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="http://socg2017.smp.uq.edu.au/workshops.html">
-										Workshop on Practical Methods for Solving Computational Geometry Problems
-									</a>
-									<div class="description">
-										The University of Queensland, Brisbane, Australia, Jul 6, 2017
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/aus.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="https://members.loria.fr/Monique.Teillaud/CGWeek_2017_workshop/">
-										Workshop: Geometric Aspects of Materials Science
-									</a>
-									<div class="description">
-										The University of Queensland, Brisbane, Australia, Jul 4 -- 5, 2017
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="http://programme-scientifique.weebly.com/1438.html">
-										Graphs and Surfaces: Algorithms, Combinatorics and Topology
-									</a>
-									<div class="description">
-										CIRM, Marseille, France, May 9 –- 13, 2016
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/gr.png" class="ui avatar image">
-								<div class="content">
-									<a class="header" target="_blank" href="http://acmac.uoc.gr/WAVES2012">
-										Wave propagation in complex media and applications
-									</a>
-									<div class="description">
-										ACMAC, Heraklion, Greece, May 7 –- 11, 2012
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Neither -- these are the events at which we got some actual work done
-					</div>
-					<div class="content">
-						<div class="ui relaxed divided list">
-
-							<div class="item">
-								<img src="img/fr.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										CGAL Developers meeting 
-									</div>
-									<div class="description">
-										INRIA, Sophia Antipolis, France, Sep 3 -- 7, 2018
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/nl.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Visit to <a target="_blank" href="http://www.cs.rug.nl/~gert/">Gert Vegter</a> 
-									</div>
-									<div class="description">
-										Johann Bernoulli Institute for Mathematics and Computer Science, University of Groningen, The Netherlands, Apr 9 -- 20, 2018 <br>
-										Partially supported by the University of Groningen and by the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/nl.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Visit to <a target="_blank" href="http://www.cs.rug.nl/~gert/">Gert Vegter</a> 
-									</div>
-									<div class="description">
-										Johann Bernoulli Institute for Mathematics and Computer Science, University of Groningen, The Netherlands, Jan 15 -- 26, 2018 <br>
-										Partially supported by the University of Groningen and by the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/lux.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Visit to <a target="_blank" href="http://math.uni.lu/schlenker/">Jean-Marc Schlenker</a> 
-									</div>
-									<div class="description">
-										UR en math&egrave;matiques, University of Luxembourg, Luxembourg, Mar 29 -- 31, 2017 <br>
-										Partially supported by the University of Luxembourg and the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/nl.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Visit to <a target="_blank" href="http://www.cs.rug.nl/~gert/">Gert Vegter</a> 
-									</div>
-									<div class="description">
-										Johann Bernoulli Institute for Mathematics and Computer Science, University of Groningen, The Netherlands, Sep 19 -- 23, 2016 <br>
-										Partially supported by the University of Groningen and by the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/lux.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Extended visit to <a target="_blank" href="http://math.uni.lu/schlenker/">Jean-Marc Schlenker</a> 
-									</div>
-									<div class="description">
-										Mathematics Research Unit, University of Luxembourg, Luxembourg, Jun 1 -– 30, 2016 <br>
-										Partially supported by the University of Luxembourg and the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<img src="img/lux.png" class="ui avatar image">
-								<div class="content">
-									<div class="header">
-										Visit to <a target="_blank" href="http://math.uni.lu/schlenker/">Jean-Marc Schlenker</a> 
-									</div>
-									<div class="description">
-										Mathematics Research Unit, University of Luxembourg, Luxembourg, Feb 18, 2016 <br>
-										Partially supported by the University of Luxembourg and the <a href="https://members.loria.fr/Monique.Teillaud/collab/Astonishing" target="_blank">ASTONISHING associate team</a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="three wide column"> <!-- empty space, as always --> </div>
-
-	</section>
-
-	<section id="trivia" class="ui fluid grid">
-		<div class="one column row">
-			<div class="column"> 
-				<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-			</div>
-		</div>
-
-		<div class="one column row">
-			<div class="column">
-				<h1 class="ui centered header">What else would you like to know?</h1>
-			</div>
-		</div>
-
-		<div class="three wide column"> <!-- empty space, as always --> </div>
-		<div class="ten wide column"> 
-			<div class="ui basic segment" style="text-align: justify;">
-
-				<div class="ui basic segment">
-					I've saved this space for all the random things that I think are interesting. Have a look around, and if you like something, feel free to keep it. I've also included some random info in there. It's random, there's a lot of randomness here. Chance? Hardly.
-				</div>
-
-				<div class="ui styled fluid accordion">
-					
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Dear Lordan, ...
-					</div>
-					<div class="content">
-						<p>
-							STOP. Please stop for a second, and consider this -- why would I write my own name with a lowercase letter? Right, it's IORDAN, or iordan if you prefer. Sorry for the confusion, I went with the writing in my passport (although I do think that the Yordan version looks a bit weird so I'm quite happy with Iordan).
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Am I Bulgarian?
-					</div>
-					<div class="content">
-						<p>
-							I get that a lot. The answer is yes and no.
-						</p>
-						<p>
-							I was born in Bulgaria, my parents also, I have a Bulgarian nationality, for all intents and purposes I am a Bulgarian national. However, I belong to a tribe called <a href="https://en.wikipedia.org/wiki/Boyash" target="_blank">Boyash</a>. We have many names -- Ludari, Rudari, Linguri...
-						</p>
-						<p>
-							We are a nomadic tribe that would survive either by performing (think like street performers), or by making and selling utensils from wood and other natural sources (spoons, brooms, these large wooden bath tubs even). I myself am an expert broom-maker and broom-salesperson.
-						</p>
-						<p>
-							We have our own language derived from Latin (perhaps Romanian?) and mixed with some elements from Bulgarian. I guess because we live in Bulgaria. Our language doesn't have a written form, but we do speak it actively within my family. What I find fascinating is that I've found Linguri people in Greece, in Italy, and in France, and I can kind of understand what they say. Mind-blowing, really.
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						How many languages do I speak?
-					</div>
-					<div class="content">
-						<p>
-							Another one I get quite often.
-						</p>
-						<p>
-							Let's count, shall we?
-						</p>
-						<p>
-							English, Greek, Italian, French, Bulgarian. That's 5. I also speak my own language (see previous item), which is not official, so I don't count that one. As for Japanese, I can only communicate basic stuff, so that one doesn't really count either. Therefore, 5.
-						</p>
-						<p>
-							I really need to work on my Japanese.
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						How to spend your free time if you LOVE solving problems?
-					</div>
-					<div class="content">
-						<p>
-							We're talking about mathematical and/or programming problems, of course. These are easy to solve, the other ones are more complicated.
-						</p>
-						<p>
-							So if you're looking for a way to spend your free time, you can head over to <a href="https://projecteuler.net/" target="_blank">Project Euler</a> and have a look at the very large set of problems they have. Some of them are quite frustrating, but they will keep you busy, for sure. Have fun!
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						So how does Hyperbolic Space look like?
-					</div>
-					<div class="content">
-						<p>
-							It's hard to imagine how Hyperbolic Space works. It's mind-bending, really. Fortunately, there are some very smart people like <a href="http://vihart.com/" target="_blank">Vi Hart</a>, <a href="http://www.andreahawksley.com/" target="_blank">Andrea Hawksley</a>, <a href="https://matsumoto.gatech.edu/" target="_blank">Elisabetta Matsumoto</a>, and <a href="http://www.segerman.org/" target="_blank">Henry Segerman</a> who have done something very cool for us common folks.
-						</p>
-						<p>
-							These people have created a Virtual Reality model of 3D hyperbolic space, and you can try it our in your browser right now. <a href="http://h3.hypernom.com/" target="_blank">Try it out if you click here</a>, and you can <a href="https://arxiv.org/abs/1702.04004" target="_blank">see the paper here</a>. Once you open the window, you can use the W,A,S,D keys on your keyboard, or the arrows to navigate; use E,Q to rotate. It's like a game! 
-						</p>
-						<p>
-							If you're up to it, you can also try the <a href="http://h2xe.hypernom.com/" target="_blank">product of a 2D hyperbolic space and a 1D Euclidean space</a>. It can cause vertigo. Yes, I know this is not how vertigo works, but trust me, in VR it can actually cause vertigo. <a href="https://arxiv.org/abs/1702.04862" target="_blank">Here is the paper</a>, if you want to see how it works. 
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Have you ever wondered how B&eacute;zier curves work in hyperbolic space?
-					</div>
-					<div class="content">
-						<p>
-							I did. Since I worked with these wonderful curves during my Master's, I wanted to see how they would work in the hyperbolic plane. So I made a simple widget on GeoGebra when I was playing around in my free time. 
-						</p>
-						<p>
-							You can play around with the widget directly in your browser<a class="header" href="https://www.geogebra.org/m/wCmFPVuk" target="_blank"> on this link</a>. The implementation uses <a href="https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm" target="_blank">De Casteljau's algorithm</a>, but it's implemented using circular arcs instead of linear segments (since, you know, in the <a href="https://en.wikipedia.org/wiki/Poincar%C3%A9_disk_model" target="_target">Poincar&eacute; disk model</a> geodesics are arcs of circles).
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						How does trust evolve? Hmm??
-					</div>
-					<div class="content">
-						<p>
-							At some point I came upon this super cool interactive animation based on Game Theory (one of the fanciest things of the past few years, for some reason) that shows how trust evolves. If you've got a few minutes to play around, <a href="http://ncase.me/trust/" target="_blank">go for it</a>! 
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Have you heard about the Game of Life?
-					</div>
-					<div class="content">
-						<p>
-							<a href="https://en.wikipedia.org/wiki/John_Horton_Conway" target="_blank">John Horton Conway</a> was an English mathematician who had the inspiration for this simple, but extremely powerful idea. He modeled the way a system of cells would behave with four simple rules. <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Wikipedia can tell you more about this</a>.
-						</p>
-						<p>
-							I thought it would be a nice way to spend a weekend afternoon, so I made a tiny implementation in JavaScript. Since I was working with periodic things at the time, I made it so that the left-right and top-bottom boundaries are "glued" together (at least in the code). That makes it into a flat torus! <a href="game-of-life/index.html" target="_blank">You can see the page here</a>. If you refresh the page, you'll get a new board! ;)
-						</p>
-					</div>
-
-					<div class="title">
-						<i class="dropdown icon"></i>
-						Trolley problem. Thoughts? Morality?
-					</div>
-					<div class="content">
-						<p>
-							<a href="https://www.moralmachine.net/" target="_blank">MIT's Moral Machine</a> is an incredible project that will put you in crisis mode within two clicks. The idea is that you get to choose who lives and who does.
-						</p>
-						<p>
-							You see, everyone (well, at least some people, I guess) is thinking about the future when we will have self-driving cars. The thing is, no one thinks about what would happen if we actually got them. These cars will not exist in a vacuum, so it is highly probable that situations will arise in which a human life will be lost, no matter what the car chooses. The question then becomes, who should die, and who should live? 
-						</p>
-						<p>
-							This is a version of the trolley problem, and it becomes highly relevant in the context of self-driving cars. This is what the Moral Machine does -- it makes you decide the fate of people and animals in such situations. Very thought-provoking, might cause some soul-searching.
-						</p>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-		<div class="three wide column"> <!-- empty space, as always --> </div>
-	</section>
-
-	<section id="contact" class="ui fluid grid"> 
-		<div class="one column row">
-			<div class="column"> 
-				<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-			</div>
-		</div>
-
-		<div class="one column row">
-			<div class="column">
-				<h1 class="ui centered header">Should we talk?</h1>
-			</div>
-		</div>
-
-		<div class="five wide column"> <!-- empty space, as always --> </div>
-		<div class="six wide column"> 
-			<div class="ui basic segment" style="text-align: justify;">
-
-				<div class="ui basic center aligned segment">
-					If you're still here and actually want to get in touch, I am impressed! <br>
-					Please reach out and I will get back to you as soon as possible. 
-				</div>
-
-				<div class="ui centered inverted fluid horizontal card">
-					<div class="image">
-						<img src="img/line.jpg">
-					</div>
-					<div class="content">
-						<div class="center aligned header">Iordan Iordanov</div>
-						<div class="center aligned meta">
-							<span class="category">CTO, Corpy&Co.</span>
-						</div>
-						<div class="center aligned description">
-							4-4-11 Hongo, Bunkyo-ku <br>
-  							&#12306;113-0033 Tokyo, Japan <br>
-							<i class="envelope outline icon"></i><a href="mailto:iordan@corpy.co.jp">iordan@corpy.co.jp</a> <br>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="five wide column"> <!-- empty space, as always --> </div>
-	</section>
-
-	<div class="ui basic segment" style="height: 20vh;"> <!-- just empty space --> </div>
-
+				<!-- OoDD project -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny black label" style="margin-bottom: 10px;">AI/ML</div>
+                        <div class="header">Out-of-distribution detection</div>
+                        <div class="description">
+                            <p>
+                                Implementation and validation of a custom method for the detection of unknown (i.e., out-of-distribution) objects with the use of a one-step object detector. The method demonstrated state-of-the-art performance in the domain and is being used for the detection of obstacles. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">Python</div>
+							<div class="ui label">Out-of-distribution detection</div>
+                            <div class="ui label">Computer vision</div>
+                            <div class="ui label">YOLO</div>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- Battery manufacturing optimization project -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny black label" style="margin-bottom: 10px;">AI/ML</div>
+                        <div class="header">Battery manufacturing optimization</div>
+                        <div class="description">
+                            <p>
+                                Developed and implemented an algorithm for the optimization of the manufacturing process of industrial batteries. The method combines GAN (Generative Adversarial Networks) and Genetic Algorithms to explore new combinations while maintaining feasibility constraints.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">Python</div>
+							<div class="ui label">Multi-objective optimization</div>
+                            <div class="ui label">GAN</div>
+                            <div class="ui label">Genetic algorithms</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cow monitoring system -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny black label" style="margin-bottom: 10px;">AI/ML</div>
+                        <div class="header">Cow monitoring system</div>
+                        <div class="description">
+                            <p>
+                                Supervised and contributed to the implementation of a system for the monitoring and detection of calving events. The AI detection model is integrated into a real-time notification and alerting system to ensure the safety of calves during the calving process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">Python</div>
+							<div class="ui label">Object detection</div>
+                            <div class="ui label">Pose estimation</div>
+                            <div class="ui label">AIOps</div>
+                        </div>
+                    </div>
+                </div>
+
+				<!-- CGAL Project -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny blue label" style="margin-bottom: 10px;">Computational Geometry</div>
+                        <div class="header">CGAL Library Contribution</div>
+                        <div class="description">
+                            <p>
+                                Developed and implemented an algorithm for constructing periodic Delaunay triangulations 
+                                of the Bolza surface. The resulting code is now part of the CGAL library, the largest open-source 
+                                library for computational geometry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">C++</div>
+							<div class="ui label">CGAL</div>
+                            <div class="ui label">Hyperbolic Geometry</div>
+                            <div class="ui label">Delaunay Triangulations</div>
+							<div class="ui label">Voronoi Diagrams</div>
+                        </div>
+                    </div>
+                    <div class="ui bottom attached button" onclick="window.open('https://www.cgal.org/2019/02/25/Hyperbolic_triangulations/', '_blank')">
+                        <i class="external alternate icon"></i> Learn More
+                    </div>
+                </div>
+                
+                <!-- Abdominal Aortic Aneurysm Research -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny green label" style="margin-bottom: 10px;">Medical Research</div>
+                        <div class="header">Geometry-Based Analysis of Aortic Aneurysms</div>
+                        <div class="description">
+                            <p>
+                                Developed geometry-based methods to determine morphological changes in abdominal 
+                                aortic aneurysms between scans. This work provided valuable diagnostic insights for medical professionals to guide treatment of patients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">C++</div>
+                            <div class="ui label">Python</div>
+                            <div class="ui label">VMTK</div>
+                            <div class="ui label">Geometry Analysis</div>
+                        </div>
+                    </div>
+                    <div class="ui bottom attached button" onclick="window.open('https://doi.org/10.1007/s11517-016-1592-8', '_blank')">
+                        <i class="external alternate icon"></i> View Paper
+                    </div>
+                </div>
+                
+                <!-- Shape-Preserving Interpolation -->
+                <div class="ui card">
+                    <div class="content">
+                        <div class="ui tiny blue label" style="margin-bottom: 10px;">Computational Geometry</div>
+                        <div class="header">Shape-Preserving Interpolation on the Sphere</div>
+                        <div class="description">
+                            <p>
+                                Implemented a shape-preserving interpolation method on the unit sphere. The implementation is provided in C++ and includes visualization scripts. The proposed algorithm finds optimal tension parameters to ensure geometric continuity at defined control points.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="ui mini labels">
+                            <div class="ui label">C++</div>
+                            <div class="ui label">Spline Mathematics</div>
+                            <div class="ui label">Interpolation</div>
+                            <div class="ui label">Numerical Analysis</div>
+                        </div>
+                    </div>
+                    <div class="ui bottom attached button" onclick="window.open('https://github.com/imiordanov/nu-spline', '_blank')">
+                        <i class="github icon"></i> View Code
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trivia Section -->
+    <section id="trivia" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Personal & Professional Insights</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    Beyond professional accomplishments and technical projects -- additional info about me and my interests
+                </p>
+            </div>
+            
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                    <div class="ui segments">
+                        <!-- About My Name -->
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="signature icon"></i>
+                                <div class="content">About My Name</div>
+                            </div>
+                            <p>
+                                I often get emails addressed to "Dear Lordan" -- it's actually "Iordan" (starting with an uppercase 'i'). It gives me a chuckle every time, and it's always a pleasant surprise when people get it right!
+                            </p>
+                        </div>
+                        
+                        <!-- Cultural Heritage -->
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="globe europe icon"></i>
+                                <div class="content">Cultural Heritage</div>
+                            </div>
+                            <p>
+                                I was born in Bulgaria and have Bulgarian nationality, but I also belong to the nomadic 
+                                Boyash tribe (also known as Ludari, Rudari, or Linguri). We have our own language derived from Latin with elements of Bulgarian. Interestingly, I've met Linguri in Greece, Italy, and France, 
+                                despite geographical separation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="eight wide column">
+                    <div class="ui segments">
+                        <!-- Languages -->
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="language icon"></i>
+                                <div class="content">Multilingual Proficiency</div>
+                            </div>
+                            <p>
+                                I speak five languages fluently: English, Greek, Italian, French, and Bulgarian. 
+                                Additionally, I speak my native Boyash language, but that is not an "official" language. Despite living in Japan for almost six years, my Japanese is still not good.
+                            </p>
+                        </div>
+                        
+                        <!-- Problem Solving -->
+                        <div class="ui segment">
+                            <div class="ui header">
+                                <i class="puzzle piece icon"></i>
+                                <div class="content">Mathematical Problem Solving</div>
+                            </div>
+                            <p>
+                                For those who enjoy mathematical and programming challenges, I recommend 
+                                <a href="https://projecteuler.net/" target="_blank">Project Euler</a>, where you can find 
+                                a diverse set of problems combining mathematics and programming. It's an excellent 
+                                way to develop problem-solving skills and explore interesting mathematical concepts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Explorations -->
+            <h3 class="ui center aligned header">Interactive Explorations -- for when you have a little time to be mind-blown</h3>
+            
+            <div class="ui three stackable cards">
+                <!-- Game of Life -->
+                <div class="ui centered card">
+                    <div class="content">
+                        <div class="ui right corner label">
+                            <i class="th icon"></i>
+                        </div>
+                        <div class="header">Conway's Game of Life</div>
+                        <div class="description">
+                            <p>
+                                John Horton Conway's Game of Life demonstrates how complex patterns can emerge from 
+                                simple rules. I implemented the Game of Life in JavaScript on a periodic space (flat torus), allowing patterns to wrap around the edges. It's quite interesting!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="game-of-life/index.html" target="_blank" class="ui fluid blue button">
+                            Try the Game of Life
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Trust Evolution -->
+                <div class="ui centered card">
+                    <div class="content">
+                        <div class="ui right corner label">
+                            <i class="handshake icon"></i>
+                        </div>
+                        <div class="header">Evolution of Trust</div>
+                        <div class="description">
+                            <p>
+                                An interactive animation based on Game Theory that demonstrates how trust evolves 
+                                in different scenarios. It provides fascinating insights into cooperation and competition.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="http://ncase.me/trust/" target="_blank" class="ui fluid blue button">
+                            Explore Trust Evolution
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Moral Machine -->
+                <div class="ui centered card">
+                    <div class="content">
+                        <div class="ui right corner label">
+                            <i class="car icon"></i>
+                        </div>
+                        <div class="header">The Moral Machine</div>
+                        <div class="description">
+                            <p>
+                                MIT's Moral Machine presents modern versions of the trolley problem in the context 
+                                of autonomous vehicles. It raises important ethical questions about AI decision-making 
+                                in life-or-death situations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a href="https://www.moralmachine.net/" target="_blank" class="ui fluid blue button">
+                            Explore Moral Dilemmas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="ui vertical segment fade-in">
+        <div class="ui container">
+            <div class="ui center aligned header section-header">
+                <h2>Get In Touch</h2>
+                <div class="ui divider"></div>
+                <p class="section-intro">
+                    I'm open to discussing professional opportunities, research collaborations, 
+                    or any questions related to my work and expertise
+                </p>
+            </div>
+            
+            <div class="custom-contact-container">
+                <div class="contact-profile">
+                    <div class="profile-image">
+                        <img src="img/me.jpg" alt="Iordan Iordanov">
+                    </div>
+                    <div class="profile-info">
+                        <h3>Iordan Iordanov</h3>
+                        <div class="job-title">Chief Technology Officer, Director</div>
+                        <div class="company-name">Corpy&Co., Inc.</div>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="map marker alternate icon"></i>
+                                <div>
+                                    1-44-11 Jimbocho, Chiyoda-ku<br>
+                                    &#12306;101-0051 Tokyo, Japan
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="envelope outline icon"></i>
+                                <div>
+                                    <a href="mailto:i.m.iordanov@gmail.com">i.m.iordanov@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="phone alternate icon"></i>
+                                <div>
+                                    <a href="tel:+81-80-9976-1233">+81 (0)80-9976-1233</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-actions">
+                            <a href="docs/cv-iordanov.pdf" target="_blank" class="ui primary button">
+                                <i class="file pdf outline icon"></i> Download CV
+                            </a>
+                            <a href="mailto:iordan@corpy.co.jp" class="ui blue button">
+                                <i class="envelope outline icon"></i> Email Me
+                            </a>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/imiordanov/" target="_blank" class="ui circular icon button">
+                                <i class="linkedin in icon"></i>
+                            </a>
+                            <a href="https://twitter.com/imiordanov" target="_blank" class="ui circular icon button">
+                                <i class="twitter icon"></i>
+                            </a>
+                            <a href="https://github.com/imiordanov" target="_blank" class="ui circular icon button">
+                                <i class="github icon"></i>
+                            </a>
+                            <a href="https://zababablog.wordpress.com/" target="_blank" class="ui circular icon button">
+                                <i class="wordpress icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided grid">
+                <div class="four wide column">
+                    <h4 class="ui inverted header">
+                        <img class="ui mini circular image" src="img/me.jpg">
+                        <div class="content">
+                            Iordan Iordanov
+                            <div class="sub header">Senior Technology Leader</div>
+                        </div>
+                    </h4>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Site Map</h4>
+                    <div class="ui inverted link list">
+                        <a href="#home" class="item">Home</a>
+                        <a href="#work" class="item">Experience</a>
+                        <a href="#education" class="item">Education</a>
+                        <a href="#projects" class="item">Projects</a>
+                        <a href="#trivia" class="item">Insights</a>
+                        <a href="#contact" class="item">Contact</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Resources</h4>
+                    <div class="ui inverted link list">
+                        <a href="docs/cv-iordanov.pdf" target="_blank" class="item">Download CV</a>
+                        <a href="docs/PhD-thesis.pdf" target="_blank" class="item">PhD Thesis</a>
+                        <a href="docs/MSc-thesis.pdf" target="_blank" class="item">MSc Thesis</a>
+                        <a href="docs/BSc-thesis.pdf" target="_blank" class="item">BSc Thesis</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Connect</h4>
+                    <div class="ui inverted link list">
+                        <a href="https://www.linkedin.com/in/imiordanov/" target="_blank" class="item">LinkedIn</a>
+                        <a href="https://github.com/imiordanov" target="_blank" class="item">GitHub</a>
+                        <a href="https://twitter.com/imiordanov" target="_blank" class="item">Twitter</a>
+                        <a href="https://www.instagram.com/i.m.iordanov/" target="_blank" class="item">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <div class="ui horizontal inverted small divided link list">
+                <div class="item">
+                    &copy; <span id="currentYear"></span> Iordan Iordanov. All rights reserved.
+                </div>
+                <div class="item">
+                    Last updated: March 2025
+                </div>
+                <a href="#home" class="item back-to-top">
+                    <i class="arrow up icon"></i> Back to Top
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="dist/script.js"></script>
 </body>
-
-<script>
-	document.body.onload = function() {
-		$('.ui.accordion').accordion();
-	}
-
-	const sections = document.querySelectorAll("section[id]");
-
-	window.addEventListener("scroll", navHighlighter);
-
-	function navHighlighter() {
-
-		let scrollY = window.pageYOffset;
-
-		sections.forEach(current => {
-			const sectionHeight = current.offsetHeight;
-			
-			const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 150;
-			sectionId = current.getAttribute("id");
-
-			if ( scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-				document.querySelector(".ui.menu a[href*=" + sectionId + "]").classList.add("active");
-			} else {
-				document.querySelector(".ui.menu a[href*=" + sectionId + "]").classList.remove("active");
-			}
-		});
-	}
-</script>
-
 </html>
