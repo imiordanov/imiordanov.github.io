@@ -1,160 +1,207 @@
 /**
- * Main JavaScript file for Iordan Iordanov's personal website
- * Last updated: April 2025
+ * Iordan Iordanov — Personal Site JS
+ * No jQuery, no Semantic UI. Vanilla only.
  */
 
-$(document).ready(function () {
-  // Initialize Semantic UI components
-  $(".ui.dropdown").dropdown();
-  $(".ui.accordion").accordion();
-  $(".tabular.menu .item").tab();
+/* ── Copyright year ── */
+document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-  // Initialize progress bars
-  $(".ui.progress").progress();
+/* ── Hero canvas: animated Delaunay-inspired mesh ── */
+(function () {
+    const canvas = document.getElementById('heroCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
 
-  // Update copyright year
-  $("#currentYear").text(new Date().getFullYear());
+    let W, H, pts, edges;
+    const POINT_COUNT = 60;
+    const MAX_DIST = 200;
+    const SPEED = 0.18;
 
-  // Add fade-in animation class to major sections
-  const sectionsToAnimate = [
-    "#about",
-    "#work",
-    "#education",
-    ".education-item",
-    "#projects",
-    ".featured-project",
-    ".ui.card",
-    "#trivia",
-    "#contact",
-  ];
-
-  sectionsToAnimate.forEach((selector) => {
-    $(selector).addClass("fade-in");
-  });
-
-  // Hero section typing effect
-  function typeEffect(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = "";
-
-    function type() {
-      if (i < text.length) {
-        element.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, speed);
-      }
+    function resize() {
+        W = canvas.width = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
     }
 
-    type();
-  }
+    function randomPt() {
+        return {
+            x: Math.random() * W,
+            y: Math.random() * H,
+            vx: (Math.random() - 0.5) * SPEED,
+            vy: (Math.random() - 0.5) * SPEED,
+        };
+    }
 
-  // Run typing effect on page load
-  const heroSubheader = $(".hero-section h2.ui.header")[0];
-  if (heroSubheader) {
-    const originalText = heroSubheader.textContent;
-    heroSubheader.textContent = "";
-    setTimeout(() => {
-      typeEffect(heroSubheader, originalText, 80);
-    }, 500);
-  }
+    function init() {
+        resize();
+        pts = Array.from({ length: POINT_COUNT }, randomPt);
+    }
 
-  // Handle scroll animations
-  function handleScrollAnimations() {
-    const elements = document.querySelectorAll(".fade-in");
+    function update() {
+        pts.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0 || p.x > W) p.vx *= -1;
+            if (p.y < 0 || p.y > H) p.vy *= -1;
+        });
+    }
 
-    elements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      const elementVisible = 150;
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
 
-      if (elementTop < window.innerHeight - elementVisible) {
-        element.classList.add("visible");
-      }
-    });
-  }
+        // Draw edges
+        for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[i].x - pts[j].x;
+                const dy = pts[i].y - pts[j].y;
+                const d = Math.sqrt(dx * dx + dy * dy);
+                if (d < MAX_DIST) {
+                    const alpha = 1 - d / MAX_DIST;
+                    ctx.beginPath();
+                    ctx.moveTo(pts[i].x, pts[i].y);
+                    ctx.lineTo(pts[j].x, pts[j].y);
+                    ctx.strokeStyle = `rgba(94, 231, 208, ${alpha * 0.25})`;
+                    ctx.lineWidth = 0.8;
+                    ctx.stroke();
+                }
+            }
+        }
 
-  // Navigation - Active state on scroll
-  $(window).scroll(function () {
-    let scrollPosition = $(window).scrollTop();
+        // Draw points
+        pts.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(94, 231, 208, 0.5)';
+            ctx.fill();
+        });
+    }
 
-    // Highlight active menu item
-    $("section").each(function () {
-      let sectionTop = $(this).offset().top - 100;
-      let sectionBottom = sectionTop + $(this).outerHeight();
+    function loop() {
+        update();
+        draw();
+        requestAnimationFrame(loop);
+    }
 
-      if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
-        let id = $(this).attr("id");
-        $(".ui.menu a.item").removeClass("active");
-        $('.ui.menu a.item[href="#' + id + '"]').addClass("active");
-      }
+    window.addEventListener('resize', () => {
+        resize();
     });
 
-    // Check for animations
-    handleScrollAnimations();
-  });
+    init();
+    loop();
+})();
 
-  // Initial check for animations
-  handleScrollAnimations();
+/* ── Typing effect ── */
+(function () {
+    const el = document.getElementById('typedTextA');
+    if (!el) return;
 
-  // Smooth scrolling for anchor links
-  $('a[href^="#"]').on("click", function (e) {
-    e.preventDefault();
+    const phrases = [
+        'Computational Geometry & AI',
+        'From hyperbolic surfaces to design automation',
+        'Making sense of shape',
+        'Ph.D. · Former CTO · Perpetual foreigner',
+    ];
 
-    let target = $(this.hash);
-    if (target.length) {
-      $("html, body").animate(
-        {
-          scrollTop: target.offset().top - 70,
-        },
-        800
-      );
+    let pi = 0, ci = 0, deleting = false;
+
+    function tick() {
+        const phrase = phrases[pi];
+        if (!deleting) {
+            el.textContent = phrase.slice(0, ci + 1);
+            ci++;
+            if (ci === phrase.length) {
+                deleting = true;
+                setTimeout(tick, 2200);
+                return;
+            }
+            setTimeout(tick, 55);
+        } else {
+            el.textContent = phrase.slice(0, ci - 1);
+            ci--;
+            if (ci === 0) {
+                deleting = false;
+                pi = (pi + 1) % phrases.length;
+                setTimeout(tick, 400);
+                return;
+            }
+            setTimeout(tick, 28);
+        }
     }
-  });
+    setTimeout(tick, 800);
+})();
 
-  // Toggle earlier positions
-  $("#showMoreExperience").on("click", function () {
-    $("#earlierPositions").slideToggle();
+/* ── Navigation: scroll class + active section + mobile ── */
+(function () {
+    const nav = document.getElementById('nav');
+    const links = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+    const hamburger = document.getElementById('navHamburger');
+    const mobileMenu = document.getElementById('navMobile');
 
-    if ($(this).find("i").hasClass("down")) {
-      $(this).html('<i class="chevron up icon"></i> Hide Earlier Positions');
-    } else {
-      $(this).html('<i class="chevron down icon"></i> Show Earlier Positions');
-    }
-  });
+    // Scroll state
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
 
-  // Toggle research events
-  $("#showResearchEvents").on("click", function () {
-    $("#researchEvents").slideToggle();
+        // Active nav link
+        let current = '';
+        sections.forEach(s => {
+            const top = s.offsetTop - 80;
+            if (window.scrollY >= top) current = s.id;
+        });
+        links.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === `#${current}`);
+        });
+    }, { passive: true });
 
-    if ($(this).find("i").hasClass("down")) {
-      $(this).html(
-        '<i class="chevron up icon"></i> Hide Research Events & Collaborations'
-      );
-    } else {
-      $(this).html(
-        '<i class="chevron down icon"></i> Show Research Events & Collaborations'
-      );
-    }
-  });
+    // Hamburger
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+    });
 
-  // Contact form submission
-  $("#contactForm").on("submit", function (e) {
-    e.preventDefault();
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+})();
 
-    // In a real implementation, you would send the form data to a server
-    // For now, let's just show an alert
-    alert(
-      "Thank you for your message! This is a demonstration form. In a real implementation, your message would be sent."
-    );
-    $(this)[0].reset();
-  });
-
-  // Add hover effects for timeline content
-  $(".timeline-content").hover(
-    function () {
-      $(this).parent().find(":before").css("background-color", "#1a6aa5");
-    },
-    function () {
-      $(this).parent().find(":before").css("background-color", "#3498db");
-    }
-  );
+/* ── Smooth scroll for all anchor links ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 64;
+        window.scrollTo({ top, behavior: 'smooth' });
+    });
 });
+
+/* ── Reveal on scroll ── */
+(function () {
+    const els = document.querySelectorAll('.section, .timeline-entry, .project-card, .fact-card, .interactive-card, .edu-item, .insight-block, .featured-project, .substack-block');
+    els.forEach(el => el.classList.add('reveal'));
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    els.forEach(el => observer.observe(el));
+})();
+
+/* ── Earlier positions toggle ── */
+(function () {
+    const btn = document.getElementById('showMoreBtn');
+    const panel = document.getElementById('earlierWork');
+    if (!btn || !panel) return;
+
+    btn.addEventListener('click', () => {
+        const open = panel.classList.toggle('visible');
+        btn.classList.toggle('open', open);
+        btn.querySelector('button').firstChild.textContent = open
+            ? 'Hide earlier positions '
+            : 'Show earlier positions ';
+    });
+})();
