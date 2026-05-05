@@ -224,22 +224,22 @@ export const PUBLICATIONS = [
         authors: 'N. Ishikura, D. Kondo, I. Iordanov, V. Vassiliades, H. Tode',
         title: 'Cache-Property-Aware Features for DNS Tunneling Detection',
         venue: 'ICIN, Paris, 2020',
-        note: 'Invited collaboration — contributed the AI/ML component.',
-        href: 'https://doi.org/10.1109/ICIN48450.2020.9059314',
+        note: 'Invited collaboration; consulted on the the AI/ML component.',
+        href: 'https://doi.org/10.1109/ICIN48450.2020.9059472',
     },
     {
         ref: '[4]',
         authors: 'M. Ebbens, I. Iordanov, M. Teillaud, G. Vegter',
         title: 'Systole of regular hyperbolic surfaces with an application to Delaunay triangulations',
         venue: 'Curves & Surfaces, Arcachon, 2018',
-        href: 'https://hal.inria.fr/hal-01968285',
+        href: 'https://inria.hal.science/hal-01803443v1',
     },
     {
         ref: '[3]',
         authors: 'M. Ebbens, I. Iordanov, M. Teillaud, G. Vegter',
         title: 'Delaunay triangulations of regular hyperbolic surfaces',
         venue: 'Curves & Surfaces, Arcachon, 2018',
-        href: 'https://hal.inria.fr/hal-01968267',
+        href: 'https://inria.hal.science/hal-01801136',
     },
     {
         ref: '[2]',
@@ -253,7 +253,7 @@ export const PUBLICATIONS = [
         authors: 'E. Metaxa, I. Iordanov, E. Maravelakis, Y. Papaharilaou',
         title: 'A novel approach for local abdominal aortic aneurysm growth quantification',
         venue: 'Medical & Biological Engineering & Computing, 2016',
-        href: 'https://doi.org/10.1007/s11517-016-1508-9',
+        href: 'https://doi.org/10.1007/s11517-016-1592-8',
     },
 ];
 
