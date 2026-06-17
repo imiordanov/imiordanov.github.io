@@ -171,6 +171,8 @@ export function initDisk() {
         ctx.restore();
     }
 
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     function loop() {
         angle += 0.00015;
         draw();
@@ -179,5 +181,6 @@ export function initDisk() {
 
     window.addEventListener('resize', resize);
     resize();
-    loop();
+    if (reduceMotion) draw();   // render a single static frame, no animation
+    else loop();
 }

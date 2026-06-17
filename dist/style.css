@@ -7,8 +7,9 @@
 :root {
     --bg:       #07090d;
     --text:     #d8e0ea;
-    --muted:    #a8b8cc;
-    --faint:    #2e3a4a;
+    --muted:    #b4c2d4;  /* AA on --bg; was #a8b8cc */
+    --faint:    #2e3a4a;  /* borders/hairlines only — too dark for text */
+    --faint-tx: #6b7a8d;  /* faint TEXT (notes/labels): AA-legible, was --faint */
     --amber:    #e8a020;
     --teal:     #2ec9b0;
     --green:    #4ec94e;
@@ -247,7 +248,7 @@ html, body {
 .r-edu-degree { color: var(--text); font-size: 0.84rem; }
 .r-edu-year   { color: var(--muted); font-size: 0.70rem; flex-shrink: 0; }
 .r-edu-school { color: var(--muted); font-size: 0.74rem; margin-bottom: 2px; }
-.r-edu-note   { color: var(--faint); font-size: 0.68rem; font-style: italic; margin-bottom: 4px; letter-spacing: 0.02em; }
+.r-edu-note   { color: var(--faint-tx); font-size: 0.68rem; font-style: italic; margin-bottom: 4px; letter-spacing: 0.02em; }
 .r-edu-thesis { color: var(--teal); font-size: 0.70rem; text-decoration: none; letter-spacing: 0.02em; }
 .r-edu-thesis:hover { color: var(--amber); }
 

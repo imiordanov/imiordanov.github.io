@@ -71,7 +71,7 @@ export const WORK = [
         tags: ['C++', 'CGAL', 'Hyperbolic Geometry', 'Delaunay Triangulations'],
         links: [
             { label: '↗ thesis: Delaunay triangulations of hyperbolic surfaces', href: 'docs/PhD-thesis.pdf' },
-            { label: '↗ CGAL announcement', href: 'https://www.cgal.org/2019/02/25/Hyperbolic_triangulations/' },
+            { label: '↗ code in CGAL', href: 'https://github.com/CGAL/cgal/tree/main/Periodic_4_hyperbolic_triangulation_2' },
         ],
     },
     {
@@ -86,7 +86,7 @@ export const WORK = [
         body: 'Applied geometric processing to medical research on Abdominal Aortic Aneurysms (AAA). My first peer-reviewed journal, and the one that\'s dearest to me.',
         tags: ['Geometry', 'Medical Imaging', 'C++'],
         links: [
-            { label: '↗ doi: Medical & Biological Engineering & Computing, 2016', href: 'https://doi.org/10.1007/s11517-016-1508-9' },
+            { label: '↗ doi: Medical & Biological Engineering & Computing, 2016', href: 'https://doi.org/10.1007/s11517-016-1592-8' },
         ],
     },
     {
@@ -199,7 +199,7 @@ export const PROJECTS = [
         body: 'Periodic Delaunay triangulations of the Bolza surface. Integrated in CGAL, the largest open-source library for computational geometry. The direct result of my Ph.D.',
         tags: ['C++', 'CGAL', 'Hyperbolic Geometry', 'Delaunay Triangulations', 'Open Source'],
         links: [
-            { label: '↗ CGAL announcement', href: 'https://www.cgal.org/2019/02/25/Hyperbolic_triangulations/' },
+            { label: '↗ code in CGAL', href: 'https://github.com/CGAL/cgal/tree/main/Periodic_4_hyperbolic_triangulation_2' },
         ],
     },
     {
@@ -213,7 +213,7 @@ export const PROJECTS = [
         body: 'Geometry-based methods for morphological analysis of abdominal aortic aneurysms.',
         tags: ['Computational Geometry', 'Medical Imaging', 'C++', 'Peer-reviewed'],
         links: [
-            { label: '↗ doi: Medical & Biological Engineering & Computing, 2016', href: 'https://doi.org/10.1007/s11517-016-1508-9' },
+            { label: '↗ doi: Medical & Biological Engineering & Computing, 2016', href: 'https://doi.org/10.1007/s11517-016-1592-8' },
         ],
     },
 ];
@@ -224,7 +224,7 @@ export const PUBLICATIONS = [
         authors: 'N. Ishikura, D. Kondo, I. Iordanov, V. Vassiliades, H. Tode',
         title: 'Cache-Property-Aware Features for DNS Tunneling Detection',
         venue: 'ICIN, Paris, 2020',
-        note: 'Invited collaboration; consulted on the the AI/ML component.',
+        note: 'Invited collaboration; consulted on the AI/ML component.',
         href: 'https://doi.org/10.1109/ICIN48450.2020.9059472',
     },
     {
