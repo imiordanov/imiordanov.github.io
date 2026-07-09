@@ -43,7 +43,7 @@ export const WORK = [
         role: 'Chief Scientist → CTO / Director',
         fields: ['AI / ML', 'Management', 'Research', 'Software Dev'],
         meta: 'Tokyo, Japan',
-        body: 'Technical R&D across 50+ client projects in manufacturing, automotive, and industrial AI. Deep learning for computer vision in depth estimation, pose estimation, object detection, optical flow, and others. Four funded AIST collaborations on AI Quality Management. Built an Explainable AI platform including model quantization for edge deployment. Scaled the engineering organization from 10 to 70 people; introduced OKRs and built internal research and hiring pipelines. Headed ISO standardization of processes and practices, and ISMS implementation in preparation for IPO.',
+        body: 'Technical R&D across 50+ client projects in manufacturing, automotive, and industrial AI. Deep learning for computer vision in depth estimation, pose estimation, object detection, optical flow, and others. Four funded AIST collaborations on AI Quality Management. Built an Explainable AI platform including model quantization for edge deployment. Scaled the engineering organization from 10 to 70 people; introduced OKRs and built internal research and hiring pipelines. Drove ISO process standardization and board-approved ISMS adoption in preparation for IPO.',
         tags: ['PyTorch', 'Computer Vision', 'MLOps', 'XAI', 'GANs', 'Team Scaling', 'ISMS'],
     },
     {
